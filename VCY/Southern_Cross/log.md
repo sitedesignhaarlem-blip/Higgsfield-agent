@@ -51,10 +51,50 @@
 | SC cabin E4.jpeg | 891d0c94-ded0-4278-af73-b1bdb89e908a |
 
 ## Generaties
-_wordt aangevuld tijdens stap 4/5_
+Testclip (index 1, opening exterior) eerst per ongeluk gegenereerd zonder expliciete
+`mode`/`sound` → draaide op std/sound-on (10 credits i.p.v. 8,75). Gemeld aan Valentijn,
+op zijn instructie opnieuw gedaan met `mode: pro`, `sound: off` (job d7f7b105... vervangen
+door job d7f7b105-64a6-464e-ba96-b8257d8e2d90 met de juiste instellingen — extra 10 credits
+"verspild" aan de eerste, foute poging).
+
+Batch 1 (index 2–13, 12 clips): 9/12 in één keer geaccepteerd; index 5, 10, 11 (Flybridge
+grill, Aft deck bar, Aft deck tender) kregen bij indienen een "submission_failed" met
+preset-aanbeveling "IN THE DARK" i.p.v. een job. Oorzaak leek de zin "no additional boats
+in the background" in de prompt. Opnieuw ingediend zonder die zin → alle 3 geaccepteerd
+en succesvol gegenereerd.
+
+Batch 2 (index 14–23, 10 clips): alle 10 in één keer geaccepteerd en succesvol.
+
+Alle 23 clips: `completed`, 1920x1080/720, sound off, model kling3_0. Job-id's staan in de
+volledige tool-history van deze sessie; kern: index 1 = d7f7b105-64a6-464e-ba96-b8257d8e2d90
+(pro, 5s), index 2-4,6-9,12-23 = std, index 5/10/11 = std (na prompt-fix).
+
+**Creditverbruik totaal: 129,75 credits** (3000 → 2870,25). Dat is 10 credits meer dan de
+geplande 119,75 — door de verkeerd-geconfigureerde eerste testclip-poging (mijn fout).
 
 ## QC
-_wordt aangevuld tijdens stap 6_
+- **Technisch/automatisch (ffmpeg/ffprobe):** alle 23 clips gedownload, genormaliseerd naar
+  1920x1080/30fps/yuv420p en gemonteerd met crossfades (0,4s) in de Higgsfield cloud-sandbox
+  (`sandbox_exec`) — niet lokaal, want de Higgsfield CDN-hosts (`*.cloudfront.net`) zijn niet
+  bereikbaar vanuit de lokale bash van deze sessie (org egress-policy, HTTP 403 op de proxy).
+  Eindvideo: 1920x1080, 30fps, 70,98s (binnen 60-90s doel), geen audiospoor.
+- **Volledige twee-laags QC uit CLAUDE.md §12 (qc_check.py met JERK/EDGE/DRIFT-scores +
+  12-frame contactsheet per clip) is NIET uitgevoerd.** Reden: dezelfde CDN-blokkade
+  betekent dat opencv/numpy-analyse en contactsheets alleen in de Higgsfield-sandbox kunnen
+  draaien, en het terughalen van beeldmateriaal naar deze sessie (voor mijn eigen visuele
+  inspectie, verplicht in §12 laag 2) loopt vast op de maximale tool-outputgrootte —
+  een enkel klein 1-frame-per-clip overzicht (22KB jpg) kwam wel door, maar bleek na
+  decodering corrupt/onvolledig.
+- Ik heb dus **geen visuele controle op vervormingen of verzonnen objecten kunnen doen**
+  zoals het draaiboek voorschrijft. Aan Valentijn gevraagd: zelf de eindvideo bekijken en
+  beoordelen, of dat hij wil dat hier alsnog tijd in gestoken wordt (bijv. via een lokale
+  render buiten deze sandbox, of contactsheets in kleinere batches).
 
 ## Oplevering
-_wordt aangevuld tijdens stap 8_
+- Bestand: `Southern_Cross_walkthrough.mp4` (48,4 MB, 1920x1080, 30fps, 70,98s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/36d6bceb-0be9-46d7-86a6-d353b5726fde.mp4
+- media_id: 36d6bceb-0be9-46d7-86a6-d353b5726fde (bevestigd)
+- Resterend saldo: 2870,25 credits
+- **Nog niet opgeleverd aan klant** — Valentijn levert, per de vaste regel in CLAUDE.md.
+- **Openstaand:** volledige QC-laag 1/2 (zie boven), en titel-overlay (optioneel, alleen na
+  goedkeuring, nog niet gevraagd).
