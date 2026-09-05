@@ -1,0 +1,224 @@
+{
+  "yacht": "Yachti By Nature",
+  "aspect_ratio": "16:9",
+  "target_length_sec": 73,
+  "clips": [
+    {
+      "index": 1,
+      "category": "Exterior",
+      "start_image": "photos/02_481580037_1148074936766191_6243626030063898754_n-1-1-1280x950.jpg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "pro",
+      "prompt": "Slow cinematic dolly forward along the hull of a luxury motor yacht at anchor, gimbal-stabilized, slow constant speed, locked horizon, calm turquoise water, soft late afternoon light, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "openingsshot"
+    },
+    {
+      "index": 2,
+      "category": "Exterior",
+      "start_image": "photos/04_480672615_3556054041354667_8102385026189154779_n-1-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow aerial pull-back revealing the yacht's stern at anchor, gimbal-stabilized, slow constant speed, locked horizon, glassy turquoise sea, clear sky, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 3,
+      "category": "Exterior",
+      "start_image": "photos/07_480931739_1616043159278091_6981979517973854812_n-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle slow orbit around the yacht's bow, gimbal-stabilized, slow constant speed, locked horizon, glassy sea, marina in the distance, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 4,
+      "category": "Flybridge",
+      "start_image": "photos/10_476581123_972688454816526_4699291103145672241_n.jpg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Smooth walkthrough across the flybridge deck, gimbal-stabilized, slow constant speed, locked horizon, teak decking and upholstered seating around a dining table, open sky, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 5,
+      "category": "Flybridge",
+      "start_image": "photos/09_472583707_597538863048304_3050537564328950140_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle slow pan across the flybridge grill and wet bar station, gimbal-stabilized, slow constant speed, locked horizon, stainless steel fixtures, open sky, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional boats in the background, stable geometry, no morphing or warping of cabinetry edges"
+    },
+    {
+      "index": 6,
+      "category": "Helm",
+      "start_image": "photos/15_475734646_1121390926398768_7180042818703132616_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow push-in toward the flybridge helm station, gimbal-stabilized, slow constant speed, locked horizon, navigation instruments and wheel, soft daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable screens or displays, stable geometry, no morphing or warping of instrument panels or window frames"
+    },
+    {
+      "index": 7,
+      "category": "Helm",
+      "start_image": "photos/35_473035472_595556676435878_7493514484585936093_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow push-in toward the interior lower helm station, gimbal-stabilized, slow constant speed, locked horizon, navigation instruments and wheel, soft interior light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable screens or displays, stable geometry, no morphing or warping of instrument panels or window frames"
+    },
+    {
+      "index": 8,
+      "category": "Bow",
+      "start_image": "photos/18_475425300_3910906589176832_9103740376045452051_n.jpg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Slow forward glide across the bow lounge toward the horizon, gimbal-stabilized, slow constant speed, locked horizon, open marina ahead, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 9,
+      "category": "Aft deck",
+      "start_image": "photos/23_475891490_1273350653966546_3260595900753451486_n.jpg",
+      "end_image": "photos/24_476305315_512090045238915_7351487285781441861_n.jpg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Smooth walkthrough of the aft deck lounge, gimbal-stabilized, slow constant speed, locked horizon, dining table and cushioned seating under the overhang, warm natural light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, furniture edges or window frames"
+    },
+    {
+      "index": 10,
+      "category": "Aft deck",
+      "start_image": "photos/22_475365257_4232884946942258_3965805282356894682_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow push-in from the swim platform toward the aft deck lounge, gimbal-stabilized, slow constant speed, locked horizon, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional boats in the background, stable geometry, no morphing or warping of railings or hull lines"
+    },
+    {
+      "index": 11,
+      "category": "Aft deck",
+      "start_image": "photos/26_475576389_1662929511311093_5476590271546619832_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle slow pan across the aft deck toward the stairway leading up to the flybridge, gimbal-stabilized, slow constant speed, locked horizon, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings or cabinetry edges"
+    },
+    {
+      "index": 12,
+      "category": "Salon",
+      "start_image": "photos/28_475852036_1466611051392837_7254578630540848070_n.jpg",
+      "end_image": "photos/33_474862738_969952808402183_534506089523359206_n.jpg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Slow interior walkthrough through the main salon, gimbal-stabilized, slow constant speed, locked horizon, polished wood joinery and soft furnishings, daylight through panoramic windows, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges or window frames"
+    },
+    {
+      "index": 13,
+      "category": "Galley",
+      "start_image": "photos/31_476120654_590552077165102_7101721651392621019_n.jpg",
+      "end_image": "photos/32_475523287_935841015395864_7835661198280990736_n.jpg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle slow pan across the galley countertop, gimbal-stabilized, slow constant speed, locked horizon, clean countertops and stainless appliances, soft daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable labels, stable geometry, no morphing or warping of cabinetry edges"
+    },
+    {
+      "index": 14,
+      "category": "Galley",
+      "start_image": "photos/30_475921527_4077968672458698_5950538130344024684_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow interior reveal of the galley opening toward the aft deck, gimbal-stabilized, slow constant speed, locked horizon, clean countertops and stainless appliances, soft daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable labels, stable geometry, no morphing or warping of cabinetry edges or window frames"
+    },
+    {
+      "index": 15,
+      "category": "Cabin",
+      "start_image": "photos/39_475874142_638878698676259_1362318432567574825_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow interior reveal of the guest cabin, gimbal-stabilized, slow constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera or crew, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    },
+    {
+      "index": 16,
+      "category": "Cabin",
+      "start_image": "photos/40_476297650_636602285572220_8121513085323158206_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow interior reveal of the guest cabin, gimbal-stabilized, slow constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera or crew, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    },
+    {
+      "index": 17,
+      "category": "Cabin",
+      "start_image": "photos/42_475514781_986794090010588_5793792343796124501_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow interior reveal of the guest cabin, gimbal-stabilized, slow constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    },
+    {
+      "index": 18,
+      "category": "Cabin",
+      "start_image": "photos/43_475902505_2074068689701377_4162849525557264758_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow interior reveal of the guest cabin, gimbal-stabilized, slow constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    },
+    {
+      "index": 19,
+      "category": "Cabin",
+      "start_image": "photos/45_476179222_1869751220428104_5992189294564021458_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow interior reveal of the guest cabin, gimbal-stabilized, slow constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    },
+    {
+      "index": 20,
+      "category": "Ensuite",
+      "start_image": "photos/44_475648069_3909064759336646_4105483178850339085_n-1170x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow push-in into the ensuite bathroom, gimbal-stabilized, slow constant speed, locked horizon, marble surfaces and polished fixtures, soft light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera, stable geometry, no morphing or warping of mirror frames or fixtures"
+    },
+    {
+      "index": 21,
+      "category": "Ensuite",
+      "start_image": "photos/46_476283732_603197219273907_1055981266575649512_n-1170x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow push-in toward the ensuite bathroom sink and mirror, gimbal-stabilized, slow constant speed, locked horizon, marble surfaces and polished fixtures, soft light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera, stable geometry, no morphing or warping of mirror frames or fixtures"
+    },
+    {
+      "index": 22,
+      "category": "Exterior",
+      "start_image": "photos/06_480702339_621631717129467_48841490520709643_n-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle slow orbit around the yacht's profile, gimbal-stabilized, slow constant speed, locked horizon, glassy sea, distant hills, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 23,
+      "category": "Exterior",
+      "start_image": "photos/20_474952038_612569631529983_6093185005670646768_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow forward glide toward the yacht's stern at the dock, gimbal-stabilized, slow constant speed, locked horizon, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 24,
+      "category": "Flybridge",
+      "start_image": "photos/11_475569766_473279205840529_6944838576982929938_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle slow pan across the flybridge lounge, gimbal-stabilized, slow constant speed, locked horizon, teak decking and upholstered seating, open sky, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    }
+  ]
+}
