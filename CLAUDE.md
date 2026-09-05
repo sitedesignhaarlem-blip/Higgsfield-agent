@@ -432,6 +432,22 @@ wat je gaat aanpassen. Pas na zijn akkoord regenereer je.
 Noteer alles in `log.md`. Zo wordt de promptbibliotheek beter en hoeven we deze fout bij
 jacht 12 niet opnieuw te maken.
 
+### Transition QC (na montage, VERPLICHT — vangt wat clip-QC niet vangt)
+
+De dubbele QC hierboven (laag 1 automatisch, laag 2 visueel) keurt alleen de **losse clips**.
+Ghosting/double-exposure in een crossfade ontstaat pas ná montage, tussen twee op zichzelf
+goedgekeurde clips. Dat is een aparte stap, geen optionele extra:
+
+- Na de xfade-assemblage: sample **1 frame midden in élke transitie** (niet alleen midden in
+  de clips) en bekijk dat frame visueel op ghosting/double-exposure.
+- Crossfade-duur nooit langer dan **0,5–0,8s**, tenzij je expliciet hebt getest dat de blend
+  volledig "dichttrekt". (Onze standaard 0,4s valt hierbinnen, maar dat ontslaat je niet van
+  het daadwerkelijk bekijken van de transitieframes.)
+- Vertoont een transitie ghosting: test die overgang eerst **geïsoleerd** (de twee betrokken
+  clips, losse xfade-export) vóór je de hele montage opnieuw draait.
+- Deze check is een verplichte aparte stap **ná montage, vóór oplevering** — niet iets dat je
+  overslaat omdat de losse clips al goedgekeurd zijn.
+
 ---
 
 ## 13. Stap 7 — Montage met ffmpeg
@@ -708,5 +724,6 @@ haar, en het is veel goedkoper om nu extra foto's te vragen dan om later te hers
 [ ] ALLE clips aan elkaar gemonteerd met assemble.py
 [ ] Eindvideo: 60–90s, geen audio, volgorde klopt, geen dubbele hutten
 [ ] QC over de eindvideo gedraaid
+[ ] Transition QC: elke crossfade-transitie visueel gecheckt op ghosting
 [ ] log.md compleet, saldo gemeld  → STOP, lever op aan Valentijn
 ```
