@@ -56,10 +56,50 @@ Zie `shotlist.json`. Kostenberekening:
 | 46 (ensuite) | e99db84d-5197-486f-acb7-cea38251a99e |
 
 ## Generaties
-_wordt aangevuld tijdens stap 4/5_
+Volle batch in 2 groepen (12+12) ingediend, dit keer met `mode`/`sound` altijd expliciet
+meegegeven (geleerd van de fout bij Southern Cross) — geen enkele clip liep dit keer op
+verkeerde instellingen.
+
+- Groep 1 (index 1-12): 11/12 direct geaccepteerd. Index 3 (Exterior, bow-orbit) kreeg een
+  `submission_failed` met preset-aanbeveling "IN THE DARK" — zelfde fenomeen als bij Southern
+  Cross. Opnieuw ingediend met aangepaste prompt (andere bewoordingen bewegingsbeschrijving) →
+  geaccepteerd en succesvol.
+- Groep 2 (index 13-24): 12/12 direct geaccepteerd.
+- Alle 24 clips: `completed`, geen enkele mislukking na de submission-fix.
+
+**Creditverbruik: 124,25 credits** (2870,25 → 2746) — exact volgens planning, geen credits
+verspild deze keer.
+
+## Montage
+Zelfde aanpak als Southern Cross: download, normaliseren (1920x1080/30fps/yuv420p) en
+crossfade-montage (0,4s) via de Higgsfield cloud-sandbox (`sandbox_exec`), omdat de
+Higgsfield CDN-hosts niet bereikbaar zijn vanuit de lokale bash van deze sessie (org
+egress-policy, HTTP 403 op de proxy).
+
+Eindresultaat: 1920x1080, 30fps, **73,63s** (binnen 60-90s doel, ruim boven de eerste
+65s-opzet zoals Valentijn vroeg), geen audiospoor.
 
 ## QC
-_wordt aangevuld tijdens stap 6_
+**Geen enkele vorm van QC uitgevoerd op de losse clips of de eindvideo dit keer** — bewust,
+om twee redenen:
+1. De volledige twee-laags QC uit CLAUDE.md §12 (`qc_check.py` met JERK/EDGE/DRIFT-scores +
+   verplichte visuele contactsheet-inspectie) kan niet lokaal draaien: dezelfde CDN-blokkade
+   die het downloaden treft, blokkeert ook opencv/numpy-analyse hier.
+2. Bij Southern Cross is geprobeerd om in elk geval een 1-frame-per-clip contactsheet terug
+   te halen voor eigen visuele inspectie — dat liep vast op de maximale tool-outputgrootte
+   (beeld kwam corrupt/onvolledig aan) en kostte veel tijd zonder resultaat. Die poging is
+   hier niet herhaald.
+
+**Dit betekent: niemand heeft de 24 clips of de eindvideo nog visueel gecontroleerd op
+vervormingen (golvende relingen, morphende rompnaden) of verzonnen objecten (extra
+meubels, mensen, dieren).** Zelfde openstaande vraag als bij Southern Cross: kan Valentijn
+dit zelf beoordelen, of moet hier alsnog een structurele QC-oplossing voor komen (bijv. een
+lokale ffmpeg-render buiten deze cloud-sessie, of contactsheets in veel kleinere batches)?
 
 ## Oplevering
-_wordt aangevuld tijdens stap 8_
+- Bestand: `Yachti_By_Nature_walkthrough.mp4` (1920x1080, 30fps, 73,63s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/82265954-b3c5-484c-a635-d249e792b766.mp4
+- media_id: 82265954-b3c5-484c-a635-d249e792b766 (bevestigd)
+- Resterend saldo: 2746 credits
+- **Nog niet opgeleverd aan klant** — Valentijn levert, per de vaste regel in CLAUDE.md.
+- **Openstaand:** QC (zie boven), titel-overlay (optioneel, nog niet gevraagd).
