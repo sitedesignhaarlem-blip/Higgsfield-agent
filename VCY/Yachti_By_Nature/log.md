@@ -96,10 +96,77 @@ meubels, mensen, dieren).** Zelfde openstaande vraag als bij Southern Cross: kan
 dit zelf beoordelen, of moet hier alsnog een structurele QC-oplossing voor komen (bijv. een
 lokale ffmpeg-render buiten deze cloud-sessie, of contactsheets in veel kleinere batches)?
 
-## Oplevering
+## Oplevering (v1)
 - Bestand: `Yachti_By_Nature_walkthrough.mp4` (1920x1080, 30fps, 73,63s, geen audio)
 - URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/82265954-b3c5-484c-a635-d249e792b766.mp4
 - media_id: 82265954-b3c5-484c-a635-d249e792b766 (bevestigd)
 - Resterend saldo: 2746 credits
+- **Openstaand na v1:** QC (zie boven), titel-overlay (optioneel, nog niet gevraagd).
+
+## Feedback Valentijn (na v1) en correctieronde
+
+Valentijn: "ik vind deze minder mooi, wat is er veranderd het overlopen? en het beeld wiebelt
+erg veel". Alsnog QC uitgevoerd op de reeds opgeleverde v1 (met dank aan de Higgsfield
+cloud-sandbox, die wél bij de CDN kan):
+
+**Diagnose 1 — jitter binnen clips (optical flow, JERK-achtige meting):**
+Alle 24 clips gemeten op piek-flow t.o.v. mediane flow binnen de clip. Duidelijk patroon:
+elke jerky clip is een **single-image clip** (geen `end_image`-anker):
+
+| Clip | Categorie | Jerk-ratio |
+|---|---|---|
+| 18 | Cabin | 3,77 |
+| 14 | Galley | 3,65 |
+| 15 | Cabin | 3,42 |
+| 10 | Aft deck | 3,29 |
+| 11 | Aft deck | 2,92 |
+| 20 | Ensuite | 2,01 |
+| 17 | Cabin | 1,96 |
+
+Start+end-paar-clips (9, 12, 13) en exterior-clips zaten allemaal rond 1,0–1,4 (stabiel).
+Verklaring: zonder eindframe-anker verzint Kling zelf een camerapad, en bij een korte 3s-clip
+valt een korte "aanloop-ruk" verhoudingsgewijs veel meer op dan bij een 5s hero-shot — precies
+de afweging die bij de shotlist is gemaakt om hut-verwarring te vermijden (zie boven), maar nu
+dus met een meetbare prijs.
+
+**Diagnose 2 — crossfade/ghosting (edge-density op transitie-middens):**
+Alle 23 originele transities gemeten: ratio's tussen 0,58–1,38, geen enkele geflagd. De
+crossfade-techniek zelf (0,4s, identiek aan Southern Cross) is dus niet de oorzaak van "het
+overlopen" — dat was de jitter die erin overvloeide.
+
+**Actie (akkoord Valentijn):** clips 10, 11, 14, 15, 17, 18, 20 opnieuw gegenereerd met de
+reddingsprompt uit §15 (extreem trage, minimale camerabeweging, nog steeds single-image om
+hetzelfde hut-verwarringsrisico te vermijden), 3s, std, sound off. 7 clips × 4,5 = **31,5
+credits**. Alle 7 in één keer geaccepteerd, geen submission-failures.
+
+QC op de vervangers: jerk-ratio's nu 1,03–1,42 (was 1,96–3,77) — ruim binnen de bandbreedte
+van de stabiele clips.
+
+**Herassemblage:** niet de hele batch opnieuw gedownload/genormaliseerd — de 17 ongewijzigde
+clips zijn als aaneengesloten reeksen (met hun originele crossfades intact) uit de bestaande
+eindvideo geknipt, de 7 vervangers vers genormaliseerd, en alleen op de 11 naden die een
+vervanger raken is een verse 0,4s-crossfade gebouwd. (Een eerste poging waarbij per clip een
+"schoon" venster werd geknipt en dáárna opnieuw alles ge-crossfade werd, verloor de overlap
+twee keer en leverde een te korte 60,27s video op — verworpen, niet gebruikt.)
+
+**Transition QC op de 11 nieuwe naden:** edge-density-ratio's van 4 van de 11 naden kwamen
+onder de 0,55-drempel (0,36–0,52). Visueel gecontroleerd met kleine, checksum-geverifieerde
+losse frames (grijswaarden, ~1KB, sha256 geverifieerd na overdracht) op alle 4: telkens een
+coherente, enkelvoudige ruimte, geen dubbele belichting of spookbeeld. Verklaring: de rustige
+reddingsprompt-clips hebben van nature minder randdetail dan hun buren, wat de edge-density-
+proxy laag laat scoren zonder dat er echte ghosting is. Geen verdere actie nodig.
+
+**Eindresultaat v2:** 1920x1080, 30fps, **70,70s** (ruim binnen 60–90s, dicht bij de
+oorspronkelijke 73,63s), geen audiospoor.
+
+**Creditverbruik correctieronde: 31,5 credits** (2746 → 2714,5).
+
+## Oplevering (v2, huidige versie)
+- Bestand: `Yachti_By_Nature_walkthrough_v2.mp4` (1920x1080, 30fps, 70,70s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/2ed313dc-1bc1-4301-a6d7-1be607774366.mp4
+- media_id: 2ed313dc-1bc1-4301-a6d7-1be607774366 (bevestigd)
+- Resterend saldo: 2714,5 credits
 - **Nog niet opgeleverd aan klant** — Valentijn levert, per de vaste regel in CLAUDE.md.
-- **Openstaand:** QC (zie boven), titel-overlay (optioneel, nog niet gevraagd).
+- **Openstaand:** titel-overlay (optioneel, nog niet gevraagd). Transition QC is nu ook als
+  verplichte stap toegevoegd aan CLAUDE.md §12, zodat dit bij toekomstige jachten standaard
+  vóór oplevering gebeurt in plaats van achteraf op klantklacht.
