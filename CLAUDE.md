@@ -238,7 +238,18 @@ Harde voorwaarden, anders krijg je een morphing-ramp:
 
 Bij **exterieur, bow en helm** gebruik je meestal losse foto's met alleen een `start_image`,
 en laat je de beweging volledig uit de prompt komen. Buitenshots met veel water en lucht
-morphen sneller bij een geforceerd eindframe.
+morphen sneller bij een geforceerd eindframe — **tenzij** je twee foto's hebt van dezelfde
+ligplaats/hoek-combinatie die aan de harde voorwaarden hierboven voldoen (zelfde ankerplek,
+zelfde licht, overlappende inhoud); dan mag je ook hier een paar gebruiken, zoals bij
+Unwinding's exterieur-openingsshot.
+
+> **Regel sinds Unwinding (07-09-2026): zoek bij elke categorie actief naar een bruikbaar
+> paar, ook bij exterieur/bow.** Loop bij de inventarisatie niet alleen de duidelijk
+> gelabelde foto's (hutten, etc.) langs, maar bekijk ook de generiek genoemde bestanden op
+> overlap — vaak zit er een tweede hoek van dezelfde ruimte tussen die je anders zou missen.
+> Een start+end-paar oogt vrijwel altijd beter dan een single-image clip (rustiger, minder
+> kans op de jerk/wiebel-problemen uit sectie 15). **Lukt het niet — geen probleem, dan gewoon
+> single-image**, maar controleer dat bewust per categorie voordat je de shotlist bevriest.
 
 ### shotlist.json formaat
 

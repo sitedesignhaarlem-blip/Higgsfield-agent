@@ -1,0 +1,194 @@
+{
+  "yacht": "Unwinding",
+  "aspect_ratio": "16:9",
+  "target_length_sec": 64,
+  "clips": [
+    {
+      "index": 1,
+      "category": "Exterior",
+      "start_image": "photos/726f8693-a2a7-4f3e-a202-98206b35bc20-1280x950.jpeg",
+      "end_image": "photos/ffc28af3-a84f-4d60-8dd3-7fd1a12f66f5-1280x950 (1).jpeg",
+      "duration": 5,
+      "mode": "pro",
+      "prompt": "Cinematic orbit around the hull of a luxury motor yacht at anchor, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, calm turquoise water, bright daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "openingsshot"
+    },
+    {
+      "index": 2,
+      "category": "Exterior",
+      "start_image": "photos/d4e85905-dd73-49a9-bfc9-5276b623432b-1280x950.jpeg",
+      "end_image": "photos/f74e0a53-4886-4963-a566-23cb3487b4fb-1280x950.jpeg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Smooth aerial reveal of the yacht's stern at anchor, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, glassy turquoise sea, green hillside backdrop, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 3,
+      "category": "Exterior",
+      "start_image": "photos/6f7ec086-c7b3-4c6f-9568-a3e9c8ea76b5-1280x950.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle aerial orbit around the yacht's stern at anchor, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, clear turquoise water, bright daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 4,
+      "category": "Flybridge",
+      "start_image": "photos/0d614119-1fdb-49f7-b112-0e6fd5d4fb61.jpeg",
+      "end_image": "photos/dc5610eb-37c4-4e0e-bd35-97564efccf1d.jpeg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Smooth walkthrough across the flybridge deck, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, teak decking, dining table and cushioned seating under the awning, open marina view, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 5,
+      "category": "Flybridge",
+      "start_image": "photos/6e808e30-749f-4c21-b497-5580876fb16c.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across the forward flybridge sunpad, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open sky, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings or hull lines"
+    },
+    {
+      "index": 6,
+      "category": "Helm",
+      "start_image": "photos/5ea424ba-db88-43dd-b219-6f251fc9a11a.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Push-in toward the flybridge helm station, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, navigation instruments and wheel, open marina view, soft daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable screens or displays, stable geometry, no morphing or warping of instrument panels or window frames"
+    },
+    {
+      "index": 7,
+      "category": "Bow",
+      "start_image": "photos/1a68d12a-64ea-498f-9230-25fc51b22fc5.jpeg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Forward glide across the bow lounge toward the horizon, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open marina ahead, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 8,
+      "category": "Bow",
+      "start_image": "photos/f95213cb-6401-47f8-bbcd-6895e779212a.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle orbit around the bow lounge seating, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open marina ahead, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 9,
+      "category": "Aft deck",
+      "start_image": "photos/7c6f824a-b12e-4f02-acba-5ebcb4372c5c.jpeg",
+      "end_image": "photos/be49d74f-4d39-4900-ac69-1931dfdb0196.jpeg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Smooth walkthrough of the aft deck lounge, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, dining table and cushioned seating under the overhang, warm natural light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, furniture edges or window frames"
+    },
+    {
+      "index": 10,
+      "category": "Aft deck",
+      "start_image": "photos/fc49ed03-be40-4f9a-baa0-26666f254922.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across the aft deck toward the sliding doors into the salon, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings or cabinetry edges"
+    },
+    {
+      "index": 11,
+      "category": "Salon",
+      "start_image": "photos/677ce2d0-c023-494b-bdc3-77e625be6b0c.jpeg",
+      "end_image": "photos/699b33b8-54d9-401f-b881-417fa83522fa.jpeg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Interior walkthrough through the main salon, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, polished wood joinery and soft furnishings, daylight through panoramic windows, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges or window frames"
+    },
+    {
+      "index": 12,
+      "category": "Salon",
+      "start_image": "photos/8c21f3a9-23c6-4060-99f8-4c68022d43ba.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across the main salon toward the galley, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, soft furnishings and polished joinery, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges or window frames"
+    },
+    {
+      "index": 13,
+      "category": "Galley",
+      "start_image": "photos/6a857f5d-b82e-4740-acba-eaebd602b78a.jpeg",
+      "end_image": "photos/711d9a48-7e1e-448e-93a2-0fbeab65354b.jpeg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across the galley, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, clean countertops and stainless appliances, soft daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable labels, stable geometry, no morphing or warping of cabinetry edges"
+    },
+    {
+      "index": 14,
+      "category": "Galley",
+      "start_image": "photos/19371c17-9d96-493c-8195-d32e7940cbf4.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Push-in toward the galley countertop, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, clean countertops and built-in oven, soft daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable labels, stable geometry, no morphing or warping of cabinetry edges"
+    },
+    {
+      "index": 15,
+      "category": "Cabin",
+      "hut": "A",
+      "start_image": "photos/unwinding cabin A1.jpeg",
+      "end_image": "photos/Unwdinding cabin A2.jpeg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    },
+    {
+      "index": 16,
+      "category": "Cabin",
+      "hut": "B",
+      "start_image": "photos/unwinding cabin B1.jpeg",
+      "end_image": "photos/Unwinding cabin B2.jpeg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    },
+    {
+      "index": 17,
+      "category": "Cabin",
+      "hut": "C",
+      "start_image": "photos/Unwinding cabin C1.jpeg",
+      "end_image": "photos/Unwinding Cabin C2.jpeg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    },
+    {
+      "index": 18,
+      "category": "Cabin",
+      "hut": "D",
+      "start_image": "photos/unwinding cabin D1.jpeg",
+      "end_image": "photos/unwinding cabin D2.jpeg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    },
+    {
+      "index": 19,
+      "category": "Cabin",
+      "hut": "E",
+      "start_image": "photos/Unwinding cabin E2.jpeg",
+      "end_image": "photos/Unwinding cabin E3.jpeg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, folded towels, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    },
+    {
+      "index": 20,
+      "category": "Cabin",
+      "hut": "F",
+      "start_image": "photos/Unwinding cabin F2.jpeg",
+      "end_image": "photos/unwinding cabin F3.jpeg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, folded towels, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    }
+  ]
+}
