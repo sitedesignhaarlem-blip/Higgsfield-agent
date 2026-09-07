@@ -1,0 +1,117 @@
+{
+  "yacht": "Freedom",
+  "aspect_ratio": "16:9",
+  "target_length_sec": 42,
+  "clips": [
+    {
+      "index": 1,
+      "category": "Exterior",
+      "start_image": "photos/Screenshot-45.png",
+      "end_image": null,
+      "duration": 5,
+      "mode": "pro",
+      "prompt": "Cinematic dolly forward along the hull of a luxury motor yacht at anchor, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, calm turquoise water, soft daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "openingsshot"
+    },
+    {
+      "index": 2,
+      "category": "Exterior",
+      "start_image": "photos/Screenshot-46 (1).png",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Smooth forward glide alongside the hull of a luxury motor yacht underway, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, sea spray and wake, bright daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 3,
+      "category": "Flybridge",
+      "start_image": "photos/Screenshot-74.png",
+      "end_image": "photos/Screenshot-76.png",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Smooth walkthrough across the flybridge deck, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, helm station and cushioned dining lounge, open marina view, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable screens or displays, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 4,
+      "category": "Flybridge",
+      "start_image": "photos/Screenshot-81.png",
+      "end_image": null,
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Wide reveal of the flybridge deck, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, helm station, wet bar and cushioned lounge seating, marina and hillside beyond, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no readable screens or displays, stable geometry, no morphing or warping of railings or window frames"
+    },
+    {
+      "index": 5,
+      "category": "Helm",
+      "start_image": "photos/Screenshot-82.png",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Push-in toward the helm station, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, navigation instruments and wheel, marina view beyond, soft daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable screens or displays, stable geometry, no morphing or warping of instrument panels or window frames"
+    },
+    {
+      "index": 6,
+      "category": "Bow",
+      "start_image": "photos/Screenshot-57-1.png",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Forward glide across the bow sunpad toward the horizon, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open sea and distant coastline ahead, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 7,
+      "category": "Bow",
+      "start_image": "photos/Screenshot-73.png",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across the bow sunpad toward the flybridge superstructure, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open marina beyond, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 8,
+      "category": "Aft deck",
+      "start_image": "photos/Screenshot-67.png",
+      "end_image": "photos/Screenshot-68.png",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Smooth walkthrough of the aft deck lounge, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, dining table and cushioned seating under the overhang, marina view beyond, warm natural light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, furniture edges or window frames"
+    },
+    {
+      "index": 9,
+      "category": "Aft deck",
+      "start_image": "photos/Screenshot-69.png",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across the aft deck dining area toward the marina, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, cushioned seating, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings or furniture edges"
+    },
+    {
+      "index": 10,
+      "category": "Salon",
+      "start_image": "photos/Freedom2 (1).png",
+      "end_image": "photos/Screenshot-61.png",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Interior walkthrough through the main salon, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, cushioned seating and soft furnishings, daylight through panoramic windows, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges or window frames"
+    },
+    {
+      "index": 11,
+      "category": "Galley",
+      "start_image": "photos/Screenshot-63.png",
+      "end_image": "photos/Screenshot-66.png",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across the galley, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, clean countertops and stainless appliances, open door to the aft deck, soft daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable labels, stable geometry, no morphing or warping of cabinetry edges"
+    },
+    {
+      "index": 12,
+      "category": "Cabin",
+      "hut": "A",
+      "start_image": "photos/Cabin A1.png",
+      "end_image": "photos/Cabin A2.png",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    }
+  ]
+}
