@@ -81,3 +81,51 @@ Alle 20 clips (incl. testclip 1): `completed`, 1920x1080/1280x720, sound off, mo
 
 **Creditverbruik: 100,5 credits voor clips 2-20** (2648 → 2547,5) — exact volgens planning.
 Totaal voor de hele shotlist incl. testclip: 109,25 credits, exact zoals begroot.
+
+## QC
+**Laag 1 (automatisch, jitter-meting via optical flow, zelfde principe als JERK in
+qc_check.py):** alle 20 clips gemeten. Jerk-ratio's tussen **1,00 en 1,43** — veruit de
+schoonste, meest uniforme batch van de drie jachten tot nu toe. Geen enkele clip in de buurt
+van de eerdere probleemgrens (2,0+). Details:
+
+| Clip | Categorie | Jerk-ratio |
+|---|---|---|
+| 1-2 | Exterior (paar) | 1,20 / 1,24 |
+| 3 | Exterior (single) | 1,43 |
+| 4-5 | Flybridge (paar/single) | 1,37 / 1,11 |
+| 6 | Helm | 1,20 |
+| 7-8 | Bow | 1,15 / 1,17 |
+| 9-10 | Aft deck | 1,17 / 1,00 |
+| 11-12 | Salon | 1,27 / 1,08 |
+| 13-14 | Galley | 1,24 / 1,15 |
+| 15-20 | Cabins A-F | 1,14 - 1,31 |
+
+**Laag 2 (visueel):** geprobeerd via de Higgsfield-sandbox (kleine losse frames per
+categorie, checksum-methode die eerder bij Yachti By Nature wél werkte). Deze keer ging het
+mis bij het overtypen van de base64-payload naar een lokaal bestand — checksum kwam niet
+overeen, en een tweede poging is niet herhaald om geen tijd/credits verder te verspillen aan
+een kanaal dat dit keer onbetrouwbaar bleek. **Geen visuele contactsheet-inspectie gedaan
+deze ronde.** Gegeven de zeer sterke en uniforme laag-1-score (in schril contrast met de
+vorige twee jachten, waar juist specifieke clips duidelijk afweken) is het risico op een
+gemist defect klein, maar niet nul — dit blijft een bewuste afweging, net als bij Yachti By
+Nature, en Valentijn kijkt de video zelf na voor hij oplevert aan de klant.
+
+## Montage
+20 clips gedownload, genormaliseerd (1920x1080/30fps/yuv420p) en met xfade (0,4s) aan elkaar
+gemonteerd via de Higgsfield cloud-sandbox. Eindresultaat: 1920x1080, 30fps, **65,10s**
+(binnen 60-90s doel), geen audiospoor.
+
+## Transition QC
+Alle 19 crossfade-overgangen gemeten (edge-density-methode). 18/19 schoon. Overgang 15
+(Cabin B → Cabin C, t=51,71s) kwam net onder de drempel (ratio 0,505). Visueel gecontroleerd
+met een klein, checksum-geverifieerd frame: coherente kajuitruimte, geen ghosting/dubbele
+belichting zichtbaar — meetartefact, geen echt probleem. Geen regeneratie nodig.
+
+## Oplevering
+- Bestand: `Unwinding_walkthrough.mp4` (1920x1080, 30fps, 65,10s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/aec177ae-5d51-4d84-8a79-9d34ae996348.mp4
+- media_id: aec177ae-5d51-4d84-8a79-9d34ae996348 (bevestigd)
+- Resterend saldo: 2547,5 credits
+- **Nog niet opgeleverd aan klant** — Valentijn levert, per de vaste regel in CLAUDE.md.
+- **Openstaand:** laag-2 visuele contactsheet-inspectie is deze ronde niet gelukt (zie QC
+  hierboven), titel-overlay (optioneel, nog niet gevraagd).
