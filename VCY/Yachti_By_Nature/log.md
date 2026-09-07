@@ -161,12 +161,82 @@ oorspronkelijke 73,63s), geen audiospoor.
 
 **Creditverbruik correctieronde: 31,5 credits** (2746 → 2714,5).
 
-## Oplevering (v2, huidige versie)
+## Oplevering (v2)
 - Bestand: `Yachti_By_Nature_walkthrough_v2.mp4` (1920x1080, 30fps, 70,70s, geen audio)
 - URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/2ed313dc-1bc1-4301-a6d7-1be607774366.mp4
 - media_id: 2ed313dc-1bc1-4301-a6d7-1be607774366 (bevestigd)
 - Resterend saldo: 2714,5 credits
+- **Openstaand na v2:** titel-overlay (optioneel, nog niet gevraagd).
+
+## Feedback Valentijn (na v2) — "ik wil die hele wiebelige beelden verbeterd"
+
+Ook na v2 nog steeds te veel jerk volgens Valentijn. Op zijn verzoek: Southern Cross als
+kwaliteitsreferentie genomen ("start+end-shots, perfect, weinig jerk") en gekeken of dezelfde
+techniek hier alsnog kon, in plaats van blind nieuwe dingen te genereren.
+
+**Fotocontrole:** alle 12 nog ongebruikte bronfoto's (van de 46) visueel bekeken op een tweede
+hoek van dezelfde ruimte. Resultaat:
+- Foto 41 = tweede hoek van de ensuite uit foto 44 (zelfde douche met "Aventura"-opdruk) → echt paar
+- Foto 29 = tweede hoek van de galley uit foto 30 (zelfde aanrecht, zelfde raampartij) → echt paar
+- Foto 17 = tweede hoek van de bow uit foto 18 (zelfde ankerlier, zelfde tafeltjes) → adresseert
+  Valentijns "ik mis een bow shot" (standaardopzet is 2 bow-clips, hier stond er maar 1)
+- Voor de 5 cabin-foto's (39,40,42,43,45) en de 2 losse aft deck-foto's (22,26) is **geen**
+  tweede hoek gevonden — start+end forceren zou hier precies het morphing-risico opleveren dat
+  CLAUDE.md verbiedt. Voor die clips was er geen betere fotografische optie beschikbaar.
+
+**Correctieronde 2 — 10 clips, in overleg met Valentijn geaccordeerd:**
+- Clip 14 (Galley) → echt start+end-paar (30+29)
+- Clip 20 (Ensuite) → echt start+end-paar (44+41)
+- Nieuwe clip 25 (Bow #2) → los, foto 17 (bow/exterieur blijft bewust single-image per
+  CLAUDE.md §8, morphing-risico met water/lucht)
+- Clip 16, 19 (Cabin) → voor het eerst gefixt met reddingsprompt (waren in ronde 1 niet
+  meegenomen)
+- Clip 10, 11 (Aft deck), 15, 17, 18 (Cabin) → geen bronfoto-alternatief, dus enige overgebleven
+  hefboom uit §12 "Bij afkeur": `mode: pro` i.p.v. `std`, met Valentijns expliciete akkoord
+  vooraf (17% duurder, zoals §3 voorschrijft)
+
+Kosten: 3× 4,5 (groep A) + 2× 4,5 (groep B) + 5× 5,25 pro/3s (groep C, `get_cost` preflight
+bevestigd) = **48,75 credits** (2714,5 → 2665,75).
+
+Alle 10 clips in één keer geaccepteerd, geen submission-failures.
+
+**QC op de vervangers:** jitter-ratio's nu 1,05–1,6 (na correctie voor een meetartefact op het
+laatste steekproefframe bij het einde van elke clip) — vergelijkbaar met de rustigste clips in
+de video.
+
+**Herassemblage (v3):** opnieuw vanaf de originele v1 opgebouwd (niet vanaf v2, om dubbele
+crossfade-verliezen te vermijden zoals bij de eerste correctieronde). 15 segmenten: 4 lange
+ongewijzigde reeksen met originele crossfades intact (clips 1-8, 9, 12-13, 21, 22-24) + 1
+nieuw ingevoegde bow-clip + 9 vervangers, met verse 0,4s-crossfades alleen op de 14 naden die
+een nieuwe/vervangen clip raken. Eindresultaat: **25 clips, 71,40s**.
+
+## Oplevering (v3, huidige versie)
+- Bestand: `Yachti_By_Nature_walkthrough_v3.mp4` (1920x1080, 30fps, 71,40s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/e91ece45-8f53-4773-adcd-0f8a3751217b.mp4
+- media_id: e91ece45-8f53-4773-adcd-0f8a3751217b (bevestigd)
+- Resterend saldo: 2665,75 credits
 - **Nog niet opgeleverd aan klant** — Valentijn levert, per de vaste regel in CLAUDE.md.
-- **Openstaand:** titel-overlay (optioneel, nog niet gevraagd). Transition QC is nu ook als
-  verplichte stap toegevoegd aan CLAUDE.md §12, zodat dit bij toekomstige jachten standaard
-  vóór oplevering gebeurt in plaats van achteraf op klantklacht.
+- **Openstaand:** titel-overlay (optioneel, nog niet gevraagd); volledige Transition QC op de
+  14 nieuwe naden van v3 is nog niet herhaald (wel gedaan op v2's 11 naden).
+
+## Basisregel-wijziging (07-09-2026): camerabeweging iets sneller
+
+Valentijn: nog steeds te veel jerk gezien, ook na v3. Op zijn instructie CLAUDE.md §15
+aangepast: `slow constant speed` → `smooth moderately-paced constant speed` in de
+basisformule en alle categorie-voorbeelden; reddingsprompt niet langer "extremely slow,
+almost static" maar één duidelijke bewegingsas op gematigd tempo. Achterliggende hypothese:
+bij bijna-statische clips wordt Kling's eigen frame-tot-frame ruis niet gemaskeerd door
+bedoelde beweging, wat als wiebelen overkomt.
+
+**Testclips volgens nieuwe regel** (buiten én binnen, zoals gevraagd — geen nieuwe foto's
+nodig, bestaande media_id's hergebruikt met aangepaste prompt):
+
+- Buiten/aft deck: foto 22 (media_id b6fefacc-...), 3s, std, sound off — 4,5 credits.
+  Job `48e282b1-d39f-472b-bce4-adadb26693ce`, completed.
+  URL: https://d8j0ntlcm91z4.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/hf_20260907_083641_48e282b1-d39f-472b-bce4-adadb26693ce.mp4
+- Binnen/cabin: foto 39 (media_id 199b3af0-...), 3s, std, sound off — 4,5 credits.
+  Job `45b50069-ae64-4304-bedb-6b033ffc6129`, completed.
+  URL: https://d8j0ntlcm91z4.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/hf_20260907_083916_45b50069-ae64-4304-bedb-6b033ffc6129.mp4
+
+Totaal 9 credits (2665,75 → 2656,75). Beide getoond aan Valentijn, **wacht op feedback** voor
+de nieuwe regel op de rest van de shotlist wordt toegepast.

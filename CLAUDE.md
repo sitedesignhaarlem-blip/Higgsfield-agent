@@ -561,7 +561,7 @@ Prompts zijn **altijd in het Engels**. Kling reageert slechter op Nederlands.
 ### Basisformule
 
 ```
-[camerabeweging], gimbal-stabilized, slow constant speed, locked horizon,
+[camerabeweging], gimbal-stabilized, smooth moderately-paced constant speed, locked horizon,
 [onderwerp], luxury yacht charter, natural daylight, photorealistic,
 cinematic color grade, shallow depth of field,
 no people, no text, no lettering, no logos,
@@ -570,12 +570,22 @@ stable geometry, no morphing or warping of railings, hull lines or window frames
 
 De staart vanaf `no people` staat in **elke** prompt. Niet weglaten om tokens te besparen.
 
+> **Regel sinds Yachti By Nature (06-09-2026): iets sneller bewegen, zowel buiten- als
+> binnenshots.** Eerst gebruikten we overal `slow constant speed`, en bij afkeur zelfs
+> `extremely slow, almost static`. Praktijkervaring liet zien dat dit averechts werkt: bij
+> een bijna-statische clip is er te weinig bedoelde camerabeweging om Kling's eigen
+> frame-tot-frame ruis (kleine geometrie-/textuurverschillen die het model sowieso per frame
+> genereert) te maskeren, en dat leest als wiebelen/jerk. Een iets snellere, gelijkmatige
+> beweging geeft die ruis iets om "in mee te bewegen" en oogt stabieler. Gebruik dus
+> `smooth moderately-paced constant speed` als standaard — niet `slow`, en zeker niet
+> `extremely slow`/`almost static`.
+
 ### Per categorie
 
 **Exterior — opening (5s, pro)**
 ```
-Slow cinematic dolly forward along the hull of a luxury motor yacht at anchor,
-gimbal-stabilized, slow constant speed, locked horizon, calm turquoise water,
+Cinematic dolly forward along the hull of a luxury motor yacht at anchor, gimbal-stabilized,
+smooth moderately-paced constant speed, locked horizon, calm turquoise water,
 soft late afternoon light, photorealistic, cinematic color grade,
 no people, no text, no lettering, no logos, stable geometry,
 no morphing or warping of railings, hull lines or window frames
@@ -583,24 +593,24 @@ no morphing or warping of railings, hull lines or window frames
 
 **Exterior — profiel (3s)**
 ```
-Gentle slow orbit around the yacht's profile, gimbal-stabilized, slow constant speed,
-locked horizon, glassy sea, clear sky, photorealistic, cinematic color grade,
+Gentle orbit around the yacht's profile, gimbal-stabilized, smooth moderately-paced
+constant speed, locked horizon, glassy sea, clear sky, photorealistic, cinematic color grade,
 no people, no text, no lettering, no logos, stable geometry,
 no morphing or warping of railings, hull lines or window frames
 ```
 
 **Flybridge (5s, start+end)**
 ```
-Smooth walkthrough across the flybridge deck, gimbal-stabilized, slow constant speed,
-locked horizon, teak decking and upholstered seating, open sky, natural daylight,
-photorealistic, cinematic color grade, shallow depth of field,
+Smooth walkthrough across the flybridge deck, gimbal-stabilized, smooth moderately-paced
+constant speed, locked horizon, teak decking and upholstered seating, open sky,
+natural daylight, photorealistic, cinematic color grade, shallow depth of field,
 no people, no text, no lettering, no logos, stable geometry,
 no morphing or warping of railings, hull lines or window frames
 ```
 
 **Helm (3s)**
 ```
-Slow push-in toward the helm station, gimbal-stabilized, slow constant speed,
+Push-in toward the helm station, gimbal-stabilized, smooth moderately-paced constant speed,
 locked horizon, navigation instruments and wheel, soft interior light,
 photorealistic, cinematic color grade, shallow depth of field,
 no people, no text, no lettering, no logos, no readable screens or displays,
@@ -610,17 +620,17 @@ stable geometry, no morphing or warping of instrument panels or window frames
 
 **Bow (5s)**
 ```
-Slow forward glide across the bow sunpad toward the horizon, gimbal-stabilized,
-slow constant speed, locked horizon, open sea ahead, bright natural daylight,
-photorealistic, cinematic color grade,
+Forward glide across the bow sunpad toward the horizon, gimbal-stabilized,
+smooth moderately-paced constant speed, locked horizon, open sea ahead,
+bright natural daylight, photorealistic, cinematic color grade,
 no people, no text, no lettering, no logos, stable geometry,
 no morphing or warping of railings, hull lines or window frames
 ```
 
 **Aft deck (5s, start+end)**
 ```
-Smooth walkthrough of the aft deck lounge, gimbal-stabilized, slow constant speed,
-locked horizon, dining table and cushioned seating under the overhang,
+Smooth walkthrough of the aft deck lounge, gimbal-stabilized, smooth moderately-paced
+constant speed, locked horizon, dining table and cushioned seating under the overhang,
 warm natural light, photorealistic, cinematic color grade, shallow depth of field,
 no people, no text, no lettering, no logos, stable geometry,
 no morphing or warping of railings, furniture edges or window frames
@@ -628,8 +638,8 @@ no morphing or warping of railings, furniture edges or window frames
 
 **Salon (5s, start+end)**
 ```
-Slow interior walkthrough through the main salon, gimbal-stabilized,
-slow constant speed, locked horizon, polished wood joinery and soft furnishings,
+Interior walkthrough through the main salon, gimbal-stabilized, smooth moderately-paced
+constant speed, locked horizon, polished wood joinery and soft furnishings,
 daylight through panoramic windows, photorealistic, cinematic color grade,
 shallow depth of field, no people, no text, no lettering, no logos,
 stable geometry, no morphing or warping of furniture edges or window frames
@@ -637,7 +647,7 @@ stable geometry, no morphing or warping of furniture edges or window frames
 
 **Galley (3s)**
 ```
-Gentle slow pan across the galley, gimbal-stabilized, slow constant speed,
+Gentle pan across the galley, gimbal-stabilized, smooth moderately-paced constant speed,
 locked horizon, clean countertops and stainless appliances, soft daylight,
 photorealistic, cinematic color grade, shallow depth of field,
 no people, no text, no lettering, no logos, no readable labels,
@@ -646,8 +656,8 @@ stable geometry, no morphing or warping of cabinetry edges
 
 **Cabin (3s, start+end)**
 ```
-Slow interior reveal of the guest cabin, gimbal-stabilized, slow constant speed,
-locked horizon, made bed with crisp linens, warm ambient light,
+Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant
+speed, locked horizon, made bed with crisp linens, warm ambient light,
 photorealistic, cinematic color grade, shallow depth of field,
 no people, no text, no lettering, no logos, stable geometry,
 no morphing or warping of furniture edges, bedding or window frames
@@ -655,8 +665,8 @@ no morphing or warping of furniture edges, bedding or window frames
 
 **Ensuite / badkamer (3s)**
 ```
-Slow push-in into the ensuite bathroom, gimbal-stabilized, slow constant speed,
-locked horizon, marble surfaces and polished fixtures, soft light,
+Push-in into the ensuite bathroom, gimbal-stabilized, smooth moderately-paced constant
+speed, locked horizon, marble surfaces and polished fixtures, soft light,
 photorealistic, cinematic color grade, shallow depth of field,
 no people, no text, no lettering, no logos, no mirror reflections of a camera,
 stable geometry, no morphing or warping of mirror frames or fixtures
@@ -664,14 +674,19 @@ stable geometry, no morphing or warping of mirror frames or fixtures
 
 ### Reddingsprompt bij vervorming
 
-Als een clip is afgekeurd, vervang de camerabeweging door de meest voorzichtige variant:
+Als een clip is afgekeurd, vervang de camerabeweging door de meest voorzichtige variant.
+**Niet meer "extremely slow / almost static"** — dat bleek zelf een jerk-oorzaak (zie de
+regel bovenaan dit hoofdstuk). In plaats daarvan: één duidelijke, gelijkmatige bewegingsas,
+iets vlotter dan je intuïtie ingeeft:
 ```
-Extremely slow, minimal camera drift forward, gimbal-stabilized, locked horizon,
-almost static framing, [onderwerp], natural daylight, photorealistic,
+Smooth, moderately-paced camera movement along a single clear axis, gimbal-stabilized,
+locked horizon, confident and continuous motion, no hesitation or drift,
+[onderwerp], natural daylight, photorealistic,
 no people, no text, no lettering, no logos, absolutely stable geometry,
 no morphing, no warping, no deformation of any straight lines or edges
 ```
-En zet de duur op 3s. Minder beweging en minder tijd = minder ruimte voor artefacten.
+En zet de duur op 3s. Eén bewegingsas + iets meer tempo dan "slow" = minder ruimte voor
+Kling om tussen frames te gaan "twijfelen".
 
 ---
 
@@ -681,6 +696,7 @@ En zet de duur op 3s. Minder beweging en minder tijd = minder ruimte voor artefa
 |---|---|---|
 | Clip morpht in het midden | start/end frames te verschillend | end_image weghalen, twee losse clips maken |
 | Relingen golven | camerabeweging te snel of te complex | reddingsprompt, 3s, één bewegingsas |
+| Clip wiebelt/jerkt, vooral bij weinig beweging | camerabeweging te langzaam/bijna statisch — Kling's eigen frame-ruis wordt niet gemaskeerd | iets sneller laten bewegen (`smooth moderately-paced constant speed`), niet `extremely slow`/`almost static` |
 | Onzin-tekst op panelen | Kling hallucineert tekst | `no readable screens or displays` toevoegen |
 | Clip te donker/plat | bronfoto te donker | bronfoto vooraf corrigeren, niet met de prompt proberen te fixen |
 | xfade-keten faalt | clips verschillen in fps/resolutie/sar | eerst normaliseren, altijd |
