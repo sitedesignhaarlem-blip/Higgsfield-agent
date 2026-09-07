@@ -238,5 +238,6 @@ nodig, bestaande media_id's hergebruikt met aangepaste prompt):
   Job `45b50069-ae64-4304-bedb-6b033ffc6129`, completed.
   URL: https://d8j0ntlcm91z4.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/hf_20260907_083916_45b50069-ae64-4304-bedb-6b033ffc6129.mp4
 
-Totaal 9 credits (2665,75 → 2656,75). Beide getoond aan Valentijn, **wacht op feedback** voor
-de nieuwe regel op de rest van de shotlist wordt toegepast.
+Totaal 9 credits (2665,75 → 2656,75). Beide getoond aan Valentijn — **akkoord** ("top dit"),
+07-09-2026. De nieuwe regel (`smooth moderately-paced constant speed`) staat vanaf nu vast
+in CLAUDE.md §15 voor alle toekomstige jachten.
