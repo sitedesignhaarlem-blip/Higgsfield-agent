@@ -71,3 +71,13 @@ URL: https://d8j0ntlcm91z4.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/hf_20
 Kosten: 8,75 credits (2656,75 → 2648, klopt exact).
 **Akkoord Valentijn** ("heel mooi echt top") — 07-09-2026. Promptstijl (smooth
 moderately-paced) bevestigd voor de rest van de shotlist, geen aanpassingen nodig.
+
+## Generaties (volle batch)
+Clips 2-20 (19 clips) in 2 groepen (12+7) ingediend. **Alle 19 in één keer geaccepteerd en
+succesvol — geen enkele submission-failure, geen "IN THE DARK"-preset-aanbevelingen.**
+Schoonste batch tot nu toe.
+
+Alle 20 clips (incl. testclip 1): `completed`, 1920x1080/1280x720, sound off, model kling3_0.
+
+**Creditverbruik: 100,5 credits voor clips 2-20** (2648 → 2547,5) — exact volgens planning.
+Totaal voor de hele shotlist incl. testclip: 109,25 credits, exact zoals begroot.
