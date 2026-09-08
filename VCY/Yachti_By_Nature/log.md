@@ -241,3 +241,52 @@ nodig, bestaande media_id's hergebruikt met aangepaste prompt):
 Totaal 9 credits (2665,75 → 2656,75). Beide getoond aan Valentijn — **akkoord** ("top dit"),
 07-09-2026. De nieuwe regel (`smooth moderately-paced constant speed`) staat vanaf nu vast
 in CLAUDE.md §15 voor alle toekomstige jachten.
+
+## Volgorde-fix (08-09-2026): v4
+
+Valentijn: "de yaghti by nature video was in de verkeerde volgorde fix da ff". Diagnose:
+bij de shotlist-uitbreiding in stap 2 (index 22-24: 2× Exterior, 1× Flybridge, toegevoegd
+om van ~65s naar ~73s te komen) zijn deze 3 extra clips destijds **achteraan** de
+shotlist.json gezet in plaats van bij hun eigen categorie. Bij elke montage/hermontage
+sindsdien (v1 t/m v3) zijn ze daardoor als staart ná de hutten/ensuite blijven staan, in
+plaats van bij Exterior/Flybridge vooraan — in strijd met de vaste volgorde uit sectie 6
+(Exterior → Flybridge → Helm → Bow → Aft deck → Salon/Galley → Cabins).
+
+**Vastgestelde volgorde in v3** (via content-matching op frames, niet alleen op papier):
+1,2,3 (Exterior) → 4,5 (Flybridge) → 6,7 (Helm) → 8,25 (Bow) → 9,10,11 (Aft deck) →
+12 (Salon) → 13,14 (Galley) → 15-19 (Cabin) → 20,21 (Ensuite) → **22,23 (Exterior), 24
+(Flybridge)** — de laatste 3 hoorden bij het begin.
+
+**Fix — surgical splice, geen regeneratie nodig (0 credits):** de 4 categorieblokken uit
+v3 zijn er met hun bestaande crossfades intact uitgesneden en herschikt:
+- Segment A (clips 1-3, Exterior) — ongewijzigd vooraan
+- Segment B (clips 22-23, Exterior) — verplaatst van staart naar direct na segment A
+- Segment C (clips 4-5, Flybridge) — ongewijzigd, nu na segment B
+- Segment D (clip 24, Flybridge) — verplaatst van staart naar direct na segment C
+- Segment E (clips 6-21: Helm t/m Ensuite) — ongewijzigd, nu aan het eind
+
+Nieuwe volgorde: A → B → C → D → E, met 4 verse 0,4s-crossfades op de nieuwe naden (de
+crossfades bínnen elk segment zijn ongewijzigd origineel).
+
+Exacte knippunten bepaald via een combinatie van de originele assemble-wiskunde
+(offsets uit de clip-duraties) en empirische validatie: frame-diff-piekdetectie op de
+video zelf, plus content-verificatie door frames op de kandidaat-grenzen te vergelijken
+met de bronfoto's per categorie (bevestigde bv. dat t=61,6s Ensuite toont, t=64,7s/67,2s
+Exterior, t=70,0s Flybridge — exact zoals verwacht voor de staart die verplaatst moest
+worden).
+
+**Transition QC op de 4 nieuwe naden:** alle 4 visueel gecontroleerd (checksum-geverifieerd
+kleine frames), inclusief de naad Flybridge→Flybridge (segment C→D, hoogste ghosting-risico
+want zelfde categorie) — coherente, schone blends, geen dubbele belichting.
+
+**Resultaat (v4):** 1920x1080, 30fps, **68,37s** (binnen 60-90s), geen audiospoor, volgorde
+nu correct: Exterior → Flybridge → Helm → Bow → Aft deck → Salon/Galley → Cabins/Ensuite.
+Geen credits gebruikt (montage-only fix).
+
+## Oplevering (v4, huidige versie)
+- Bestand: `Yachti_By_Nature_walkthrough_v4.mp4` (1920x1080, 30fps, 68,37s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/db2ab76f-5a3c-43f5-900a-82585b28891a.mp4
+- media_id: db2ab76f-5a3c-43f5-900a-82585b28891a (bevestigd)
+- Resterend saldo: 2477,25 credits (ongewijzigd t.o.v. v3)
+- **Nog niet opgeleverd aan klant** — Valentijn levert, per de vaste regel in CLAUDE.md.
+- **Openstaand:** titel-overlay (optioneel, nog niet gevraagd).
