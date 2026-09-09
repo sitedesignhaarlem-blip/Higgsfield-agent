@@ -315,7 +315,7 @@ gevraagde ~40s-marker. 3 nieuwe naden gecontroleerd met de edge-density-methode:
 Flybridge → Helm (1 clip) → Bow → Aft deck → **trap (voorheen Helm-clip 2)** → Salon →
 Galley → Cabins/Ensuite.
 
-## Oplevering (v5, huidige versie)
+## Oplevering (v5)
 - Bestand: `Yachti_By_Nature_walkthrough_v5.mp4` (1920x1080, 30fps, 65,97s, geen audio)
 - URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/9bd78052-56bc-4638-b25a-939c92756de4.mp4
 - media_id: 9bd78052-56bc-4638-b25a-939c92756de4 (bevestigd)
@@ -323,5 +323,46 @@ Galley → Cabins/Ensuite.
   het laatst bekende saldo (2477,25) vóór deze fix, terwijl deze fix zelf 0 credits heeft
   gekost** (transactielog toont 10+ Kling v3.0-spends tussen 14:16-14:43 op 09-09-2026 die
   niet uit deze sessie komen — gemeld aan Valentijn, niet stilgehouden).
+- Niet meer de huidige versie — zie v6 hieronder.
+
+## Klantwens (09-09-2026): verzonnen bootnaam "Aventura" op de romp in clip 3
+
+Klant meldde: bij seconde 10 in v5 staat de tekst "Aventura" op de romp. Foutlocatie
+bevestigd via frame-extractie op t=10s (native resolutie, sandbox) en vergelijking met de
+bronfoto (`07_480931739_...jpg`) — de bronfoto bevat alleen het model-label "50 MY", geen
+"Aventura" nergens. Zuivere Kling-hallucinatie, exact het patroon uit CLAUDE.md §12/§16
+("Tekst en letters... op de bootnaam").
+
+**Locatie:** clip 3 (Exterior, bow-orbit, "marina in de distance"), destijds gegenereerd met
+alleen de standaard `no text, no lettering, no logos`-clausule — kennelijk niet genoeg om
+Kling ervan te weerhouden een naam op de romp te verzinnen bij een shot waar een bootnaam
+"logisch" zou passen.
+
+**Fix:** clip 3 opnieuw gegenereerd (index 3, foto 07, media_id
+`ca657791-9cb5-4542-b7f0-2a097201e6ff`, hergebruikt), met expliciet
+`no boat name, no vessel name painted on the hull, no additional signage` toegevoegd aan de
+verbodslijst (CLAUDE.md §12: expliciet benoemen werkt beter dan alleen "stable geometry").
+3s, std, 16:9, sound off — **4,5 credits**. Job `5bc148c2-b32f-455b-a228-e53157193974`,
+in één keer geslaagd (na de bekende "IN THE DARK"-preset-retry met `declined_preset_id`).
+
+**QC nieuwe clip:** jerk-score 1,02 (ruim onder de drempel van 2,5). Visuele contactsheet-
+inspectie op tekst is dit keer niet nodig geweest om de fix te initiëren — het was juist de
+aanleiding om `qc_check.py` een geautomatiseerde TEXT-check te geven (zie de aparte
+toolingwijziging in de hoofdrepo, commit "Add automated TEXT (OCR) check..."), zodat dit
+soort hallucinatie voortaan door laag 1 wordt gevangen in plaats van pas door de klant.
+
+**Montage:** surgical splice op v5 — segment A (v5, 0–7,2s: clip 1+2 ongewijzigd) →
+nieuwe clip 3 (genormaliseerd naar 1920x1080/30fps) → segment C (v5, vanaf 10,2s: clip 4
+en verder ongewijzigd), met 2 verse 0,4s-crossfades op de nieuwe naden. Transition-QC
+(edge-density ratio): 0,83 en 0,75, beide gezond (drempel 0,55–1,8). Eindlengte 65,23s
+(binnen 60–90s).
+
+## Oplevering (v6, huidige versie)
+- Bestand: `Yachti_By_Nature_walkthrough_v6.mp4` (1920x1080, 30fps, 65,23s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/9855c8ea-c5f3-491d-b028-7ea4558f8145.mp4
+- media_id: 9855c8ea-c5f3-491d-b028-7ea4558f8145 (bevestigd)
+- Kosten van deze fix: 4,5 credits. Saldo vóór: 2408,25. Saldo na: 2402,25 (1,5 credit meer
+  dan de 4,5 van de generatie zelf verklaart — zelfde soort kleine onverklaarde afwijking
+  als eerder bij v5, hier te klein om verder te onderzoeken, wel genoteerd).
 - **Nog niet opgeleverd aan klant** — Valentijn levert, per de vaste regel in CLAUDE.md.
 - **Openstaand:** titel-overlay (optioneel, nog niet gevraagd).
