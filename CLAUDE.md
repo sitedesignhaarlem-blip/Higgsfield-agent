@@ -346,30 +346,51 @@ vervorming in de lijnen van het jacht. Bij VCY, waar 18 video's van afhangen, ma
 nog een keer gebeuren.
 
 **Geen enkele clip gaat de montage in zonder dat hij beide lagen heeft doorstaan.** Laag 1 is
-een script en vindt bewegings- en geometrieproblemen. Laag 2 ben jij, met je ogen, en vindt
-verzonnen objecten. Laag 1 vervangt laag 2 niet — een verzonnen surfplank op het achterdek
-geeft een perfect normale jerk-score.
+een script en vindt bewegings-, geometrie- én tekstproblemen. Laag 2 ben jij, met je ogen, en
+vindt verzonnen objecten zónder tekst. Laag 1 vervangt laag 2 niet — een verzonnen surfplank
+op het achterdek geeft een perfect normale jerk-score en geen tekst-treffer.
+
+> **Regel sinds Yachti By Nature (09-09-2026): een klant vond zelf "Aventura" — een verzonnen
+> bootnaam — op de romp in clip 3, die door beide QC-lagen heen was geglipt.** Oorzaak: laag 1
+> deed toen nog geen tekstdetectie, en bij de visuele contactsheet-check (laag 2) is de tekst
+> gemist — hij was klein, cursief en stond niet in het midden van de sheet-frames. `qc_check.py`
+> heeft sindsdien een vierde geautomatiseerde check (TEXT, zie hieronder) die dit soort
+> hallucinaties nu vindt zonder dat je ze met het blote oog hoeft te spotten. Laag 2 blijft
+> verplicht voor niet-tekstuele hallucinaties (extra meubels, dieren, boten), maar is niet meer
+> de enige vangnet voor tekst.
 
 ### Laag 1 — Automatisch: `qc_check.py`
 
 ```bash
-pip install opencv-python numpy --break-system-packages
+pip install opencv-python numpy pytesseract --break-system-packages
+apt-get install -y tesseract-ocr   # nodig voor de TEXT-check; eenmalig per sessie/container
 python3 qc_check.py clips/raw --shotlist shotlist.json --out qc/
 ```
 
-Het script meet drie dingen per clip:
+Het script meet vier dingen per clip:
 
-| Score | Wat het meet | Drempel | Wat een hoge score betekent |
+| Score | Wat het meet | Drempel | Wat een hoge score/treffer betekent |
 |---|---|---|---|
 | **JERK** | 95e percentiel van de jerk uit optical flow, t.o.v. de mediane beweging | 2,5 | De camera springt, of de geometrie vervormt schoksgewijs |
 | **EDGE** | Variatiecoëfficiënt van de randdichtheid (Canny) over de clip | 0,22 | Rechte lijnen — relingen, kozijnen, rompnaden — lossen op of flikkeren |
 | **DRIFT** | Verschil tussen het laatste frame en de bronfoto | 0,38 | Het model is ver van het origineel afgedwaald. Dit is de belangrijkste voorbode van verzonnen objecten |
+| **TEXT** | OCR (tesseract) op elk gesamplet frame, op (bijna-)volle resolutie | elke treffer ≥ conf 45 | Kling heeft `no text, no lettering, no logos` genegeerd. Altijd een afkeuring, ongeacht hoe "echt" de tekst oogt |
 
-Output: `qc/report.json` met alle scores, en `qc/sheets/<clip>.jpg` — een contactsheet van
-12 frames per clip in een raster.
+Belangrijk over TEXT: de bewegingsscores (JERK/EDGE/DRIFT) draaien op sterk verkleinde frames
+(480px breed) voor snelheid — prima voor beweging, maar een bootnaam op die resolutie is voor
+OCR onleesbaar. Daarom leest het script de clip voor de TEXT-check apart in op ~1600px breed.
+Gebruik nooit een custom lagere resolutie voor deze check zonder eerst te testen dat kleine
+letters (zoals een romp-naam) er nog op gevonden worden — dat is precies hoe "Aventura" de
+eerste keer werd gemist.
+
+Output: `qc/report.json` met alle scores (incl. `text_hits`: tijdstip + gevonden tekst per
+treffer), en `qc/sheets/<clip>.jpg` — een contactsheet van 12 frames per clip in een raster.
 
 De DRIFT-score werkt alleen als je `--shotlist` meegeeft én de bestandsnamen beginnen met het
 clipnummer uit de shotlist (`01_exterior.mp4`, `12_salon.mp4`). Houd je daaraan.
+
+Als `tesseract-ocr` niet geïnstalleerd is, print het script een waarschuwing en slaat de
+TEXT-check over — dat is geen geldige reden om hem structureel over te slaan. Installeer hem.
 
 ### Laag 2 — Visueel: bekijk élke contactsheet
 
@@ -708,7 +729,7 @@ Kling om tussen frames te gaan "twijfelen".
 | Clip morpht in het midden | start/end frames te verschillend | end_image weghalen, twee losse clips maken |
 | Relingen golven | camerabeweging te snel of te complex | reddingsprompt, 3s, één bewegingsas |
 | Clip wiebelt/jerkt, vooral bij weinig beweging | camerabeweging te langzaam/bijna statisch — Kling's eigen frame-ruis wordt niet gemaskeerd | iets sneller laten bewegen (`smooth moderately-paced constant speed`), niet `extremely slow`/`almost static` |
-| Onzin-tekst op panelen | Kling hallucineert tekst | `no readable screens or displays` toevoegen |
+| Onzin-tekst op panelen, of een verzonnen bootnaam op de romp | Kling hallucineert tekst | `no readable screens or displays` (panelen) of `no boat name, no vessel name painted on the hull` (romp) toevoegen. `qc_check.py`'s TEXT-check (sinds 09-09-2026) vindt dit automatisch — zie sectie 12 |
 | Clip te donker/plat | bronfoto te donker | bronfoto vooraf corrigeren, niet met de prompt proberen te fixen |
 | xfade-keten faalt | clips verschillen in fps/resolutie/sar | eerst normaliseren, altijd |
 | Eindvideo te kort | crossfade-overlap niet meegerekend | 10% meer materiaal genereren |
@@ -742,7 +763,7 @@ haar, en het is veel goedkoper om nu extra foto's te vragen dan om later te hers
 [ ] Foto's geüpload, media_id's gelogd
 [ ] Eén testclip                   → STOP, wacht op feedback
 [ ] Batch gegenereerd (max 12/groep)
-[ ] QC laag 1: qc_check.py gedraaid (JERK / EDGE / DRIFT)
+[ ] QC laag 1: qc_check.py gedraaid (JERK / EDGE / DRIFT / TEXT)
 [ ] QC laag 2: ALLE contactsheets visueel bekeken
 [ ] Verzonnen objecten gecheckt (mensen, tekst, extra meubels, boten, dieren)
 [ ] Afkeuringen gemeld             → STOP, wacht op akkoord

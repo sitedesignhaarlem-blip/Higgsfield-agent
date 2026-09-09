@@ -2,17 +2,23 @@
 """
 qc_check.py — automatische kwaliteitscontrole op gegenereerde clips.
 
-Detecteert drie soorten problemen:
+Detecteert vier soorten problemen:
   1. JERK      — schokkende / springende camera, golvende geometrie
   2. EDGE      — rechte lijnen (relingen, kozijnen, rompnaden) die oplossen of flikkeren
   3. DRIFT     — het beeld loopt zo ver weg van de bronfoto dat het model dingen verzint
+  4. TEXT      — OCR vindt letters/tekst in beeld (bootnamen, instrumentpanelen, labels).
+                 Onze prompts bevatten altijd "no text, no lettering, no logos" — elke
+                 door OCR gevonden tekst is dus per definitie een afkeuring, ongeacht hoe
+                 overtuigend hij oogt (zie Yachti By Nature / "Aventura", 09-09-2026).
 
 Daarnaast maakt het per clip een contactsheet zodat je de clip VISUEEL kunt nakijken.
-De scores vinden bewegingsproblemen. Verzonnen objecten vind je alleen met je ogen.
-Beide stappen zijn verplicht.
+De JERK/EDGE/DRIFT-scores vinden bewegingsproblemen; TEXT vangt hallucinaties met tekst.
+Verzonnen objecten zónder tekst (extra meubels, dieren, boten) vind je alleen met je ogen.
+Alle stappen zijn verplicht — TEXT vervangt de visuele check niet, het is een extra laag.
 
 Gebruik:
-    pip install opencv-python numpy --break-system-packages
+    pip install opencv-python numpy pytesseract --break-system-packages
+    apt-get install -y tesseract-ocr   # of: sudo apt-get install -y tesseract-ocr
     python3 qc_check.py clips/raw --shotlist shotlist.json --out qc/
 
 Output:
@@ -33,15 +39,31 @@ try:
 except ImportError:
     sys.exit("Installeer eerst: pip install opencv-python numpy --break-system-packages")
 
+try:
+    import pytesseract
+    _HAS_TESSERACT = True
+except ImportError:
+    _HAS_TESSERACT = False
+
 VIDEO_EXT = {".mp4", ".mov", ".mkv", ".webm"}
 
 # Drempels. Boven deze waarden gaat een clip naar handmatige inspectie.
 JERK_THRESHOLD = 2.5    # 95e percentiel jerk t.o.v. mediane beweging
 EDGE_CV_THRESHOLD = 0.22  # variatiecoefficient van de randdichtheid
 DRIFT_THRESHOLD = 0.38   # genormaliseerd verschil laatste frame vs. bronfoto
+TEXT_MIN_CONF = 45      # OCR-confidence (0-100) waarboven een treffer telt
+TEXT_MIN_CHARS = 2      # minimum aantal alfanumerieke tekens in de treffer
 
-SAMPLE_FPS = 10          # frames per seconde die we analyseren
-ANALYSIS_WIDTH = 480     # downscale voor snelheid
+SAMPLE_FPS = 10          # frames per seconde die we analyseren (jerk/edge/drift)
+ANALYSIS_WIDTH = 480     # downscale voor snelheid (jerk/edge/drift)
+
+# OCR heeft veel meer resolutie nodig dan de bewegingsanalyse: een bootnaam op de
+# romp (zoals "Aventura" op Yachti By Nature) is bij 480px breed volledig onleesbaar
+# voor tesseract, ook na 4x upscalen van een crop (geteste confidence < 45 op "or").
+# Daarom leest text_hits() de clip apart in, op een eigen (hogere) resolutie en een
+# lagere sample-rate — OCR is traag, dus we hoeven niet elk jerk/edge-frame te doen.
+TEXT_SAMPLE_FPS = 2      # OCR is traag; dit is ruim genoeg voor 3-5s clips
+TEXT_ANALYSIS_WIDTH = 1600  # bijna-native breedte; alleen groter dan de bronclip wordt niet upscaled
 
 
 def read_frames(path, sample_fps=SAMPLE_FPS, width=ANALYSIS_WIDTH):
@@ -145,6 +167,69 @@ def drift_score(color_frames, reference_path):
     return float(np.mean(diff) * 3.0)  # geschaald naar een leesbaar bereik
 
 
+def text_hits(path, sample_fps=TEXT_SAMPLE_FPS, width=TEXT_ANALYSIS_WIDTH):
+    """
+    Leest de clip apart in op (bijna-)volle resolutie en draait OCR per
+    gesamplet frame. Geeft elke geloofwaardige tekst-treffer terug (tijdstip,
+    tekst, confidence). Onze prompts verbieden tekst/letters/logo's altijd
+    expliciet — dus elke treffer hier betekent dat Kling die regel heeft
+    genegeerd (bootnamen op de romp, onzin-tekst op panelen, etc.).
+
+    Belangrijk: dit moet op hoge resolutie, niet op de 480px-frames die
+    jerk/edge/drift gebruiken. Een bootnaam als "Aventura" op de romp
+    (Yachti By Nature, 09-09-2026) is bij 480px breed voor tesseract volledig
+    onleesbaar (geteste confidence < 45, ook na 4x upscalen van een crop) —
+    die hallucinatie is destijds alleen gevonden door de video handmatig
+    frame-voor-frame te bekijken. Vandaar de eigen, hogere resolutie hier.
+    """
+    if not _HAS_TESSERACT:
+        return None  # OCR niet beschikbaar; caller slaat de TEXT-check over
+
+    cap = cv2.VideoCapture(str(path))
+    if not cap.isOpened():
+        return []
+
+    src_fps = cap.get(cv2.CAP_PROP_FPS) or 30.0
+    step = max(1, int(round(src_fps / sample_fps)))
+
+    hits = []
+    seen = set()
+    idx = 0
+    while True:
+        ok, frame = cap.read()
+        if not ok:
+            break
+        if idx % step == 0:
+            h, w = frame.shape[:2]
+            if w < width:
+                scale = width / float(w)
+                frame = cv2.resize(frame, (width, max(1, int(h * scale))),
+                                    interpolation=cv2.INTER_CUBIC)
+            rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            data = pytesseract.image_to_data(rgb, output_type=pytesseract.Output.DICT)
+            for text, conf in zip(data["text"], data["conf"]):
+                cleaned = text.strip()
+                alnum = sum(c.isalnum() for c in cleaned)
+                try:
+                    conf = float(conf)
+                except (TypeError, ValueError):
+                    continue
+                if conf < TEXT_MIN_CONF or alnum < TEXT_MIN_CHARS:
+                    continue
+                key = cleaned.lower()
+                if key in seen:
+                    continue
+                seen.add(key)
+                hits.append({
+                    "t": round(idx / src_fps, 2),
+                    "text": cleaned,
+                    "conf": round(conf, 1),
+                })
+        idx += 1
+    cap.release()
+    return hits
+
+
 def contact_sheet(clip, out_path, tiles=(4, 3)):
     """12 frames in een raster, zodat je de clip in een oogopslag kunt scannen."""
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -211,6 +296,7 @@ def main():
             frames, color = read_frames(clip)
             jerk, mags = jerk_score(frames)
             edge_cv, densities = edge_stability(frames)
+            text = text_hits(clip)
 
             drift = None
             idx = clip_index(clip)
@@ -229,6 +315,8 @@ def main():
                 flags.append("EDGE")
             if drift is not None and drift > DRIFT_THRESHOLD:
                 flags.append("DRIFT")
+            if text:
+                flags.append("TEXT")
 
             results.append({
                 "clip": clip.name,
@@ -236,6 +324,7 @@ def main():
                 "jerk": round(jerk, 3),
                 "edge_cv": round(edge_cv, 3),
                 "drift": round(drift, 3) if drift is not None else None,
+                "text_hits": text if text else [],
                 "flags": flags,
                 "sheet": str(sheet) if sheet else None,
                 "motion_profile": [round(m, 4) for m in mags],
@@ -254,24 +343,34 @@ def main():
 
     (outdir / "report.json").write_text(json.dumps(results, indent=2))
 
-    print(f"{'CLIP':<30} {'JERK':>7} {'EDGE':>7} {'DRIFT':>7}  FLAGS")
-    print("-" * 70)
+    if not _HAS_TESSERACT:
+        print("WAARSCHUWING: pytesseract/tesseract niet gevonden — TEXT-check is OVERGESLAGEN.")
+        print("  Installeer: apt-get install -y tesseract-ocr && pip install pytesseract --break-system-packages")
+        print("  Zonder deze check vind je tekst-hallucinaties (bv. bootnamen) alleen nog visueel.\n")
+
+    print(f"{'CLIP':<30} {'JERK':>7} {'EDGE':>7} {'DRIFT':>7}  {'TEXT':>4}  FLAGS")
+    print("-" * 78)
     for r in results:
         if "error" in r:
-            print(f"{r['clip']:<30} {'-':>7} {'-':>7} {'-':>7}  ERROR: {r['error']}")
+            print(f"{r['clip']:<30} {'-':>7} {'-':>7} {'-':>7}  {'-':>4}  ERROR: {r['error']}")
             continue
         drift = f"{r['drift']:.3f}" if r["drift"] is not None else "-"
-        print(f"{r['clip']:<30} {r['jerk']:>7.2f} {r['edge_cv']:>7.3f} {drift:>7}  "
+        text_n = len(r.get("text_hits") or [])
+        text_col = str(text_n) if text_n else ("-" if not _HAS_TESSERACT else "0")
+        print(f"{r['clip']:<30} {r['jerk']:>7.2f} {r['edge_cv']:>7.3f} {drift:>7}  {text_col:>4}  "
               f"{','.join(r['flags']) if r['flags'] else 'ok'}")
+        for hit in r.get("text_hits") or []:
+            print(f"    -> t={hit['t']:.1f}s  \"{hit['text']}\"  (conf {hit['conf']:.0f})")
 
     flagged = [r for r in results if r.get("flags")]
-    print("-" * 70)
+    print("-" * 78)
     print(f"{len(flagged)} van {len(results)} clips gemarkeerd voor inspectie.")
     print(f"\nRapport: {outdir/'report.json'}")
     if not args.no_sheets:
         print(f"Contactsheets: {outdir/'sheets'}")
     print("\nVERPLICHT: bekijk ALLE contactsheets, niet alleen de gemarkeerde.")
-    print("Verzonnen objecten geven geen hoge score - die zie je alleen met je ogen.")
+    print("TEXT-treffers zijn altijd een afkeuring (onze prompts verbieden tekst/letters/logo's).")
+    print("Verzonnen objecten zonder tekst geven geen hoge score - die zie je alleen met je ogen.")
 
 
 if __name__ == "__main__":
