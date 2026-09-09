@@ -1,7 +1,7 @@
 {
   "yacht": "Unwinding",
   "aspect_ratio": "16:9",
-  "target_length_sec": 64,
+  "target_length_sec": 68,
   "clips": [
     {
       "index": 1,
@@ -174,6 +174,17 @@
       "index": 19,
       "category": "Cabin",
       "hut": "E",
+      "start_image": "photos/Unwinding cabin E1.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle push-in toward the open deck hatch leading down to the guest cabin stairway, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, teak decking, open hatch with steps visible below, marina in the background, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hatch frame or stairs",
+      "note": "toegevoegd 09-09-2026 op verzoek klant: entree via het luik moet zichtbaar zijn vóór de hut zelf"
+    },
+    {
+      "index": 20,
+      "category": "Cabin",
+      "hut": "E",
       "start_image": "photos/Unwinding cabin E2.jpeg",
       "end_image": "photos/Unwinding cabin E3.jpeg",
       "duration": 3,
@@ -181,7 +192,18 @@
       "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, folded towels, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
     },
     {
-      "index": 20,
+      "index": 21,
+      "category": "Cabin",
+      "hut": "F",
+      "start_image": "photos/Unwinding cabin F1.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle push-in toward the open deck hatch leading down to the guest cabin stairway, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, teak decking, open hatch with steps visible below, salon door and marina in the background, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hatch frame or stairs",
+      "note": "toegevoegd 09-09-2026 op verzoek klant: entree via het luik moet zichtbaar zijn vóór de hut zelf"
+    },
+    {
+      "index": 22,
       "category": "Cabin",
       "hut": "F",
       "start_image": "photos/Unwinding cabin F2.jpeg",

@@ -283,10 +283,45 @@ want zelfde categorie) — coherente, schone blends, geen dubbele belichting.
 nu correct: Exterior → Flybridge → Helm → Bow → Aft deck → Salon/Galley → Cabins/Ensuite.
 Geen credits gebruikt (montage-only fix).
 
-## Oplevering (v4, huidige versie)
+## Oplevering (v4)
 - Bestand: `Yachti_By_Nature_walkthrough_v4.mp4` (1920x1080, 30fps, 68,37s, geen audio)
 - URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/db2ab76f-5a3c-43f5-900a-82585b28891a.mp4
 - media_id: db2ab76f-5a3c-43f5-900a-82585b28891a (bevestigd)
 - Resterend saldo: 2477,25 credits (ongewijzigd t.o.v. v3)
+
+## Klantwens (09-09-2026): trap-clip stond nog voor bow/aft deck waren afgerond
+
+Klant van Valentijn: de clip rond de 25s-marker (interior, kijkend de stuurboord-trap af
+langs de helmstoel — bronfoto 35, gebruikt in clip 7 "Helm") kwam in de video vóór bow en
+aft deck waren getoond. Verzoek: verplaats die clip naar rond de 40s-marker.
+
+**Diagnose:** clip 7 stond in het Helm-blok (positie 2 van 2), dus vóór Bow (8,25) en Aft
+deck (9,10,11) — logisch qua CLAUDE.md-categorievolgorde (Helm komt vóór Bow/Aft deck),
+maar niet wat de klant hier wil: de trap is het overgangsmoment van buitendek naar
+binnenruimtes, dus hoort na Bow/Aft deck, vlak vóór Salon.
+
+**Geverifieerd** welke clip daadwerkelijk op 25s stond door in de Higgsfield-sandbox een
+Canny/correlatie-vergelijking te draaien tussen kandidaat-videoframes en de bronfoto (35)
+zelf — geen giswerk: P2 (het venster rond 25-27s) scoorde 0,414 correlatie tegen de
+referentiefoto, ruim boven de andere kandidaten (±0,00–0,16). Klopt met clip 7.
+
+**Fix — opnieuw surgical splice, 0 credits:** v4 opgeknipt in 4 stukken (P1 = alles t/m
+einde clip 6, P2 = clip 7 los, P3 = Bow+Aft deck (8,25,9,10,11), P4 = Salon en verder) en
+herschikt als P1 → P3 → P2 → P4. Trap-clip landt nu op offset 40,5s — precies op de
+gevraagde ~40s-marker. 3 nieuwe naden gecontroleerd met de edge-density-methode: ratio's
+0,56–0,81, allemaal ruim boven de ghosting-drempel, geen probleem.
+
+**Resultaat (v5):** 1920x1080, 30fps, **65,97s**, geen audiospoor. Volgorde nu: Exterior →
+Flybridge → Helm (1 clip) → Bow → Aft deck → **trap (voorheen Helm-clip 2)** → Salon →
+Galley → Cabins/Ensuite.
+
+## Oplevering (v5, huidige versie)
+- Bestand: `Yachti_By_Nature_walkthrough_v5.mp4` (1920x1080, 30fps, 65,97s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/9bd78052-56bc-4638-b25a-939c92756de4.mp4
+- media_id: 9bd78052-56bc-4638-b25a-939c92756de4 (bevestigd)
+- Saldo bij controle na deze fix: 2417,25 credits — **let op: dit is 60 credits lager dan
+  het laatst bekende saldo (2477,25) vóór deze fix, terwijl deze fix zelf 0 credits heeft
+  gekost** (transactielog toont 10+ Kling v3.0-spends tussen 14:16-14:43 op 09-09-2026 die
+  niet uit deze sessie komen — gemeld aan Valentijn, niet stilgehouden).
 - **Nog niet opgeleverd aan klant** — Valentijn levert, per de vaste regel in CLAUDE.md.
 - **Openstaand:** titel-overlay (optioneel, nog niet gevraagd).

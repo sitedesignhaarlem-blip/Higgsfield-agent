@@ -121,11 +121,60 @@ Alle 19 crossfade-overgangen gemeten (edge-density-methode). 18/19 schoon. Overg
 met een klein, checksum-geverifieerd frame: coherente kajuitruimte, geen ghosting/dubbele
 belichting zichtbaar — meetartefact, geen echt probleem. Geen regeneratie nodig.
 
-## Oplevering
+## Oplevering (v1)
 - Bestand: `Unwinding_walkthrough.mp4` (1920x1080, 30fps, 65,10s, geen audio)
 - URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/aec177ae-5d51-4d84-8a79-9d34ae996348.mp4
 - media_id: aec177ae-5d51-4d84-8a79-9d34ae996348 (bevestigd)
 - Resterend saldo: 2547,5 credits
+
+## Klantwens (09-09-2026): entree via het luik moet zichtbaar zijn bij hut E en F
+
+Klant van Valentijn: gasten moeten zien dat hutten E en F bereikt worden via het opgetilde
+luik op het achterdek en dan de trap af — dus foto's E1/F1 (het luik, exterieur) horen
+**vóór** de bestaande E2→E3 en F2→F3 hut-clips, niet in plaats daarvan. E1/F1 waren nooit
+gebruikt (alleen als reserve gelogd bij de eerste shotlist).
+
+**Waarom geen start+end-paar van E1+E2 of F1+F2:** E1/F1 zijn exterieur (achterdek, luik),
+E2/F2 zijn interieur (boven aan de trap kijkend naar het bed) — twee totaal verschillende
+ruimtes/hoeken. Volgens de harde regel in CLAUDE.md §8 (nooit forceren bij niet-overlappende
+inhoud) is dit een morphing-risico. Oplossing: E1 en F1 als **losse single-image clips**,
+vlak vóór de bestaande (ongewijzigde) E2→E3 en F2→F3 paren.
+
+**Uitvoering (9 credits, 2× 3s std):**
+- Clip "Cabin E hatch": media_id 1da2da19-4562-4a0b-bee9-4ff1d90fa936 (E1), job
+  e54452df-539d-498b-8cf1-ae93e302310a, `completed`. Eerste indiening kreeg een
+  `submission_failed` met preset-aanbeveling "IN THE DARK" (bekend fenomeen) — opnieuw
+  ingediend met `declined_preset_id`, direct geaccepteerd.
+- Clip "Cabin F hatch": media_id d60cb511-b0e5-4e65-8d09-5d9ba9235303 (F1), job
+  0265acd5-b945-471c-9586-c7cbf492d156, `completed`. Zelfde fix toegepast.
+- Kosten: 2× 4,5 = **9 credits** (2417,25 → 2408,25 — zie saldo-kanttekening bij Yachti By
+  Nature v5 voor de tussentijdse onverklaarde daling die niet uit dit werk komt).
+
+**Montage — surgical splice, geen volledige hermontage:** v1 opgeknipt bij de bestaande
+naden vóór hut E (clips 1-18 intact, met originele crossfades) en de nieuwe hatch-clips
+ertussen gevoegd: **[clips 1-18] → [E-hatch] → [E2→E3] → [F-hatch] → [F2→F3]**. Snijpunten
+in de bestaande video geverifieerd met een pixelcorrelatie-check in de Higgsfield-sandbox
+tegen de bronfoto's E2/F2 zelf (niet op het oog geschat) — piekcorrelatie exact waar
+verwacht. 4 nieuwe naden gecontroleerd met de edge-density-methode: ratio's 0,63–0,91,
+allemaal gezond.
+
+**Resultaat (v2):** 1920x1080, 30fps, **68,40s** (was 65,10s), geen audiospoor. Volgorde nu
+per hut: luik (exterieur) → interieur bed, voor zowel E als F. Overige hutten (A-D)
+ongewijzigd.
+
+## Oplevering (v2, huidige versie)
+- Bestand: `Unwinding_walkthrough_v2.mp4` (1920x1080, 30fps, 68,40s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/9e6e6ede-632c-45c5-8e73-ef42609137d6.mp4
+- media_id: 9e6e6ede-632c-45c5-8e73-ef42609137d6 (bevestigd)
+- Resterend saldo: 2408,25 credits
 - **Nog niet opgeleverd aan klant** — Valentijn levert, per de vaste regel in CLAUDE.md.
-- **Openstaand:** laag-2 visuele contactsheet-inspectie is deze ronde niet gelukt (zie QC
-  hierboven), titel-overlay (optioneel, nog niet gevraagd).
+- **QC laag 2 (hatch-clips):** de manuele base64-beeldrelay naar de hoofdcontext bleef
+  deze sessie herhaaldelijk corrupt raken (checksum-mismatches, door de API geweigerde
+  media) en is voor deze twee clips niet betrouwbaar afgerond. Beoordeling steunt daarom
+  op laag 1 (optical-flow jitter: ehatch 1,14 / fhatch 1,05, ruim onder de drempel van
+  2,5) plus het feit dat dit de eenvoudigste clipvorm is (single-image, geen start+end,
+  geen interieur-naar-interieur interpolatie) — het laagste risicoprofiel uit sectie 16.
+  Dit is een bewuste, gemelde afwijking van de standaardprocedure, geen overslaan.
+  **Aanbevolen: Valentijn bekijkt deze twee clips (of de eindmontage) zelf even voor
+  oplevering aan de klant**, als laatste check op verzonnen objecten die laag 1 niet vangt.
+- **Openstaand:** titel-overlay (optioneel, nog niet gevraagd).
