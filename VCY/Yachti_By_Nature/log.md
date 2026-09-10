@@ -357,12 +357,47 @@ en verder ongewijzigd), met 2 verse 0,4s-crossfades op de nieuwe naden. Transiti
 (edge-density ratio): 0,83 en 0,75, beide gezond (drempel 0,55–1,8). Eindlengte 65,23s
 (binnen 60–90s).
 
-## Oplevering (v6, huidige versie)
+## Oplevering (v6) — MISLUKT, tekst stond er nog
+
 - Bestand: `Yachti_By_Nature_walkthrough_v6.mp4` (1920x1080, 30fps, 65,23s, geen audio)
 - URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/9855c8ea-c5f3-491d-b028-7ea4558f8145.mp4
-- media_id: 9855c8ea-c5f3-491d-b028-7ea4558f8145 (bevestigd)
-- Kosten van deze fix: 4,5 credits. Saldo vóór: 2408,25. Saldo na: 2402,25 (1,5 credit meer
-  dan de 4,5 van de generatie zelf verklaart — zelfde soort kleine onverklaarde afwijking
-  als eerder bij v5, hier te klein om verder te onderzoeken, wel genoteerd).
+- Kosten: 4,5 credits. Saldo vóór: 2408,25. Saldo na: 2402,25 (1,5 credit onverklaard verschil,
+  zelfde patroon als bij v5).
+- **Fout:** Valentijn meldde dat "Aventura" ná v6 nog steeds zichtbaar was. Klopte — de eerste
+  prompt-fix (toevoegen van `no boat name, no vessel name painted on the hull`) was onvoldoende
+  sterk om Kling van deze specifieke hallucinatie af te houden, én ik heb de nieuwe clip 3
+  destijds alleen op jerk-score gecontroleerd, niet visueel op tekst, voordat hij in de montage
+  ging. Dat is precies de fout die de TEXT-check in `qc_check.py` had moeten vangen — met terugwerkende
+  kracht een extra argument dat die check verplicht is, niet optioneel.
+- **Les:** bij content-hallucinaties (tekst, verzonnen objecten) is een score alleen (jerk/edge)
+  niet genoeg bewijs dat een fix werkte — altijd het eindresultaat zelf visueel bekijken vóór
+  het de montage in gaat, ook al kost dat een relay-stap.
+
+## Fix v7: sterkere prompt + visuele verificatie vóór montage
+
+Clip 3 een derde keer gegenereerd (zelfde bronfoto, media_id `ca657791-9cb5-4542-b7f0-2a097201e6ff`),
+met een veel explicietere prompt: naast het verbod op bootnaam ook `completely blank unmarked
+white hull surface`, `no decals, no vinyl graphics, no signage`, en de framing aangepast naar een
+directere bow-benadering (minder zijaanzicht van de romp, waar Kling kennelijk het sterkst
+geneigd is een naam te plaatsen). Job `74a286f4-e8e4-43fe-8bc3-89bdd32d53dc`, in één keer
+geslaagd. 3s, std, 16:9, sound off — nogmaals 6,0 credits (saldo 2402,25 → 2396,25).
+
+**Voordat deze clip de montage in ging:** frame op t=1,5s (het punt waar de romp het duidelijkst
+in beeld is) gedownload, checksum geverifieerd, en zelf bekeken — schoon, geen tekst, alleen het
+originele "AI 50 MY"-modellabel uit de bronfoto. Dit is de stap die bij v6 is overgeslagen.
+
+Zelfde surgical splice als bij v6 (segment A 0–7,2s ongewijzigd → nieuwe clip 3 → segment C
+vanaf 10,2s ongewijzigd), opnieuw met 2 verse 0,4s-crossfades. Transition-QC (edge-density
+ratio): 0,83 en 0,61, beide binnen de gezonde band (0,55–1,8).
+
+## Oplevering (v7, huidige versie)
+- Bestand: `Yachti_By_Nature_walkthrough_v7.mp4` (1920x1080, 30fps, 65,23s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/9b28686e-dd55-47f3-927b-e89bef790f47.mp4
+- media_id: 9b28686e-dd55-47f3-927b-e89bef790f47 (bevestigd)
+- Totale kosten voor de "Aventura"-fix (v6 mislukt + v7 geslaagd): 10,5 credits.
+- Saldo bij oplevering: 2396,25 credits.
+- Geverifieerd: clip 3 visueel gecontroleerd op tekst vóór montage (zie hierboven), transitie-QC
+  op beide nieuwe naden gezond.
 - **Nog niet opgeleverd aan klant** — Valentijn levert, per de vaste regel in CLAUDE.md.
-- **Openstaand:** titel-overlay (optioneel, nog niet gevraagd).
+- **Openstaand:** titel-overlay (optioneel, nog niet gevraagd). Aanbevolen dat Valentijn v7 zelf
+  nog even bekijkt vóór levering aan de klant, gezien de misser bij v6.
