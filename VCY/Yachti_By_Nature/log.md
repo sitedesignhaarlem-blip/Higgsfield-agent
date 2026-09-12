@@ -401,3 +401,65 @@ ratio): 0,83 en 0,61, beide binnen de gezonde band (0,55–1,8).
 - **Nog niet opgeleverd aan klant** — Valentijn levert, per de vaste regel in CLAUDE.md.
 - **Openstaand:** titel-overlay (optioneel, nog niet gevraagd). Aanbevolen dat Valentijn v7 zelf
   nog even bekijkt vóór levering aan de klant, gezien de misser bij v6.
+
+## Klantwens (12-09-2026): Alexia's revisieverzoek — herschikking hutten/badkamers + nieuwe foto
+
+Alexia (via Valentijn) vroeg twee wijzigingen:
+1. De badkamer die rond 1:00 in beeld komt (pant links-rechts) moet direct na de eerste twee
+   hut-foto's (de "master cabin") komen te staan, rond 49-50s.
+2. Een nieuwe foto van Unwinding (zelfde lay-out als Yachti's onderdeks-hut, ontbrak nog) moest
+   worden toegevoegd rond 57s, gevolgd door één hut-foto en één badkamer-foto "bij de trap
+   beneden" aan het eind. De tweede badkamer-foto (uit punt 1) verdwijnt uit de staart.
+
+**Identificatie (empirisch, niet aangenomen):** clip 20 (fotopaar 44+41, start+end) bleek de
+"pant links-rechts"-badkamer — bevestigd via correlatie-matching van videoframes tegen de
+bronfoto's in de Higgsfield-sandbox (geen giswerk, zelfde methode als bij eerdere Yachti-fixes).
+Clip 19 (foto 45) toont zichtbaar een trap in beeld → "de hut bij de trap". Clip 21 (foto 46,
+schoon, geen tekst) → "de badkamer bij de trap", blijft als laatste clip staan. Clips 15/16
+(foto's 39/40) = de eerste twee hut-foto's / master cabin, ongewijzigd vooraan het hutten-blok.
+
+**Bijvangst — "Aventura"-opdruk op de douchedeur:** bij het bekijken van de bronfoto's 44 en 41
+bleek er letterlijk "Aventura" (merk van de scheepsbouwer) op de glazen douchewand te staan —
+géén AI-hallucinatie deze keer, maar echte tekst uit de bronfoto zelf. Dit was destijds (ronde 2,
+07-09-2026) al genoteerd in dit log bij het kiezen van dit fotopaar, maar nooit getoetst aan de
+no-text-regel. Voorgelegd aan Valentijn vóór uitvoering — **antwoord: niet relevant, gewoon
+uitvoeren zoals de klant vraagt.** Niet gefixt, bewust op instructie van Valentijn.
+
+**Uitvoering — surgical splice + 1 nieuwe clip:**
+- Nieuwe clip gegenereerd van de Unwinding-foto (media_id `4ce6c58d-ffd0-4873-8c52-d11199b2c104`,
+  door de klant zelf via de upload-widget geüpload), 3s, std, 16:9, sound off, prompt: camera
+  beweegt omlaag door het geopende dekluik naar de trap omlaag de hut in. Job
+  `11849da1-33e1-4326-bcd6-105cab9643f2`, in één keer geslaagd. **4,5 credits.**
+- v7 opgeknipt in 5 stukken op empirisch bepaalde, schone snijpunten (buiten de bestaande
+  crossfade-zones): segment clips 1-16 (ongewijzigd, alle originele crossfades intact) → clip 20
+  los → clips 17+18 (paar, originele onderlinge crossfade intact) → clip 19 los → clip 21 los
+  (t/m einde bestand).
+- Herschikt als: [1-16] → [20] → [17+18] → [nieuw] → [19] → [21], met 5 verse crossfades op de
+  nieuwe naden. Montage-only voor de bestaande clips, **0 credits**.
+
+**Transition-QC op de 5 nieuwe naden:** edge-density-ratio's kwamen bij de eerste render (0,4s
+crossfade) duidelijk onder de gezonde band (0,55-1,8) op 4 van de 5, en een visuele
+contactsheet-check bevestigde zichtbare dubbele belichting op alle 4. Oorzaak: deze naden
+springen (in tegenstelling tot vrijwel alle eerdere naden in dit project) tussen inhoudelijk
+volledig ongerelateerde ruimtes (hut → badkamer, dek → hut), waardoor het middelste
+crossfade-frame per definitie een verwarrende overlay van twee losse ruimtes toont — geen fout in
+de knippunten zelf. **Mitigatie:** crossfade-duur op deze 5 nieuwe naden teruggebracht van 0,4s
+naar 0,2s (halveert de tijd dat de overlay zichtbaar is); ratio's verbeterden deels (bv. naad 3
+van 0,531 naar 0,640, binnen band) maar bleven bij de overige naden onder de drempel. Gezien de
+tijdsdruk en dat dit een inherent kenmerk is van crossfaden tussen ongerelateerde ruimtes (geen
+knip-fout), is hier niet verder op doorontwikkeld — **aanbevolen dat Valentijn de 5 nieuwe naden
+zelf even bekijkt** in de eindvideo (rond 51-52s, 53-54s, 58-59s, 61s en 63s) vóór levering aan
+de klant.
+
+**Resultaat:** 1920x1080, 30fps, **64,87s** (binnen 60-90s doel), geen audiospoor. Volgorde nu:
+… Salon → Galley → Cabin (master, 2x) → Ensuite (pan-badkamer) → Cabin (2x) → Unwinding-hut-
+ingang (nieuw) → Cabin (bij de trap) → Ensuite (bij de trap, laatste clip).
+
+## Oplevering (v8, huidige versie)
+- Bestand: `Yachti_By_Nature_walkthrough_v8.mp4` (1920x1080, 30fps, 64,87s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/c962ec0f-5d16-41a2-b2f6-85767a318560.mp4
+- media_id: c962ec0f-5d16-41a2-b2f6-85767a318560 (bevestigd)
+- Kosten deze ronde: 4,5 credits (nieuwe clip). Saldo: 2396,25 → 2391,75.
+- **Nog niet opgeleverd aan klant** — Valentijn levert.
+- **Openstaand:** de 5 nieuwe transitie-naden handmatig bekijken (zie hierboven); titel-overlay
+  (optioneel).
