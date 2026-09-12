@@ -480,6 +480,36 @@ goedgekeurde clips. Dat is een aparte stap, geen optionele extra:
 - Deze check is een verplichte aparte stap **ná montage, vóór oplevering** — niet iets dat je
   overslaat omdat de losse clips al goedgekeurd zijn.
 
+> **Regel sinds Unwinding (12-09-2026): deze check daadwerkelijk uitvoeren, niet als openstaand
+> punt in `log.md` parkeren.** Bij een surgical splice (clips uit een bestaande video knippen en
+> herschikken, i.p.v. helemaal opnieuw monteren) is er een extra faalmodus die de checklist
+> hierboven niet expliciet noemt: een knippunt dat te dicht op een bestaande crossfade zit,
+> waardoor restmateriaal van de OUDE naad in het nieuwe segment blijft zitten. Dat is geen
+> blend-artefact (ziet er niet uit als een nette dissolve) maar een korte, herkenbare flits van
+> compleet andere content — precies wat een klant wél opvalt en jij mist als je alleen op de
+> edge-density-score vertrouwt. Bij Unwinding zat dit al sinds 09-09-2026 in de opgeleverde video
+> en is het pas via klantfeedback ontdekt, twee keer (zie `VCY/Unwinding/log.md` en
+> `VCY/Yachti_By_Nature/log.md`).
+>
+> Reden dat dit eerder werd overgeslagen: de gangbare manier om een transitieframe te
+> *bekijken* (frame downloaden, chunked base64-relay naar de hoofdsessie, checksum-verifiëren)
+> is traag en duur, en is daardoor meermaals stilzwijgend niet afgemaakt. Gebruik in plaats
+> daarvan, als eerste stap en zoveel mogelijk, **correlatie-matching tegen de bronfoto's**:
+> laad alle relevante bronfoto's van de betrokken categorieën in de sandbox, extraheer frames
+> rond elke nieuwe naad (bv. via ffmpeg naar losse jpg's, niet via cv2-videoseeking — die is
+> onbetrouwbaar/onnauwkeurig op H.264), en reken per frame een genormaliseerde
+> kruiscorrelatie tegen elke bronfoto uit. Een scherpe piek (doorgaans >0,35) naar een foto die
+> niet bij de twee aangrenzende clips hoort, is restmateriaal — geen giswerk, geen dure
+> beeld-relay nodig, en dit heeft dit exacte defect in de praktijk gevonden en bevestigd
+> opgelost. Bewaar de dure visuele relay-methode voor het moment dat je een gevonden anomalie
+> echt met eigen ogen wilt bevestigen, niet als eerste zoekmethode.
+>
+> Bij een surgical splice: knip nooit dicht tegen een bestaande crossfade-zone aan (ken je de
+> exacte grens niet zeker, neem dan extra marge en accepteer een fractie kortere clip). Twijfel
+> je na de fix nog aan de schoonheid van een naad, en heb je geen tijd/budget voor verdere
+> verificatie: meld dat expliciet in `log.md` én aan Valentijn — "waarschijnlijk opgelost, niet
+> volledig geverifieerd" is altijd beter dan een ongemelde aanname.
+
 ---
 
 ## 13. Stap 7 — Montage met ffmpeg

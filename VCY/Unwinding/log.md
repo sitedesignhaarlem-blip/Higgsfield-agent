@@ -178,3 +178,52 @@ ongewijzigd.
   **Aanbevolen: Valentijn bekijkt deze twee clips (of de eindmontage) zelf even voor
   oplevering aan de klant**, als laatste check op verzonnen objecten die laag 1 niet vangt.
 - **Openstaand:** titel-overlay (optioneel, nog niet gevraagd).
+
+## Klantwens (12-09-2026): flits van verkeerde hut zichtbaar bij beide luik-overgangen
+
+Klant meldde: bij zowel de E- als de F-hut is er, tussen het luik-shot (buiten) en de hut-shot
+(binnen, onderaan de trap), heel kort een frame van een andere, niet-relevante hut zichtbaar
+(rond 1:01-1:02 en rond 1:05-1:06/07 in v2).
+
+**Root cause, empirisch vastgesteld (geen giswerk):** de vier nieuwe naden uit de
+luik-toevoeging van 09-09-2026 (D→E-luik, E-luik→E2/E3, E2/E3→F-luik, F-luik→F2/F3) bleken bij
+nadere analyse niet schoon geknipt — bij het vergelijken van videoframes tegen alle
+hut-bronfoto's (correlatie-matching in de Higgsfield-sandbox, dezelfde methode als bij eerdere
+snijpunt-verificaties) kwamen op de gerapporteerde tijdstippen duidelijke, korte pieken naar
+foto's van **andere hutten (D en C)** naar boven — geen blend-artefact, maar daadwerkelijk
+restmateriaal van de oorspronkelijke v1-crossfades dat bij de eerdere splice niet volledig is
+weggesneden. Dit verklaart ook waarom de E2→E3-clip in v2 nooit een geloofwaardige E3-eindframe
+liet zien: een stuk van de eigen clip-inhoud was vervangen door dit restmateriaal.
+
+**Fix — niet opnieuw proberen te knippen, opnieuw gegenereerd:** in plaats van nog een keer in
+de mogelijk beschadigde v2 te knippen (zelfde risico als de vorige keer), zijn alle 4 betrokken
+clips **vers opnieuw gegenereerd** vanaf hun bekende bronfoto's, zodat er gegarandeerd schoon
+materiaal is om mee te monteren:
+- Cabin E hatch: media_id `1da2da19-4562-4a0b-bee9-4ff1d90fa936`, job `6341168e-55e7-4d47-871b-741319e69413`. Eerste indiening kreeg de bekende "IN THE DARK"-presetmelding, opnieuw ingediend met `declined_preset_id`, direct geslaagd.
+- Cabin E2→E3 (start+end paar): media_id's `7bef0ab6-...`+`2bfe1d85-...`, job `9f84f3df-43f5-442a-b978-f7fd196c28fa`, in één keer geslaagd.
+- Cabin F hatch: media_id `d60cb511-b0e5-4e65-8d09-5d9ba9235303`, job `2890dace-8f4b-40ee-8451-dfd005368f51`. Zelfde presetfix toegepast.
+- Cabin F2→F3 (start+end paar): media_id's `a5a05195-...`+`811f561a-...`, job `0e8db301-26a9-437a-89b2-77a52e8b8786`, in één keer geslaagd.
+- 4× 3s std, 16:9, sound off = **4× 4,5 = 18 credits**.
+
+**Montage:** v2 opgeknipt bij 57,9s (ruim vóór het luik-shot begint, geen risico op restmateriaal
+van de oude naad) — alles vóór dat punt (clips 1-18, Exterior t/m Cabin D) blijft ongewijzigd
+met de originele crossfades intact. Daarachter de 4 nieuwe, schone clips geplakt: **[clips 1-18]
+→ [E-luik] → [E2→E3] → [F-luik] → [F2→F3]**, met verse 0,3s-crossfades op alle 4 naden.
+
+**Verificatie vóór oplevering (nieuw: voortaan standaard, op verzoek van Valentijn):**
+frame-voor-frame correlatie van de nieuwe montage tegen alle hut-bronfoto's herhaald. Resultaat:
+de E2→E3-clip laat nu voor het eerst een geloofwaardige doorlopende boog van E2 naar E3 zien
+(beide met sterke, oplopende matchscores), in plaats van een abrupte sprong naar een andere hut.
+Geen van de 4 nieuwe naden laat nog een scherpe (>0,35) piek naar een niet-aangrenzende hutfoto
+zien; de resterende kleine fluctuaties zijn consistent met normale crossfade-vervaging tussen
+visueel vergelijkbare hutten, niet met echt restmateriaal.
+
+**Resultaat (v3):** 1920x1080, 30fps, **68,87s** (was 68,40s), geen audiospoor.
+
+## Oplevering (v3, huidige versie)
+- Bestand: `Unwinding_walkthrough_v3.mp4` (1920x1080, 30fps, 68,87s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/ab949206-39c8-4775-99e4-fecefd1e957c.mp4
+- media_id: ab949206-39c8-4775-99e4-fecefd1e957c (bevestigd)
+- Kosten deze ronde: 18 credits (4 nieuwe generaties). Saldo: 2275 → 2257.
+- **Nog niet opgeleverd aan klant** — Valentijn levert.
+- **Openstaand:** titel-overlay (optioneel).
