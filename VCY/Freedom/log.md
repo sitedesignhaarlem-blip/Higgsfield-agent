@@ -195,11 +195,107 @@ verificatie gedaan gezien de tijdsdruk — expliciet genoteerd i.p.v. stilgehoud
 
 **Resultaat (v2):** 1920x1080, 30fps, **48,87s** (was 42,03s), geen audiospoor.
 
-## Oplevering (v2, huidige versie)
+## Oplevering (v2)
 - Bestand: `Freedom_v2.mp4` (1920x1080, 30fps, 48,87s, geen audio)
 - URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/12f6ccfc-0b0a-4d88-b714-acb5edc28974.mp4
 - media_id: 12f6ccfc-0b0a-4d88-b714-acb5edc28974 (bevestigd)
 - Kosten deze ronde: 18 credits. Saldo: 2257 → 2239.
+- **Vervangen door v3** — zie hieronder. De 4 paired hut-clips in v2 bevatten een
+  vervormingsfout, gevonden door Valentijn.
+
+## Fix (13-09-2026): vervorming rond sec 41-42 in v2 — bed+badkamer als start+end-paar
+
+**Melding Valentijn:** "ik zie 1 raar ding bij sec 41 42 een vervorming dat ineens het beeld
+veranderd kijk daar even naar".
+
+**Root cause (structureel gediagnosticeerd, geen gok):** de 4 nieuwe hut-clips uit de
+klantwens hierboven waren elk gebouwd als één interpolerende Kling-clip met een
+slaapkamerfoto als `start_image` en de bijbehorende badkamerfoto als `end_image`. Dat is
+een directe overtreding van de vaste regel in CLAUDE.md §8: een start+end-paar moet uit
+**dezelfde ruimte** komen met overlappende inhoud. Slaapkamer en en-suite badkamer zijn twee
+fysiek gescheiden ruimtes — Kling probeert daartussen te interpoleren en morpht/vervormt
+halverwege de clip. Dit is precies het bekende faalpatroon uit CLAUDE.md §16 ("Clip morpht
+in het midden | start/end frames te verschillend"). Het trof alle 4 hutten, niet alleen de
+ene (Cabin B, rond sec 41-42) die Valentijn toevallig opmerkte.
+
+Voor Cabin C/D was dit al bewust een uitzondering op de standaardregel (zie klantwens
+hierboven — Alexia's expliciete instructie om de gedeelde badkamerfoto als eindframe te
+gebruiken); die uitzondering bleek dus zelf de bron van het defect.
+
+**Fix, akkoord Valentijn:** elke hut opgesplitst in 2 losse single-image clips (bed, dan
+badkamer), geen interpolatie meer. Cabin C en D delen dezelfde badkamer-generatie (dezelfde
+clip tweemaal gebruikt in de montage — geen extra credits).
+
+**Kosten:** 7 nieuwe clips × 4,5 = 31,5 credits (verving de 4 afgekeurde paired clips, die
+credits waren al besteed — geen extra kosten daarvoor). Akkoord Valentijn ("hoeveel kosten
+dan?" → 31,5 credits bevestigd, geen bezwaar).
+
+**Generaties:**
+
+| Clip | Bron | Job ID |
+|---|---|---|
+| Cabin A bed | cabin a1.png | 05283471-2fc7-4ddd-b9f9-afc29fb05e9b |
+| Cabin A bath | cabin a2.png | 11172400-e7e9-4315-8b47-8e05b6de8aa9 |
+| Cabin B bed | cabin b1.png | 64ecd85b-bef8-46c4-9171-342ca5745e98 |
+| Cabin B bath | cabin b2.png | 55ea3629-2424-462b-b7f7-bded53ba3cb1 |
+| Cabin C bed | cabin c1.png | 8e689c92-3b51-40d1-b7f8-18e5557503cf |
+| Cabin D bed | cabin d1.png | 999da1bd-6bbc-4edb-97cf-c14ae1b96baf |
+| Cabin C/D bath (gedeeld) | cabin c2 and d2.png | a2cc3ec7-1478-4599-91c5-f2d5e0a80282 |
+
+Noot: de `generate_video_batch`-call timede lokaal uit na 60s. In plaats van blind opnieuw
+in te dienen (CLAUDE.md: nooit automatisch retrypushen bij een mislukte batch) is eerst
+`balance` gecheckt — exact -31,5 credits bleek al afgeschreven, dus de batch was
+serverzijde wél geslaagd. Job-id's daarna teruggevonden via `show_generations` op
+prompttekst + start_image media_id. Eén clip (Cabin C bed) was niet terug te vinden ondanks
+de afschrijving; na meerdere paginering-pogingen pragmatisch los geregenereerd
+(`ccfff020-e88a-4b6d-b30e-bb7ea5363b92`, ongebruikte duplicaat — geen probleem).
+
+**QC laag 1 (automatisch, jitter-ratio):** alle 7 clips ruim onder de 2,5-drempel:
+
+| Clip | Jerk-ratio |
+|---|---|
+| Cabin A bed | 0,427 |
+| Cabin A bath | 0,665 |
+| Cabin B bed | 0,607 |
+| Cabin B bath | 0,533 |
+| Cabin C bed | 0,511 |
+| Cabin D bed | 0,523 |
+| Cabin C/D bath | 0,460 |
+
+**QC laag 2 (visueel):** contactsheet (eerste/midden/laatste frame per clip) bekeken voor
+alle 7 clips, plus een apart middenframe van de gedeelde badkamerclip (eerste contactsheet-
+poging corrupt geraakt tijdens de chunk-relay, opnieuw en kleiner opgebouwd om dat te
+voorkomen). Geen vervormingen, geen verzonnen objecten (geen mensen, tekst, extra meubels,
+dieren). Omdat elke clip nu single-image is (geen `end_image`), is het specifieke gemelde
+defect — een interpolatie-morph tussen twee verschillende ruimtes — structureel onmogelijk
+geworden, niet alleen statistisch onwaarschijnlijk.
+
+**Source-verificatie:** sha256 van elke gedownloade bronfoto (via de Higgsfield media-URL)
+vergeleken met de lokale bestanden in `photos/` — alle 7 exact gelijk. Bevestigt dat elke
+clip echt van de bedoelde foto is gemaakt, geen verwisseling tussen hutten.
+
+**Montage (v3):** clips 1-11 ongewijzigd (zelfde bronnen als v1/v2). Daarna de 8 nieuwe
+hut-clips (7 unieke + 1 hergebruik van de gedeelde badkamer):
+`[1-11] → A_bed → A_bath → B_bed → B_bath → C_bed → CD_bath → D_bed → CD_bath(2x)`,
+met 0,4s-crossfades. Alle 19 clips genormaliseerd (1920x1080/30fps/yuv420p) en met een
+xfade-keten gerenderd.
+
+**Transition QC:** automatische sharpness-meting (Laplacian-variantie) op alle 8 nieuwe
+naden — twee kwamen laag uit (13→14 en 15→16, beide badkamer-naar-volgende-ruimte). Beide
+frames apart visueel bekeken (checksum-geverifieerd): normale, coherente crossfade-blend
+tussen vergelijkbare badkamerbeelden, geen dubbele belichting of spookbeelden. De lage score
+kwam simpelweg doordat het een 50/50-blend van twee visueel vergelijkbare scenes is, geen
+defect. Geen surgical splice hier (alle clips vers gegenereerd, niet uit bestaand materiaal
+geknipt), dus het Unwinding-type "restmateriaal van een oude naad"-risico is hier niet van
+toepassing.
+
+**Resultaat (v3):** 1920x1080, 30fps, **60,47s** (was 48,87s — nu weer ruim binnen de
+gebruikelijke 60-90s doelrange dankzij de extra badkamer-clips), geen audiospoor.
+
+## Oplevering (v3, huidige versie)
+- Bestand: `Freedom_v3.mp4` (1920x1080, 30fps, 60,47s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/8801d923-272e-48e2-befe-58fb3ed51cc3.mp4
+- media_id: 8801d923-272e-48e2-befe-58fb3ed51cc3 (bevestigd)
+- Kosten deze ronde: 31,5 + 4,5 (losse regeneratie Cabin C bed, zie boven) = 36 credits.
+  Saldo: 2239 → 2203.
 - **Nog niet opgeleverd aan klant** — Valentijn levert.
-- **Openstaand:** titel-overlay (optioneel); Valentijn kan zelf nog even de 4 nieuwe
-  hut-overgangen bekijken gezien de beperktere transitie-QC hierboven.

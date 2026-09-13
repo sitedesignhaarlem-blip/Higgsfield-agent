@@ -1,7 +1,7 @@
 {
   "yacht": "Freedom",
   "aspect_ratio": "16:9",
-  "target_length_sec": 42,
+  "target_length_sec": 60,
   "clips": [
     {
       "index": 1,
@@ -108,44 +108,88 @@
       "category": "Cabin",
       "hut": "A",
       "start_image": "photos/cabin a1.png",
-      "end_image": "photos/cabin a2.png",
+      "end_image": null,
       "duration": 3,
       "mode": "std",
       "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
-      "note": "vervangen 13-09-2026: nieuwe foto's van klant (ander jacht, zelfde model) i.p.v. de oorspronkelijke dunne Cabin A-set"
+      "note": "gecorrigeerd 13-09-2026: single-image i.p.v. start+end-paar met de badkamerfoto (zie fixnotitie in log.md — bed en badkamer zijn verschillende ruimtes, dat paar veroorzaakte de vervorming die de klant meldde rond sec 41-42)"
     },
     {
       "index": 13,
       "category": "Cabin",
-      "hut": "B",
-      "start_image": "photos/cabin b1.png",
-      "end_image": "photos/cabin b2.png",
+      "hut": "A",
+      "start_image": "photos/cabin a2.png",
+      "end_image": null,
       "duration": 3,
       "mode": "std",
-      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
-      "note": "toegevoegd 13-09-2026"
+      "prompt": "Push-in into the ensuite bathroom, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marble surfaces and polished fixtures, soft light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera, stable geometry, no morphing or warping of mirror frames or fixtures",
+      "note": "gecorrigeerd 13-09-2026: losse single-image badkamerclip i.p.v. eindframe van clip 12 (zie fixnotitie in log.md)"
     },
     {
       "index": 14,
       "category": "Cabin",
-      "hut": "C",
-      "start_image": "photos/cabin c1.png",
-      "end_image": "photos/cabin c2 and d2.png",
+      "hut": "B",
+      "start_image": "photos/cabin b1.png",
+      "end_image": null,
       "duration": 3,
       "mode": "std",
       "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
-      "note": "toegevoegd 13-09-2026; eindfoto is dezelfde gedeelde badkamerfoto als Cabin D (expliciete instructie klant, tegen de standaard-paarregel in)"
+      "note": "gecorrigeerd 13-09-2026: single-image i.p.v. start+end-paar (zie fixnotitie in log.md)"
     },
     {
       "index": 15,
       "category": "Cabin",
-      "hut": "D",
-      "start_image": "photos/cabin d1.png",
-      "end_image": "photos/cabin c2 and d2.png",
+      "hut": "B",
+      "start_image": "photos/cabin b2.png",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Push-in into the ensuite bathroom, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marble surfaces and polished fixtures, soft light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera, stable geometry, no morphing or warping of mirror frames or fixtures",
+      "note": "gecorrigeerd 13-09-2026: losse single-image badkamerclip i.p.v. eindframe van clip 14 (zie fixnotitie in log.md)"
+    },
+    {
+      "index": 16,
+      "category": "Cabin",
+      "hut": "C",
+      "start_image": "photos/cabin c1.png",
+      "end_image": null,
       "duration": 3,
       "mode": "std",
       "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
-      "note": "toegevoegd 13-09-2026; eindfoto is dezelfde gedeelde badkamerfoto als Cabin C (expliciete instructie klant, tegen de standaard-paarregel in)"
+      "note": "gecorrigeerd 13-09-2026: single-image i.p.v. start+end-paar met de gedeelde badkamerfoto (zie fixnotitie in log.md)"
+    },
+    {
+      "index": 17,
+      "category": "Cabin",
+      "hut": "C",
+      "start_image": "photos/cabin c2 and d2.png",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Push-in into the ensuite bathroom, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marble surfaces and polished fixtures, soft light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera, stable geometry, no morphing or warping of mirror frames or fixtures",
+      "note": "gecorrigeerd 13-09-2026: losse single-image badkamerclip, gedeeld met Cabin D (clip 19 is dezelfde gegenereerde clip, klant-instructie), i.p.v. eindframe van clip 16"
+    },
+    {
+      "index": 18,
+      "category": "Cabin",
+      "hut": "D",
+      "start_image": "photos/cabin d1.png",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
+      "note": "gecorrigeerd 13-09-2026: single-image i.p.v. start+end-paar met de gedeelde badkamerfoto (zie fixnotitie in log.md)"
+    },
+    {
+      "index": 19,
+      "category": "Cabin",
+      "hut": "D",
+      "start_image": "photos/cabin c2 and d2.png",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Push-in into the ensuite bathroom, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marble surfaces and polished fixtures, soft light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera, stable geometry, no morphing or warping of mirror frames or fixtures",
+      "note": "gecorrigeerd 13-09-2026: zelfde gegenereerde clip als 17 (gedeelde badkamer, klant-instructie), hergebruikt in de montage — geen nieuwe generatie/credits nodig"
     }
   ]
 }
