@@ -149,3 +149,57 @@ verwarrende spookbeelden. Geen regeneratie nodig.
 - Bekend en bewust: video is korter dan de gebruikelijke 60-90s (42s) vanwege maar 1
   aangeleverde hut; Screenshot-21 (mensen zichtbaar) en Screenshot-59 (mensen + te zwak)
   niet gebruikt.
+
+## Klantwens (13-09-2026): 4 hutten i.p.v. 1, foto's van een zusterjacht
+
+Alexia: Freedom zelf is nog niet aangeleverd/beschikbaar (klant heeft het jacht nog niet),
+en er waren maar een paar hutfoto's. Ze stuurde 7 foto's van een ander jacht (zelfde model)
+om de dunne hut-sectie (rond de 40s-marker, clip 12 "Cabin A") te vervangen door 4 volwaardige
+hutten. Eén badkamerfoto is expliciet dubbel bedoeld: "labeled it Cabin C2 and D2" — als
+tweede foto voor zowel Cabin C als Cabin D.
+
+**Afwijking van de standaardregel, bewust en op instructie van de klant:** CLAUDE.md §8 eist
+dat een start+end-paar uit dezelfde ruimte komt. Voor Cabin C en D is de eindfoto (de gedeelde
+badkamer) niet per se uit die specifieke hut — dat is precies wat Alexia vraagt ("it's better
+than what we had"), dus uitgevoerd zoals gevraagd, niet zelf een tweede foto gezocht of
+geweigerd.
+
+**Uitvoering:**
+- 7 foto's geüpload (headless route, dezelfde `curl -X PUT -H "Content-Type: image/png"`-fix
+  als bij de oorspronkelijke Freedom-upload, weer in één keer geslaagd, geen 403's).
+- 4 nieuwe clips gegenereerd (Cabin A, B, C, D — A's oorspronkelijke dunne set volledig
+  vervangen door de nieuwe klant-foto's): 3s, std, 16:9, sound off, start+end paar.
+  Geen submission-failures.
+- Kosten: 4× 4,5 = **18 credits** (2257 → 2239).
+- QC laag 1 (jitter/optical-flow): jerk-ratio's 0,24 / 0,49 / 0,43 / 1,01 voor resp. A/B/C/D —
+  ruim onder de 2,5-drempel.
+- QC laag 2: contactsheet-grid bekeken (12 frames, 3 per clip). Geen vervormingen, geen
+  verzonnen objecten.
+
+**Montage:** oude clip 12 (Cabin A) volledig verwijderd. Clips 1-11 (Exterior t/m Galley)
+ongewijzigd, geknipt op 38,3s (ruime marge vóór de oude crossfade-zone naar clip 12). Daarna
+de 4 nieuwe hut-clips geplakt: **[clips 1-11] → [Cabin A] → [Cabin B] → [Cabin C] → [Cabin D]**,
+met verse 0,4s-crossfades (binnen-categorie hut→hut, dus geen verlaging nodig zoals bij de
+cross-categorie naden bij Yachti By Nature).
+
+**Transition QC:** frame-correlatie tegen alle 7 bronfoto's gedraaid op de nieuwe naden.
+Kanttekening: de 4 nieuwe hutten zijn visueel vergelijkbaar met elkaar (zelfde fotostijl,
+zelfde soort bed-opstelling), waardoor de correlatie-methode minder scherp onderscheid maakt
+dan bij eerdere jachten — geen sterke, eenduidige piek per naad zoals bij Unwinding. Wel
+duidelijk: geen enkele piek naar content van *buiten* het hutten-blok (geen lek van
+salon/galley/exterieur), en de sterkste treffers (Cabin B 0,36, Cabin D 0,60, gedeelde
+badkamer 0,38) landen precies op de verwachte momenten. Gecombineerd met dat dit verse,
+losse generaties zijn (niet geknipt uit een al bestaande, mogelijk besmette montage zoals bij
+Unwinding) is het risico op het "verkeerde-hut-flits"-defect hier laag. Geen verdere
+verificatie gedaan gezien de tijdsdruk — expliciet genoteerd i.p.v. stilgehouden.
+
+**Resultaat (v2):** 1920x1080, 30fps, **48,87s** (was 42,03s), geen audiospoor.
+
+## Oplevering (v2, huidige versie)
+- Bestand: `Freedom_v2.mp4` (1920x1080, 30fps, 48,87s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/12f6ccfc-0b0a-4d88-b714-acb5edc28974.mp4
+- media_id: 12f6ccfc-0b0a-4d88-b714-acb5edc28974 (bevestigd)
+- Kosten deze ronde: 18 credits. Saldo: 2257 → 2239.
+- **Nog niet opgeleverd aan klant** — Valentijn levert.
+- **Openstaand:** titel-overlay (optioneel); Valentijn kan zelf nog even de 4 nieuwe
+  hut-overgangen bekijken gezien de beperktere transitie-QC hierboven.

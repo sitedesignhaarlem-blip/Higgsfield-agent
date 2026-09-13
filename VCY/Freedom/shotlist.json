@@ -107,11 +107,45 @@
       "index": 12,
       "category": "Cabin",
       "hut": "A",
-      "start_image": "photos/Cabin A1.png",
-      "end_image": "photos/Cabin A2.png",
+      "start_image": "photos/cabin a1.png",
+      "end_image": "photos/cabin a2.png",
       "duration": 3,
       "mode": "std",
-      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
+      "note": "vervangen 13-09-2026: nieuwe foto's van klant (ander jacht, zelfde model) i.p.v. de oorspronkelijke dunne Cabin A-set"
+    },
+    {
+      "index": 13,
+      "category": "Cabin",
+      "hut": "B",
+      "start_image": "photos/cabin b1.png",
+      "end_image": "photos/cabin b2.png",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
+      "note": "toegevoegd 13-09-2026"
+    },
+    {
+      "index": 14,
+      "category": "Cabin",
+      "hut": "C",
+      "start_image": "photos/cabin c1.png",
+      "end_image": "photos/cabin c2 and d2.png",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
+      "note": "toegevoegd 13-09-2026; eindfoto is dezelfde gedeelde badkamerfoto als Cabin D (expliciete instructie klant, tegen de standaard-paarregel in)"
+    },
+    {
+      "index": 15,
+      "category": "Cabin",
+      "hut": "D",
+      "start_image": "photos/cabin d1.png",
+      "end_image": "photos/cabin c2 and d2.png",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
+      "note": "toegevoegd 13-09-2026; eindfoto is dezelfde gedeelde badkamerfoto als Cabin C (expliciete instructie klant, tegen de standaard-paarregel in)"
     }
   ]
 }
