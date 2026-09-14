@@ -68,4 +68,28 @@ Clip 1 (openingsshot, exterior 953f0f61, single image, pro, 5s): job
 b9393bfa-2399-4be3-b8e2-c2f6f9554dd3, `completed`.
 URL: https://d8j0ntlcm91z4.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/hf_20260914_105551_b9393bfa-2399-4be3-b8e2-c2f6f9554dd3.mp4
 Kosten: 8,75 credits (2203 → 2194,25, klopt exact).
-**Wacht op akkoord Valentijn voordat de volle batch draait.**
+**Akkoord Valentijn** ("mooi akoord op hele boot") — 14-09-2026.
+
+## Generaties (volle batch)
+Clips 2-18 (17 clips) in twee groepen ingediend (12 + 5). **Alle 17 in één keer
+geaccepteerd — geen enkele submission-failure.**
+
+| Clip | Categorie | Job ID |
+|---|---|---|
+| 2 | Exterior | bfb276e1-9a31-44ba-b647-7705afb8e29b |
+| 3 | Exterior | b85cf427-d6f4-4369-9335-2b9baa57ea7e |
+| 4 | Flybridge (paar) | 91ae7b9a-8b4d-4f6b-8eb3-f5dbd8954de9 |
+| 5 | Helm | 543d0577-c687-45f4-a00a-999dd030895b |
+| 6 | Aft deck (paar) | 35817e2f-da3e-4a1e-9222-b7f980625083 |
+| 7 | Aft deck zwemplatform (paar) | fde63b0f-dcc1-4953-acba-e3cc8bb30d2d |
+| 8 | Salon (paar) | 8b195489-b73f-4a43-86e2-ff82181cbab0 |
+| 9 | Galley | 122b4df1-1075-458e-a401-44ee8f217c96 |
+| 10 | Cabin A (paar) | 5c9fcc6c-fd5e-4f05-ad5f-9457b5e397e2 |
+| 11 | Cabin B (paar) | 62091ea0-04e0-4ebd-a90a-3cd209f1a231 |
+| 12 | Cabin B (bad) | 175d7dfd-1076-46cf-9edf-a2f93116386d |
+| 13 | Cabin C (paar) | 6e2140ba-8d53-4037-8810-5f51cc3ff6a3 |
+| 14 | Cabin C (bad) | 77dc687f-bbee-4ca8-a85f-3cf9a356be6b |
+| 15 | Cabin D (paar) | 8623b5db-afea-44e8-a5b2-75b5131c27ef |
+| 16 | Cabin D (bad) | b17964b5-e1d7-4895-b38e-1ad899d32526 |
+| 17 | Cabin E (paar) | bf25b113-2ae5-4877-a5f9-a1ff85c1398e |
+| 18 | Cabin E (bad) | f07f7db8-74da-4b5c-a5ef-6560a8e3d092 |
