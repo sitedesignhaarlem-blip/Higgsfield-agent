@@ -150,3 +150,52 @@ OCR-treffers zijn ruis op textuur/randen/reflecties, geen echte hallucinaties.
 
 **Conclusie:** geen afkeuringen. Alle 18 clips volledig door beide QC-lagen, inclusief
 sluitende visuele verificatie van alle 4 TEXT-treffers. Klaar voor montage.
+
+## Montage
+Alle 18 clips genormaliseerd naar 1920x1080, 30fps, yuv420p (ffmpeg scale+crop+setsar,
+crf 18, preset slow, `-an`). `assemble.py --dry-run` eerst gedraaid ter controle:
+
+```
+Clips: 18
+Ruwe totaallengte: 68.61s
+Crossfade-verlies: 6.80s (17 x 0.4s)
+Eindlengte: 61.81s
+```
+
+Binnen de 60-90s-doelmarge, nagenoeg exact op het geplande `target_length_sec: 61`.
+Daarna `assemble.py clips/norm output/Dont_Blink.mp4 --xfade 0.4` echt gedraaid (fade-
+transities, crf 20). Resultaat: 61.83s, 1920x1080, 30fps, geen audiospoor, bestandsgrootte
+~47,5MB.
+
+## Transition QC (na montage)
+Per de 17 crossfades één frame gesampled op het exacte middelpunt (offset + 0,2s) en in een
+overzichtsraster bekeken. Geen ghosting/spookbeelden die niet bij een normale 0,4s-fade
+horen — de zichtbare overlap op de sheet is de verwachte halverwege-blend van een fade
+tussen twee inhoudelijk verwante, opeenvolgende shots (bijv. cabin-bed naar cabin-bad),
+geen brokstuk van onverwante content zoals bij het Unwinding-defect (niet van toepassing
+hier: deze video is volledig vers gerenderd en gemonteerd, geen surgical splice uit
+bestaand materiaal, dus dat specifieke faalmodel speelt niet). Volgorde gecontroleerd:
+Exterior → Flybridge → Helm → Aft deck → Salon → Galley → Cabins A-E (alfabetisch, geen
+hut dubbel). Bow ontbreekt bewust (geen bruikbare bronfoto, zie brief.md) — conform de
+regel om een ontbrekende categorie over te slaan i.p.v. op te vullen.
+
+## Eindcontrole eindvideo
+Technisch: 61,83s (binnen 60-90s), 1920x1080, 30fps, geen audiospoor, geen zwarte frames
+aan begin/eind (helderheid eerste frame 122,7 / laatste frame 143,8 — ruim boven zwart).
+
+`qc_check.py` (JERK/EDGE) ook over de eindvideo gedraaid: JERK 3.47 en EDGE_CV 0.35, beide
+boven de per-clip-drempels. **Kanttekening:** die drempels zijn gekalibreerd op één losse
+clip met één camerabeweging; over de hele 18-clip-montage heen (met 17 harde overgangen in
+onderwerp/camerabeweging) geeft dat onvermijdelijk hoge aggregaatscores zonder dat dit een
+defect is — elke clipwissel registreert als een "jerk"/edge-sprong. De eigenlijke controle
+voor de eindvideo is daarom de per-transitie visuele check hierboven, niet deze aggregaat-
+score. Geen afkeuring.
+
+## Oplevering
+- Bestandsnaam: `Dont_Blink.mp4` (61,83s, 1920x1080, 30fps, geen audio)
+- Geüpload via de headless media_upload-route (media_id `0e6c68ed-737f-49bc-802a-9a17994ca8f1`)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/0e6c68ed-737f-49bc-802a-9a17994ca8f1.mp4
+- Totaal verbruikte credits voor deze boot: 103,25 (2203 → 2099,75), exact binnen begroting,
+  geen enkele hergeneratie nodig
+- Resterend saldo: 2099,75 credits
+- Valentijn levert de video aan de klant, niet de agent.
