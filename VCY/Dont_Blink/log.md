@@ -101,3 +101,52 @@ Alle 18 clips (incl. testclip 1): `completed`, 1920x1080 (clip 1, pro) / 1280x72
 planning (6× 5s std + 11× 3s std = 45 + 49,5 = 94,5).
 Totaal voor de hele shotlist incl. testclip: 103,25 credits, exact zoals begroot
 (binnen de 15%-buffer, geen enkele hergeneratie nodig).
+
+## QC
+**Laag 1 (automatisch, qc_check.py — JERK/EDGE/DRIFT/TEXT):** alle 18 clips gemeten,
+tesseract-ocr geïnstalleerd (`apt-get update` + `sudo apt-get install -y tesseract-ocr`,
+eerste poging zonder `sudo`/`update` faalde eerst met "unable to locate package").
+
+| Clip | JERK | EDGE | DRIFT | TEXT | Flags |
+|---|---|---|---|---|---|
+| 01_exterior_opening | 0.46 | 0.024 | 0.258 | 0 | ok |
+| 02_exterior | 0.34 | 0.088 | 0.252 | 0 | ok |
+| 03_exterior | 0.41 | 0.052 | 0.734 | 0 | DRIFT |
+| 04_flybridge | 0.27 | 0.149 | 0.057 | 0 | ok |
+| 05_helm | 0.58 | 0.050 | 0.711 | 0 | DRIFT |
+| 06_aftdeck | 0.43 | 0.273 | 0.043 | 0 | EDGE |
+| 07_aftdeck_swim | 0.13 | 0.155 | 0.047 | 0 | ok |
+| 08_salon | 0.12 | 0.072 | 0.029 | 0 | ok |
+| 09_galley | 0.57 | 0.055 | 0.798 | 3 | DRIFT,TEXT |
+| 10_cabinA | 0.67 | 0.040 | 0.065 | 0 | ok |
+| 11_cabinB | 0.14 | 0.045 | 0.053 | 0 | ok |
+| 12_cabinB_bath | 0.46 | 0.199 | 0.590 | 0 | DRIFT |
+| 13_cabinC | 0.93 | 0.021 | 0.060 | 0 | ok |
+| 14_cabinC_bath | 0.69 | 0.114 | 0.554 | 3 | DRIFT,TEXT |
+| 15_cabinD | 0.16 | 0.068 | 0.048 | 0 | ok |
+| 16_cabinD_bath | 0.65 | 0.020 | 0.384 | 1 | DRIFT,TEXT |
+| 17_cabinE | 0.27 | 0.148 | 0.026 | 3 | TEXT |
+| 18_cabinE_bath | 0.49 | 0.038 | 0.402 | 0 | DRIFT |
+
+9 van 18 gemarkeerd. Alle JERK-scores ruim onder de 2,5-drempel — geen enkele spring/
+schokprobleem. EDGE alleen bij 06_aftdeck licht over de drempel (0,273 vs 0,22).
+
+**Laag 2 (visueel):** contactsheets van alle 18 clips bekeken via een verzamel-overzicht
+(3 frames per clip: begin/midden/eind), plus een aparte closere blik op de 7 DRIFT-clips.
+Geen vervormingen, geen verzonnen objecten (mensen, extra meubels, dieren, boten) op geen
+van de 18 clips. De DRIFT-scores komen overeen met bewuste camerabeweging weg van de
+statische bronfoto (pan/push-in/glide, precies zoals de prompts vragen) — geen hallucinatie
+zichtbaar in de overzichtsbeelden.
+
+**TEXT-treffers (4 clips, 09/14/16/17):** de OCR-tekst zelf bestaat steeds uit 1-4
+betekenisloze tekens ("WI", "Vv", "Mp", "we", "seus", "uy", "Yi", "Wifff", "\"it\"") — geen
+van allen leest als een echt woord, bootnaam of paneellabel. In het verzamel-overzicht is op
+geen van deze frames zichtbare leesbare tekst te herkennen. Alle 4 exacte OCR-treffer-frames
+zijn inmiddels op volle resolutie bekeken (zoals bij "Aventura" bij Yachti By Nature nodig
+bleek): 14_t0.5 en 16_t2.5 al eerder, en nu ook 09_galley_t4.5 (magnetron/aanrecht/oven,
+marina zichtbaar door raam) en 17_cabinE_t1.5 (bed met kussens, ingebouwde trap/planken) —
+op geen van de vier frames is enige leesbare tekst, letter, logo of paneellabel te zien. De
+OCR-treffers zijn ruis op textuur/randen/reflecties, geen echte hallucinaties.
+
+**Conclusie:** geen afkeuringen. Alle 18 clips volledig door beide QC-lagen, inclusief
+sluitende visuele verificatie van alle 4 TEXT-treffers. Klaar voor montage.
