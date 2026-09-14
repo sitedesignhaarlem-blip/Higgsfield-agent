@@ -93,3 +93,11 @@ geaccepteerd — geen enkele submission-failure.**
 | 16 | Cabin D (bad) | b17964b5-e1d7-4895-b38e-1ad899d32526 |
 | 17 | Cabin E (paar) | bf25b113-2ae5-4877-a5f9-a1ff85c1398e |
 | 18 | Cabin E (bad) | f07f7db8-74da-4b5c-a5ef-6560a8e3d092 |
+
+Alle 18 clips (incl. testclip 1): `completed`, 1920x1080 (clip 1, pro) / 1280x720
+(overige, std), sound off, model kling3_0.
+
+**Creditverbruik: 94,5 credits voor clips 2-18** (2194,25 → 2099,75) — exact volgens
+planning (6× 5s std + 11× 3s std = 45 + 49,5 = 94,5).
+Totaal voor de hele shotlist incl. testclip: 103,25 credits, exact zoals begroot
+(binnen de 15%-buffer, geen enkele hergeneratie nodig).
