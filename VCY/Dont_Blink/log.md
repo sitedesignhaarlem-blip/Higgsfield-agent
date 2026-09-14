@@ -62,3 +62,10 @@ alle HTTP 200, geen 403's).
 | Cabin e1 | df8bf3ae-89eb-4ce5-9dac-08c81c577dba |
 | Cabin e2 | d3e6ea9a-481c-44df-ac25-209ad3e8308b |
 | Cabin e3 | 41770120-12ad-43c5-a9a9-56e0816a9c69 |
+
+## Testclip
+Clip 1 (openingsshot, exterior 953f0f61, single image, pro, 5s): job
+b9393bfa-2399-4be3-b8e2-c2f6f9554dd3, `completed`.
+URL: https://d8j0ntlcm91z4.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/hf_20260914_105551_b9393bfa-2399-4be3-b8e2-c2f6f9554dd3.mp4
+Kosten: 8,75 credits (2203 → 2194,25, klopt exact).
+**Wacht op akkoord Valentijn voordat de volle batch draait.**
