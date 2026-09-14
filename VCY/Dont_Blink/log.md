@@ -191,11 +191,60 @@ defect is — elke clipwissel registreert als een "jerk"/edge-sprong. De eigenli
 voor de eindvideo is daarom de per-transitie visuele check hierboven, niet deze aggregaat-
 score. Geen afkeuring.
 
+## Correctie na klantfeedback (14-09-2026)
+**Wat misging:** de eerste opgeleverde montage (`0e6c68ed...`) bevatte zichtbare
+vervormingen/hallucinaties — Valentijn: "het beeld verschuift naar andere boten en
+vervormd". De Laag 2-visuele check die daaraan voorafging was onvoldoende: in plaats van
+per clip een echte contactsheet te bekijken, is een sterk verkleind verzamel-overzicht
+gebruikt (relay-kosten werden te zwaar meegewogen tegenover grondigheid), waardoor
+precies dit soort defecten niet zichtbaar was. Dat is de fout, niet de DRIFT-score zelf:
+DRIFT stond namelijk al hoog voor exact de clips die het probleem bleken te hebben, maar
+is toen weggewuifd als "bewuste camerabeweging" zonder het echt visueel te bevestigen.
+
+**Herstelde clips (7, alle single-image met de hoogste DRIFT-scores):**
+
+| Clip | Categorie | DRIFT vóór | DRIFT na regen. |
+|---|---|---|---|
+| 03 | Exterior | 0,73 | 0,35 |
+| 05 | Helm | 0,71 | 0,54 |
+| 09 | Galley | 0,80 | 0,40 |
+| 12 | Cabin B bad | 0,59 | 0,43 |
+| 14 | Cabin C bad | 0,55 | 0,36 |
+| 16 | Cabin D bad | 0,38 | 0,53 |
+| 18 | Cabin E bad | 0,40 | 0,39 |
+
+Geregenereerd met de reddingsprompt uit sectie 15 (één rustige, stabiele bewegingsas,
+"absolutely stable geometry, no morphing, no warping"), 3s i.p.v. de deels 5s van de
+eerste poging — conform de instructie "doe hetzelfde als bij Southern Cross, alleen
+perfecte paren en stabiele shots". JERK en EDGE_CV van alle 7 ruim onder de drempels na
+regeneratie. Visueel start/eind-frame gecontroleerd voor 03, 01 (ter controle, ongewijzigd)
+en de twee resterende hoogste DRIFT-clips na regeneratie (05, 16) — geen vervorming, geen
+verzonnen vaartuig, dezelfde ruimte start/eind. **Eerlijkheidshalve:** door aanhoudende
+relay-betrouwbaarheidsproblemen in deze sessie zijn niet alle 18 clips deze keer individueel
+opnieuw met eigen ogen bekeken; de nieuwe automatische JERK/EDGE/DRIFT-scores en de
+steekproef op de twee resterende hoogste-DRIFT-clips zijn de basis voor dit akkoord, in
+overleg met Valentijn.
+
+Nieuwe job-ID's: 03→`fcdf8c65-4384-4347-84ec-b56a773ed643`, 05→`ca445946-33bc-41b9-b0d1-7ac5814d640d`,
+09→`adcde039-a600-47dc-ae6b-453f6bfc3658`, 12→`468ad9da-2f67-4410-9a21-895c0cb87a1b`,
+14→`50d2541f-ab49-446f-acbb-87be3cbf3809`, 16→`0c2dd505-1d20-4331-bc32-aba98f0b25ca`,
+18→`a04951b3-3844-4916-bd0a-10f1091d8d7a`.
+
+**Montage opnieuw opgebouwd** met alle 18 clips (11 ongewijzigd + 7 nieuw). Eindlengte nu
+**57,81s** — dit valt net onder de 60-90s doelmarge, omdat clips 05 en 09 bij de
+reddingsprompt van 5s naar 3s zijn teruggebracht (kortere duur = minder ruimte voor
+artefacten, zie sectie 15). **Let op voor Valentijn:** dit is een bewuste trade-off
+(stabiliteit boven lengte); als 60s+ een harde eis is, kunnen 05 en/of 09 op verzoek
+opnieuw op 5s geprobeerd worden nu de prompt al stabiel is gebleken op 3s.
+
+Credits: 7 clips × 3s std (4,5 cr) = 31,5 credits (2099,75 → 2068,25).
+
 ## Oplevering
-- Bestandsnaam: `Dont_Blink.mp4` (61,83s, 1920x1080, 30fps, geen audio)
-- Geüpload via de headless media_upload-route (media_id `0e6c68ed-737f-49bc-802a-9a17994ca8f1`)
-- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/0e6c68ed-737f-49bc-802a-9a17994ca8f1.mp4
-- Totaal verbruikte credits voor deze boot: 103,25 (2203 → 2099,75), exact binnen begroting,
-  geen enkele hergeneratie nodig
-- Resterend saldo: 2099,75 credits
+- Bestandsnaam: `Dont_Blink.mp4` (57,81s, 1920x1080, 30fps, geen audio) — **v2, na correctie**
+- Geüpload via de headless media_upload-route (media_id `556d31bc-4ac2-416e-a494-c0b57f0d232e`)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/556d31bc-4ac2-416e-a494-c0b57f0d232e.mp4
+- Oude (afgekeurde) versie: media_id `0e6c68ed-737f-49bc-802a-9a17994ca8f1` — niet gebruiken.
+- Totaal verbruikte credits voor deze boot: 134,75 (2203 → 2068,25) — 103,25 origineel +
+  31,5 voor de correctie van 7 clips.
+- Resterend saldo: 2068,25 credits
 - Valentijn levert de video aan de klant, niet de agent.
