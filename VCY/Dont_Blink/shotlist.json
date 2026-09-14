@@ -1,0 +1,184 @@
+{
+  "yacht": "Don't Blink",
+  "aspect_ratio": "16:9",
+  "target_length_sec": 61,
+  "clips": [
+    {
+      "index": 1,
+      "category": "Exterior",
+      "start_image": "photos/953f0f61-0738-443c-9535-5554b1fa46a6-1280x950.jpeg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "pro",
+      "prompt": "Cinematic dolly forward alongside the hull of a luxury power catamaran underway, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, calm water, marina and green hills in the distance, bright daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "openingsshot"
+    },
+    {
+      "index": 2,
+      "category": "Exterior",
+      "start_image": "photos/15757254-bb83-42c8-a1e4-88139648d09b-1280x950.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle orbit around the profile of a luxury power catamaran underway, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, calm open water, bright daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 3,
+      "category": "Exterior",
+      "start_image": "photos/008d63ce-bec1-4036-b075-57342f4dfa20.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Smooth forward glide alongside the hull of a luxury power catamaran underway, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, sea spray and wake, bright daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "bronfoto 1200x905, net onder de 1280px-drempel — bruikbaar maar mogelijk iets zachter"
+    },
+    {
+      "index": 4,
+      "category": "Flybridge",
+      "start_image": "photos/IMG_1598-1280x950.jpeg",
+      "end_image": "photos/IMG_3598-1280x950.jpeg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Smooth walkthrough across the flybridge deck, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, cushioned lounge seating and dining table, marina and green hills beyond, bright natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable screens or displays, stable geometry, no morphing or warping of railings or window frames"
+    },
+    {
+      "index": 5,
+      "category": "Helm",
+      "start_image": "photos/IMG_3624-1-1280x950.jpg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Smooth forward pan through the salon toward the helm console, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, polished wood joinery and cushioned seating, marina view through panoramic windows, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable screens or displays, stable geometry, no morphing or warping of furniture edges or window frames",
+      "note": "brede binnenopname met stuurconsole op de achtergrond, geen losse closeup beschikbaar — akkoord Valentijn om deze te gebruiken"
+    },
+    {
+      "index": 6,
+      "category": "Aft deck",
+      "start_image": "photos/IMG_3603-1280x950.jpeg",
+      "end_image": "photos/IMG_3608-1280x950.jpeg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Smooth walkthrough of the aft deck lounge, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, dining table and cushioned bench seating under the open bimini frame, marina view beyond, bright natural light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, furniture edges or window frames",
+      "note": "beide bronfoto's met canopy open (zelfde lichtstand) — bewust zo gekozen"
+    },
+    {
+      "index": 7,
+      "category": "Aft deck",
+      "start_image": "photos/IMG_3616-1280x950.jpeg",
+      "end_image": "photos/IMG_3618-1280x950.jpg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Smooth reveal of the swim platform and transom steps, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, teak platform with cushioned loungers, marina beyond, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or platform edges",
+      "note": "zwemplatform-paar, bijna identieke bronfoto's vanaf de kade — sterkste buiten/dek-paar van de set"
+    },
+    {
+      "index": 8,
+      "category": "Salon",
+      "start_image": "photos/IMG_3628-1280x950.jpg",
+      "end_image": "photos/IMG_3630-1280x950.jpg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Interior walkthrough through the main salon and galley, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, polished cabinetry and soft furnishings, daylight through panoramic windows, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges or window frames"
+    },
+    {
+      "index": 9,
+      "category": "Galley",
+      "start_image": "photos/IMG_3627-1280x950.jpg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Gentle pan across the galley, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, clean countertops and stainless appliances, marina view through the window, soft daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable labels, stable geometry, no morphing or warping of cabinetry edges"
+    },
+    {
+      "index": 10,
+      "category": "Cabin",
+      "hut": "A",
+      "start_image": "photos/Don't Blink cabin A1.jpeg",
+      "end_image": "photos/Don't Blink cabin A3.jpeg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
+      "note": "geen badkamerfoto beschikbaar voor Cabin A — alleen deze bed-clip"
+    },
+    {
+      "index": 11,
+      "category": "Cabin",
+      "hut": "B",
+      "start_image": "photos/don't Blink cabin B1.jpeg",
+      "end_image": "photos/don't Blink cabin b2.jpeg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    },
+    {
+      "index": 12,
+      "category": "Cabin",
+      "hut": "B",
+      "start_image": "photos/don't Blink cabin b3.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Push-in into the ensuite bathroom, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marble surfaces and polished fixtures, soft light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera, stable geometry, no morphing or warping of mirror frames or fixtures"
+    },
+    {
+      "index": 13,
+      "category": "Cabin",
+      "hut": "C",
+      "start_image": "photos/don't Blink cabin c1.jpeg",
+      "end_image": "photos/don't Blink cabin c2.jpeg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    },
+    {
+      "index": 14,
+      "category": "Cabin",
+      "hut": "C",
+      "start_image": "photos/don't Blink cabin c3.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Push-in into the ensuite bathroom, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marble surfaces and polished fixtures, soft light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera, stable geometry, no morphing or warping of mirror frames or fixtures"
+    },
+    {
+      "index": 15,
+      "category": "Cabin",
+      "hut": "D",
+      "start_image": "photos/don't Blink cabin d1.jpeg",
+      "end_image": "photos/don't blink cabin d2.jpeg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    },
+    {
+      "index": 16,
+      "category": "Cabin",
+      "hut": "D",
+      "start_image": "photos/don't blink cabin d3.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Push-in into the ensuite bathroom, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marble surfaces and polished fixtures, soft light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera, stable geometry, no morphing or warping of mirror frames or fixtures"
+    },
+    {
+      "index": 17,
+      "category": "Cabin",
+      "hut": "E",
+      "start_image": "photos/don't blink cabin e1.jpeg",
+      "end_image": "photos/don't blink cabin e2.jpeg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    },
+    {
+      "index": 18,
+      "category": "Cabin",
+      "hut": "E",
+      "start_image": "photos/don't blink e3.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Push-in into the ensuite bathroom, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marble surfaces and polished fixtures, soft light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera, stable geometry, no morphing or warping of mirror frames or fixtures"
+    }
+  ]
+}
