@@ -239,12 +239,89 @@ opnieuw op 5s geprobeerd worden nu de prompt al stabiel is gebleken op 3s.
 
 Credits: 7 clips × 3s std (4,5 cr) = 31,5 credits (2099,75 → 2068,25).
 
-## Oplevering
-- Bestandsnaam: `Dont_Blink.mp4` (57,81s, 1920x1080, 30fps, geen audio) — **v2, na correctie**
+## Oplevering v2 (afgekeurd door Valentijn, 14-09-2026)
+- Bestandsnaam: `Dont_Blink.mp4` (57,81s, 1920x1080, 30fps, geen audio)
 - Geüpload via de headless media_upload-route (media_id `556d31bc-4ac2-416e-a494-c0b57f0d232e`)
-- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/556d31bc-4ac2-416e-a494-c0b57f0d232e.mp4
 - Oude (afgekeurde) versie: media_id `0e6c68ed-737f-49bc-802a-9a17994ca8f1` — niet gebruiken.
-- Totaal verbruikte credits voor deze boot: 134,75 (2203 → 2068,25) — 103,25 origineel +
-  31,5 voor de correctie van 7 clips.
-- Resterend saldo: 2068,25 credits
+- Totaal verbruikte credits t/m v2: 134,75 (2203 → 2068,25).
+- **Valentijn keurde ook v2 af:** "het beeld verschuift naar andere boten en vervormd" —
+  concreet op sec 12 (door een raam heen vliegen) en sec 18-20 (ineens een andere boot).
+
+## Correctie v3 — echte root cause gevonden (15-09-2026)
+
+**De misdiagnose van de v2-correctie:** de 7 clips die toen zijn geregenereerd (03, 05, 09,
+12, 14, 16, 18) waren stuk voor stuk single-image clips met een hoge DRIFT-score. Clip 4
+(Flybridge) en clip 6 (Aft deck) — de twee clips waar Valentijn nu concreet naar verwijst —
+zijn toen NOOIT aangeraakt of visueel bekeken. Reden: het zijn start+end-**paren**, en DRIFT
+vergelijkt alleen het laatste frame met de bronfoto — voor een paar is dat per ontwerp een
+ander frame dan de start, dus een geslaagd paar en een mislukt paar scoren op DRIFT vrijwel
+hetzelfde. Ter bevestiging: de oorspronkelijke DRIFT-scores van clip 4 en 6 waren 0,057 en
+0,043 — ruim onder de drempel van 0,38, ondanks de zichtbare defecten. DRIFT is dus geen
+bruikbaar signaal voor paar-clips, alleen voor single-image clips.
+
+**Root cause, per clip, bevestigd door de bronfoto's van beide clips naast elkaar te leggen
+en te toetsen aan de harde voorwaarden uit sectie 8 (zelfde ruimte, overlappende inhoud):**
+
+- **Clip 4 (Flybridge):** paar IMG_1598 (open dek) + IMG_3598 (onder het hardtop, kijkend
+  naar getint glas). Geen overlappende inhoud — een fysieke glas-scheiding tussen de twee
+  standpunten. Kling interpoleert dat als "erdoorheen vliegen". Dit is exact "sec 12,
+  door een raam heen".
+- **Clip 6 (Aft deck):** paar IMG_3603 (interieur aan-dek shot bij de eettafel) + IMG_3608
+  (wijde exterieur kade-opname van de hele achtersteven). Geen overlappende inhoud —
+  binnen-standpunt vs. buiten-standpunt van compleet andere schaal. Dit is "sec 18-20,
+  ineens een andere boot".
+
+**Prevention-plan (besproken en akkoord met Valentijn vóór regeneratie):**
+1. Bij elk voorgesteld start+end-paar wordt vóór generatie een side-by-side vergelijking
+   van de twee bronfoto's gemaakt en expliciet getoetst aan sectie 8 (zelfde ruimte,
+   overlappende inhoud, licht, kleurprofiel) — niet pas achteraf.
+2. DRIFT wordt niet meer gebruikt als triageer-signaal voor paar-clips — alleen voor
+   single-image clips. Paar-clips krijgen altijd de volledige visuele check.
+3. Altijd de echte per-clip contactsheet bekijken (nooit een samengevat overzichtsraster)
+   met expliciete aandacht voor middenframes, waar morphing zich concentreert.
+4. Concrete testvraag per paar: is er minstens één gedeeld herkenningspunt (dezelfde
+   reling, kozijn, meubelstuk) in beide bronfoto's aan te wijzen? Zo niet: single-image.
+
+**Fix, akkoord Valentijn ("Ja, single-image voor beide"):**
+
+- **Clip 4:** omgezet naar single-image (alleen IMG_1598), reddingsprompt-stijl, 3s.
+  Job `5a861303-f95f-4673-8fe2-ffafb1a51f29`. QC: JERK 0,80 / EDGE 0,025 / DRIFT 0,330 /
+  TEXT 0 — schoon, ook visueel (contactsheet bekeken, geen vervorming/hallucinatie).
+- **Clip 6:** eerste poging single-image (ongewijzigde IMG_3603) faalde QC: DRIFT 0,52 en
+  TEXT-treffers — Kling had de naam "Forever Young" van het buurschip op de achtergrond
+  leesbaar overgenomen uit de bronfoto (geen hallucinatie, een reëel achtergrondschip, maar
+  wel een afkeuring volgens de TEXT-regel). Gemeld aan Valentijn, akkoord voor fix: bronfoto
+  bijgesneden (`IMG_3603_crop_no_bg.jpg`, onderste helft van het frame) zodat het buurschip
+  volledig buiten beeld valt. Tweede poging (media_id `1e7831fe-c6b7-4ebb-b822-c6a127bd791f`,
+  job `6ef9603a-b6ed-4eac-bbea-d433fb7cc1fc`): geen tekst/logo's meer zichtbaar (frame
+  visueel bevestigd), JERK 1,00 en EDGE 0,149 ruim binnen de norm. DRIFT steeg naar 0,66 en
+  TEXT vond twee betekenisloze fragmenten ("ay" conf 49, "is!" conf 58) — na visuele
+  inspectie van het laatste frame is vastgesteld dat dit OCR-ruis op de houtnerf is, geen
+  echte tekst; de hogere DRIFT-score is toegeschreven aan de ongewoon brede crop-verhouding
+  (1280x530) t.o.v. de referentiefoto, geen zichtbare vervorming. **Akkoord Valentijn** om
+  deze versie te gebruiken ondanks de score boven de drempel.
+- Kosten fix: 3 generaties × 3s std (4,5 cr) = 13,5 credits (2068,25 → 2054,75).
+
+**Montage opnieuw volledig opgebouwd** (alle 18 clips opnieuw gedownload en genormaliseerd —
+de eerdere sessie had de ruwe clips niet lokaal bewaard). De 4 transities rond de gewijzigde
+clips (3→4, 4→5, 5→6, 6→7) zijn visueel gecontroleerd op het transitie-middelpunt: normale
+dissolve-blends tussen inhoudelijk aangrenzende shots, geen restmateriaal of onverwante
+content. De overige 13 transities zijn ongewijzigd t.o.v. v2 (al eerder gecontroleerd).
+
+**Eindlengte: 53,83s — onder de 60-90s doelmarge.** Clip 4 en 6 zijn beide van 5s (paar) naar
+3s (single-image, reddingsprompt-stijl) gegaan, samen 4s korter dan v2. Net als bij v2 is dit
+een bewuste trade-off (stabiliteit/juistheid boven lengte) — als 60s+ een harde eis is, kan
+in overleg met Valentijn 1-2 andere, reeds goedgekeurde clips naar 5s.
+Technische eindcontrole: 1920x1080, 30fps, geen audiospoor, geen zwarte frames (helderheid
+eerste frame 122,5 / laatste frame 147,9).
+
+## Oplevering v3
+- Bestandsnaam: `Dont_Blink.mp4` (53,83s, 1920x1080, 30fps, geen audio) — **v3, na
+  correctie van de echte root cause (paar-clips 4 en 6)**
+- Geüpload via de headless media_upload-route (media_id `bda47464-cb74-4727-a9ca-f4a6520f3107`)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/bda47464-cb74-4727-a9ca-f4a6520f3107.mp4
+- Oudere versies: v1 (media_id `0e6c68ed-737f-49bc-802a-9a17994ca8f1`) en v2 (media_id
+  `556d31bc-4ac2-416e-a494-c0b57f0d232e`) — **niet gebruiken, beide afgekeurd.**
+- Totaal verbruikte credits voor deze boot: 148,25 (2203 → 2054,75).
+- Resterend saldo: 2054,75 credits.
 - Valentijn levert de video aan de klant, niet de agent.

@@ -30,16 +30,17 @@
       "duration": 3,
       "mode": "std",
       "prompt": "Smooth forward glide alongside the hull of a luxury power catamaran underway, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, sea spray and wake, bright daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
-      "note": "bronfoto 1200x905, net onder de 1280px-drempel — bruikbaar maar mogelijk iets zachter"
+      "note": "bronfoto 1200x905, net onder de 1280px-drempel \u2014 bruikbaar maar mogelijk iets zachter"
     },
     {
       "index": 4,
       "category": "Flybridge",
       "start_image": "photos/IMG_1598-1280x950.jpeg",
-      "end_image": "photos/IMG_3598-1280x950.jpeg",
-      "duration": 5,
+      "end_image": null,
+      "duration": 3,
       "mode": "std",
-      "prompt": "Smooth walkthrough across the flybridge deck, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, cushioned lounge seating and dining table, marina and green hills beyond, bright natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable screens or displays, stable geometry, no morphing or warping of railings or window frames"
+      "prompt": "Smooth, moderately-paced camera movement along a single clear axis, gimbal-stabilized, locked horizon, confident and continuous motion, no hesitation or drift, flybridge deck lounge seating and dining table, marina and green hills beyond, natural daylight, photorealistic, no people, no text, no lettering, no logos, absolutely stable geometry, no morphing, no warping, no deformation of any straight lines or edges",
+      "note": "Correctie 15-09-2026: was start+end paar (IMG_1598+IMG_3598), schond de harde voorwaarde (niet dezelfde ruimte/hoek, glas-scheiding) en veroorzaakte een door-het-raam-vlieg-artefact bij sec 12 in de eerste levering. Nu single-image (alleen IMG_1598), reddingsprompt-stijl."
     },
     {
       "index": 5,
@@ -49,17 +50,17 @@
       "duration": 5,
       "mode": "std",
       "prompt": "Smooth forward pan through the salon toward the helm console, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, polished wood joinery and cushioned seating, marina view through panoramic windows, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable screens or displays, stable geometry, no morphing or warping of furniture edges or window frames",
-      "note": "brede binnenopname met stuurconsole op de achtergrond, geen losse closeup beschikbaar — akkoord Valentijn om deze te gebruiken"
+      "note": "brede binnenopname met stuurconsole op de achtergrond, geen losse closeup beschikbaar \u2014 akkoord Valentijn om deze te gebruiken"
     },
     {
       "index": 6,
       "category": "Aft deck",
-      "start_image": "photos/IMG_3603-1280x950.jpeg",
-      "end_image": "photos/IMG_3608-1280x950.jpeg",
-      "duration": 5,
+      "start_image": "photos/IMG_3603_crop_no_bg.jpg",
+      "end_image": null,
+      "duration": 3,
       "mode": "std",
-      "prompt": "Smooth walkthrough of the aft deck lounge, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, dining table and cushioned bench seating under the open bimini frame, marina view beyond, bright natural light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, furniture edges or window frames",
-      "note": "beide bronfoto's met canopy open (zelfde lichtstand) — bewust zo gekozen"
+      "prompt": "Smooth, moderately-paced camera movement along a single clear axis, gimbal-stabilized, locked horizon, confident and continuous motion, no hesitation or drift, aft deck dining table and cushioned L-shaped bench seating, teak deck flooring, natural daylight, photorealistic, no people, no text, no lettering, no logos, no other vessels in frame, no legible text or lettering on any background object, absolutely stable geometry, no morphing, no warping, no deformation of any straight lines or edges",
+      "note": "Correctie 15-09-2026 (v2 van de fix): eerste single-image poging (ongecropte IMG_3603) faalde QC (TEXT: naam buurschip Forever Young leesbaar in beeld). Bronfoto bijgesneden (onderste helft) om het buurschip te verwijderen -> IMG_3603_crop_no_bg.jpg. Was oorspronkelijk een paar met IMG_3608, schond de harde voorwaarde (interieur vs. wijde exterieur kade-opname, geen overlap) en veroorzaakte het naar-andere-boot-artefact bij sec 18-20 in de eerste levering."
     },
     {
       "index": 7,
@@ -69,7 +70,7 @@
       "duration": 5,
       "mode": "std",
       "prompt": "Smooth reveal of the swim platform and transom steps, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, teak platform with cushioned loungers, marina beyond, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or platform edges",
-      "note": "zwemplatform-paar, bijna identieke bronfoto's vanaf de kade — sterkste buiten/dek-paar van de set"
+      "note": "zwemplatform-paar, bijna identieke bronfoto's vanaf de kade \u2014 sterkste buiten/dek-paar van de set"
     },
     {
       "index": 8,
@@ -98,7 +99,7 @@
       "duration": 3,
       "mode": "std",
       "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
-      "note": "geen badkamerfoto beschikbaar voor Cabin A — alleen deze bed-clip"
+      "note": "geen badkamerfoto beschikbaar voor Cabin A \u2014 alleen deze bed-clip"
     },
     {
       "index": 11,
