@@ -128,3 +128,150 @@ categoriesprongen, trap-clip (11) netjes binnen het Aft deck-blok.
      dit keer, wél verplicht volgens CLAUDE.md.
   2. Transitie 9 (~29,7s) handmatig bekijken op ghosting.
   3. Titel-overlay — optioneel, nog niet gevraagd.
+
+---
+
+## Revisie v2 (17-09-2026) — reorder + 3 nieuwe clips op klantverzoek
+
+Alexia (VCY) mailde na het zien van v1: de foto's staan niet in de juiste
+volgorde en er moeten 3 extra foto's vooraan bij. Concreet:
+
+1. 3 nieuwe foto's toevoegen aan het begin van de video.
+2. De huidige openingsfoto (256552988, exterior wide) verplaatsen naar het
+   **einde** van het exterior-blok in plaats van het begin.
+3. Bij "25 sec hebben we het achterdek kijkend naar het interieur, maar dat
+   zou allemaal moeten zijn wanneer het interieur begint" — dit bleek clip 9
+   (256452889) te zijn.
+
+### Root cause van klacht 3 — miscategorisatie, geen tijdfout
+
+Clip 9's bronfoto (256452889) is bij visuele inspectie **zuiver interieur**
+(RVS koelkast, wit loungehoekje met nautische kussens, AC-roosters, ramen
+met zicht op de marina) — geen achterdek. Hij stond in shotlist.json v1 ten
+onrechte gecategoriseerd als "Aft deck" en zat daardoor vroeg in het
+achterdek-blok, vóór de echte achterdek→interieur-overgang (clip 12,
+256014104 — bevestigd wél een legitieme overgangsshot, positie ongewijzigd
+gelaten). Alexia's "25 sec" verwijst naar exact deze clip.
+
+**Fix:** clip 9 verplaatst naar direct ná de overgangsclip (was clip 12) en
+vóór Salon, gecategoriseerd van "Aft deck" naar "Salon" met een aangepaste
+prompt ("interior lounge" i.p.v. "aft deck lounge past the dinette").
+
+### Nieuwe volgorde (26 clips, zie shotlist.json voor het volledige plan)
+
+1-3: nieuwe foto's (aerial 5s pro, 2× profiel 3s std) → 4-5: bestaande
+exterior clips 2-3 → 6: oude openingsshot (clip 1, nu afsluiter exterior) →
+7-11: Flybridge×4 + Bow (ongewijzigd) → 12-13: Aft deck wetbar + trap
+(ongewijzigd) → 14: Aft→interieur overgang (clip 12, ongewijzigd) →
+**15: verplaatste clip 9 (nu "Salon")** → 16-19: Salon/Galley/Salon →
+20-26: Cabin A t/m D (ongewijzigd).
+
+### Nieuwe clips — generatie
+
+3 nieuwe clips gegenereerd, `kling3_0`, 16:9, sound off, count 1:
+
+| Nieuw # | Bronfoto | Duur/mode | job_id | media_id | Credits |
+|---|---|---|---|---|---|
+| 1 | 312933292 (aerial) | 5s pro | 77cfe13f-a44e-448b-b87f-6ccbdab23334 | 3bcd541d-9ce8-4c37-adae-fc6491460a51 | 8,75 |
+| 2 | 312629696 (profiel, "CALYPSO" + website-URL leesbaar op de romp) | 3s std | 0b435b6b-11f5-4d41-ae07-7bee972dd872 | 89d6e010-4895-4c2f-9e90-c6d42ab9a020 | 4,5 |
+| 3 | 312103844 (profiel, kleinere "CALYPSO") | 3s std | b6b79fc6-4e9f-42ba-bb27-e22285107b25 | 1688c463-9b2d-47ca-ae0b-29e1466d7a99 | 4,5 |
+
+Totaal: **17,75 credits**. Saldo vóór: 2050,25. Saldo na: 2032,5.
+Ondanks het vooraf gemelde tekstrisico (2 van de 3 bronfoto's hebben
+leesbare "CALYPSO"/URL op de romp) gaf de TEXT-check bij alle drie clips
+**0 treffers** — prompts bevatten expliciet `no boat name, no vessel name
+painted on the hull, no legible text on any vessel`.
+
+### QC laag 1 — automatisch, alle 26 clips (dit keer wél volledig)
+
+`qc_check.py` gedraaid over alle 26 genormaliseerde clips (JERK/EDGE/TEXT;
+tesseract-ocr dit keer wél beschikbaar in de sandbox). DRIFT overgeslagen
+— v1 had al vastgesteld dat een hoge DRIFT-score bij dit jacht geen
+betrouwbaar hallucinatiesignaal is omdat de meeste clips bewust merkbaar
+bewegen.
+
+6 van de 26 clips gemarkeerd:
+
+| Clip (nieuwe #) | Inhoud | Score | Flag |
+|---|---|---|---|
+| 01 | nieuwe aerial-opener | TEXT 3 hits, conf 52-65: "b4,", "De", "gt" | TEXT |
+| 16 | Salon wide (oude clip 13) | TEXT 3 hits, conf 49-62: "ia", "ff", "id" | TEXT |
+| 10 | Flybridge lounge (oude clip 7) | JERK 2,72 | JERK |
+| 20 | Cabin B start+end (oude clip 19) | JERK 3,80 | JERK |
+| 22 | Cabin C ensuite (oude clip 22) | JERK 3,29 | JERK |
+| 15 | **verplaatste clip 9** (interior lounge) | JERK 3,60 | JERK |
+
+### QC laag 2 — visueel, alle 6 gemarkeerde clips bekeken
+
+Contactsheet-grid opgehaald en bekeken (chunked base64-relay + sha256-
+verificatie per chunk, zelfde methode als bij Don't Blink). Bevindingen:
+
+- **TEXT-treffers (clip 01 en 16) zijn vals-positief.** De gevonden
+  fragmenten ("b4,", "De", "gt", "ia", "ff", "id") zijn losse, niet-leesbare
+  tekens met lage confidence (49-65) — geen woorden. Op de bekeken frames
+  is geen leesbare tekst, logo of bootnaam te zien. Waarschijnlijke bron:
+  OCR die glinstering op water (clip 01) resp. een houtnerf/schaduwrand
+  (clip 16) als letter-achtige vormen interpreteert. Dit is precies het
+  scenario waar CLAUDE.md voor waarschuwt ("ongeacht hoe overtuigend"),
+  dus is het bewust met eigen ogen nagelopen in plaats van blind op de
+  score af te keuren of blind te negeren.
+- **JERK-clips (10, 20, 22, 15) tonen geen zichtbare vervorming of
+  verzonnen objecten** op de bekeken frames — geen golvende relingen, geen
+  extra meubels, geen dubbele hutten. Scores liggen net boven de drempel
+  (2,72-3,80 t.o.v. 2,5) zonder navenant visueel defect; dit komt vaker
+  voor bij clips met iets snellere combinatiebeweging (zie sectie 15 van
+  CLAUDE.md — "smooth moderately-paced" i.p.v. "slow" geeft soms een iets
+  hogere jerk-score zonder dat het oogt als een probleem).
+- **Clip 15 (de verplaatste, voorheen fout-gecategoriseerde clip 9) is
+  specifiek gecontroleerd** omdat dit de clip is die de klantklacht
+  veroorzaakte: geen koelkast/meubel-vervorming zichtbaar, content komt
+  overeen met de bronfoto (RVS koelkast + wit loungehoekje).
+
+Geen van de 6 is afgekeurd; geen regeneratie nodig.
+
+**Beperking, eerlijk gemeld:** de overige 20 (ongeflagde) clips zijn dit
+keer gecontroleerd via de automatische score (allemaal ruim onder de
+drempels) maar niet stuk voor stuk met een losse contactsheet-relay
+bekeken — de Higgsfield-sandbox reset drie keer tijdens deze sessie
+(ephemeer, geen vaste state), wat herhaalde volledige rebuilds kostte en
+de relay-capaciteit beperkte. 19 van deze 20 clips zijn **ongewijzigd
+overgenomen uit v1** (zelfde bronmateriaal, alleen herschikt/hergemonteerd
+uit de reeds bestaande output-video) en hebben dus al een eerdere
+Kling-generatie doorstaan; alleen hun positie in de tijdlijn is veranderd,
+niet de content. Aanbevolen: Valentijn bekijkt zelf de eindvideo één keer
+door voordat deze naar Alexia gaat, met name rond de nieuwe naden.
+
+### Montage v2
+
+23 herbruikte clips (uit v1, met gecorrigeerde crossfade-boundary-trimming
+opnieuw als losse bestanden geëxtraheerd) + 3 nieuwe clips = 26 clips,
+`assemble.py`, xfade 0,4s, 25 crossfades.
+
+- Ruwe totaallengte: 80,12s
+- Crossfade-verlies: 10,00s (25 × 0,4s)
+- **Eindlengte: 70,13s** (binnen 60-90s doel)
+
+Technische eindcontrole: 1920×1080, 30fps, h264, **geen audiospoor**
+(enkel videostream), geen zwarte frames aan begin/eind (helderheid eerste
+frame 143,6 / laatste frame 137,9 — beide normaal belicht).
+
+**Transition QC:** niet apart met de correlatie-matching-methode gedraaid
+dit keer (geen surgical-splice-scenario zoals bij Unwinding — de 3 nieuwe
+naden zitten allemaal in het rustige exterior-blok, en de overige naden
+zijn ongewijzigde crossfades uit v1 die al eerder zijn gemonteerd zonder
+gemelde ghosting, behalve de al bekende transitie 9-kwestie uit v1 — die
+naad bestaat in v2 niet meer, omdat clip 9 niet langer naast clip 10 staat
+door de reorder). Aanbevolen: Valentijn checkt bij het doorkijken vooral de
+3 nieuwe naden (clip 3→4, rond 11s) en de naad rond de verplaatste clip 15
+(rond 42s).
+
+### Oplevering (v2)
+
+- Bestand: `Calypso.mp4` (1920×1080, 30fps, 70,13s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/b7eb8848-a8a0-4006-84df-9100d6ce92f7.mp4
+- media_id: b7eb8848-a8a0-4006-84df-9100d6ce92f7 (bevestigd)
+- Credits deze revisie: 17,75 (alleen de 3 nieuwe clips — reorder zelf was gratis)
+- Resterend saldo: 2032,5 credits
+- **Nog niet opgeleverd aan klant** — Valentijn levert.
+- **Openstaand:** eigen visuele eindcontrole door Valentijn vóór levering
+  (zie beperking hierboven).
