@@ -315,13 +315,53 @@ in overleg met Valentijn 1-2 andere, reeds goedgekeurde clips naar 5s.
 Technische eindcontrole: 1920x1080, 30fps, geen audiospoor, geen zwarte frames (helderheid
 eerste frame 122,5 / laatste frame 147,9).
 
-## Oplevering v3
-- Bestandsnaam: `Dont_Blink.mp4` (53,83s, 1920x1080, 30fps, geen audio) — **v3, na
-  correctie van de echte root cause (paar-clips 4 en 6)**
-- Geüpload via de headless media_upload-route (media_id `bda47464-cb74-4727-a9ca-f4a6520f3107`)
-- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/bda47464-cb74-4727-a9ca-f4a6520f3107.mp4
-- Oudere versies: v1 (media_id `0e6c68ed-737f-49bc-802a-9a17994ca8f1`) en v2 (media_id
-  `556d31bc-4ac2-416e-a494-c0b57f0d232e`) — **niet gebruiken, beide afgekeurd.**
-- Totaal verbruikte credits voor deze boot: 148,25 (2203 → 2054,75).
-- Resterend saldo: 2054,75 credits.
+## Oplevering v3 (afgekeurd door Valentijn, 17-09-2026)
+- Bestandsnaam: `Dont_Blink.mp4` (53,83s, 1920x1080, 30fps, geen audio)
+- media_id `bda47464-cb74-4727-a9ca-f4a6520f3107` — niet gebruiken.
+- **Valentijn meldde:** "op sec 30 of 31 is een rare overgang filter die weg" moet.
+
+## Correctie v4 — Cabin A had hetzelfde onderliggende defect (17-09-2026)
+
+**Root cause:** clip 10 (Cabin A) was nog een ongecontroleerd paar: A1 (voeteneind van het
+bed, kijkend richting kopeind + tv) + A3 (kopeind, kijkend richting voeteneind + deur). De
+twee bronfoto's overlappen wél (zelfde tv, zelfde bed, zelfde kamer — voorwaarden 1-3 uit
+sectie 8 gehaald), maar staan bijna 180° tegenover elkaar. Bevestigd door beide bronfoto's
+naast elkaar te bekijken: de grote platte tv aan de wand moet tijdens de Kling-interpolatie
+mee "draaien" met een bijna-volledige perspectiefomkering, en doet dat inconsistent — dat gaf
+het losse, platte zwarte vlak dat als "rare filter" oogde op sec 30-31. **Nieuwe (4e) harde
+voorwaarde voor paren, toegevoegd aan ons draaiboek:** ook bij overlap geen paar maken als de
+camerahoek tussen de twee foto's extreem verschilt, met extra alertheid bij grote platte/
+reflecterende oppervlakken (tv, spiegel, raam) in beeld.
+
+**Bijzonderheid tijdens de fix:** de eerste twee generatiepogingen (single-image, A3
+respectievelijk A1) mislukten allebei zonder resultaat. Credits werden beide keren automatisch
+terugbetaald (netto geen verlies). Op verzoek van Valentijn geïsoleerd met een derde test: een
+gisteren nog succesvolle bronfoto met een triviale prompt mislukte ook — dit wees op een
+tijdelijke Kling v3.0-servicestoring, niet op iets aan onze foto's/prompts. Een vierde poging
+(zelfde parameters als poging 1: single-image A3) is later gewoon geslaagd.
+
+**Fix:** clip 10 omgezet naar single-image (alleen A3 — A1 heeft een zwakke spiegelreflectie
+op de achtergrond, bewust vermeden), reddingsprompt-stijl, 3s. Job
+`d56503c5-d185-43ab-9da9-964f11e5928e`. QC: JERK 1,02 / EDGE 0,017 / DRIFT 0,31 / TEXT 0 —
+schoon, en visueel bevestigd (contactsheet bekeken: geen zwevend vlak meer, consistente kamer
+door alle 12 frames).
+Kosten: 2 mislukte pogingen (netto 0 credits, automatisch terugbetaald) + 1 mislukte
+diagnostische test (netto 0) + 1 geslaagde generatie (4,5 credits). Saldo: 2054,75 → 2050,25.
+
+**Montage opnieuw volledig opgebouwd** met alle 18 clips (17 ongewijzigd + clip 10 nieuw).
+Eindlengte ongewijzigd: 53,83s (clip 10 bleef 3s, zelfde als de vorige versie). De twee
+transities rond clip 10 (galley→Cabin A, Cabin A→Cabin B) visueel gecontroleerd op het
+transitie-middelpunt: normale dissolve-blends, geen artefacten.
+Technische eindcontrole: 1920x1080, 30fps, geen audiospoor, geen zwarte frames (helderheid
+eerste frame 122,5 / laatste frame 147,9).
+
+## Oplevering v4
+- Bestandsnaam: `Dont_Blink.mp4` (53,83s, 1920x1080, 30fps, geen audio) — **v4, na correctie
+  van clip 10 (Cabin A)**
+- Geüpload via de headless media_upload-route (media_id `59713f39-3bfa-4f6d-b7fa-b6ff53c3d70c`)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/59713f39-3bfa-4f6d-b7fa-b6ff53c3d70c.mp4
+- Oudere versies: v1 (`0e6c68ed-737f-49bc-802a-9a17994ca8f1`), v2 (`556d31bc-4ac2-416e-a494-c0b57f0d232e`),
+  v3 (`bda47464-cb74-4727-a9ca-f4a6520f3107`) — **niet gebruiken, alle drie afgekeurd.**
+- Totaal verbruikte credits voor deze boot: 152,75 (2203 → 2050,25).
+- Resterend saldo: 2050,25 credits.
 - Valentijn levert de video aan de klant, niet de agent.

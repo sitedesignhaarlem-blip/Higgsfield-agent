@@ -94,12 +94,12 @@
       "index": 10,
       "category": "Cabin",
       "hut": "A",
-      "start_image": "photos/Don't Blink cabin A1.jpeg",
-      "end_image": "photos/Don't Blink cabin A3.jpeg",
+      "start_image": "photos/Don't Blink cabin A3.jpeg",
+      "end_image": null,
       "duration": 3,
       "mode": "std",
-      "prompt": "Interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
-      "note": "geen badkamerfoto beschikbaar voor Cabin A \u2014 alleen deze bed-clip"
+      "prompt": "Smooth, moderately-paced camera movement along a single clear axis, gimbal-stabilized, locked horizon, confident and continuous motion, no hesitation or drift, guest cabin with made bed and crisp linens, warm ambient light, photorealistic, no people, no text, no lettering, no logos, no mirror reflections of a camera or person, absolutely stable geometry, no morphing, no warping, no deformation of any straight lines or edges",
+      "note": "Correctie 17-09-2026: was start+end paar (A1+A3), foto's vanuit bijna tegenovergestelde hoeken van de hut (voeteneind vs. kopeind van het bed). De platte tv aan de wand bewoog niet correct mee met het perspectief tijdens de Kling-interpolatie, wat als een los zwevend zwart vlak (\"rare filter\") zichtbaar was bij sec 30-31 in de opgeleverde video. Nu single-image (alleen A3, ter vermijding van de zwakke spiegelreflectie in A1), reddingsprompt-stijl."
     },
     {
       "index": 11,
