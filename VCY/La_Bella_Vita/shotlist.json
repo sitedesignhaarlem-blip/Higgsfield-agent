@@ -45,13 +45,24 @@
       "index": 5,
       "category": "Flybridge",
       "start_image": "photos/431866632_344767475237569_1114690973904015689_n-1280x950.jpeg",
-      "end_image": "photos/431954242_790425182617288_2060398115097196365_n-1280x950.jpeg",
+      "end_image": null,
       "duration": 3,
       "mode": "std",
-      "prompt": "Smooth walkthrough across the flybridge lounge seating, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marina view beyond, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings or window frames"
+      "prompt": "Smooth, moderately-paced camera movement along a single clear axis, gimbal-stabilized, locked horizon, confident and continuous motion, no hesitation or drift, flybridge lounge seating, marina view beyond, natural daylight, photorealistic, no people, no text, no lettering, no logos, absolutely stable geometry, no morphing, no warping, no deformation of any straight lines or edges",
+      "note": "gecorrigeerd 24-09-2026: was een start+end-paar met foto 431954242, veroorzaakte een vervorming rond sec 16-17 in v1 (twee te verschillende hoeken van dezelfde lounge). Opgesplitst in twee losse single-image clips (deze + index 6)."
     },
     {
       "index": 6,
+      "category": "Flybridge",
+      "start_image": "photos/431954242_790425182617288_2060398115097196365_n-1280x950.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Smooth, moderately-paced camera movement along a single clear axis, gimbal-stabilized, locked horizon, confident and continuous motion, no hesitation or drift, flybridge lounge seating, marina view beyond, natural daylight, photorealistic, no people, no text, no lettering, no logos, absolutely stable geometry, no morphing, no warping, no deformation of any straight lines or edges",
+      "note": "gecorrigeerd 24-09-2026: zie note bij index 5 — tweede helft van het gesplitste paar"
+    },
+    {
+      "index": 7,
       "category": "Flybridge",
       "start_image": "photos/431777286_2129208264105999_8654403080595403626_n-1280x950.jpeg",
       "end_image": null,
@@ -60,7 +71,7 @@
       "prompt": "Gentle slow pan across the flybridge dining table, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marina view beyond, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings"
     },
     {
-      "index": 7,
+      "index": 8,
       "category": "Helm",
       "start_image": "photos/431859910_876130247857363_5257580489891330064_n-1280x950.jpeg",
       "end_image": null,
@@ -69,7 +80,7 @@
       "prompt": "Push-in toward the helm station, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, navigation instruments and wheel, marina view beyond, soft daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable screens or displays, stable geometry, no morphing or warping of instrument panels or window frames"
     },
     {
-      "index": 8,
+      "index": 9,
       "category": "Bow",
       "start_image": "photos/431981311_1587734348667992_1152905694169129595_n-1280x950.jpeg",
       "end_image": null,
@@ -78,7 +89,7 @@
       "prompt": "Forward glide across the bow toward the horizon, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open sea ahead, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
     },
     {
-      "index": 9,
+      "index": 10,
       "category": "Aft deck",
       "start_image": "photos/431887304_429345009578187_8320007116141364903_n-1280x950.jpeg",
       "end_image": null,
@@ -87,7 +98,7 @@
       "prompt": "Gentle slow pan across the aft deck dining table, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, teak decking, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings or furniture edges"
     },
     {
-      "index": 10,
+      "index": 11,
       "category": "Salon",
       "start_image": "photos/431773805_1341646899862604_4903261419593594610_n-1280x950.jpeg",
       "end_image": "photos/432071457_1932646510485274_6317304439936704903_n-1280x950.jpeg",
@@ -96,7 +107,7 @@
       "prompt": "Interior walkthrough through the main salon, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, cushioned seating and soft furnishings, daylight through panoramic windows, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges or window frames"
     },
     {
-      "index": 11,
+      "index": 12,
       "category": "Salon",
       "start_image": "photos/432116725_401068302865919_8639194478927812217_n-1280x950.jpeg",
       "end_image": null,
@@ -105,7 +116,7 @@
       "prompt": "Slow interior reveal of the salon dining area, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, daylight through panoramic windows, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges or window frames"
     },
     {
-      "index": 12,
+      "index": 13,
       "category": "Galley",
       "start_image": "photos/431778014_847853063817925_3588999419932281325_n-1280x950.jpeg",
       "end_image": "photos/431791037_1604406580334166_2977556672234610275_n-1280x950.jpeg",
@@ -114,7 +125,7 @@
       "prompt": "Gentle pan across the galley countertops, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, clean countertops and stainless appliances, soft daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable labels, stable geometry, no morphing or warping of cabinetry edges"
     },
     {
-      "index": 13,
+      "index": 14,
       "category": "Cabin A",
       "start_image": "photos/Bella cabin A1.jpeg",
       "end_image": "photos/Bella cabin a3.jpeg",
@@ -123,7 +134,7 @@
       "prompt": "Slow interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
     },
     {
-      "index": 14,
+      "index": 15,
       "category": "Cabin A",
       "start_image": "photos/Bella cabin a5.jpeg",
       "end_image": null,
@@ -132,7 +143,7 @@
       "prompt": "Push-in into the ensuite bathroom, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marble surfaces and polished fixtures, soft light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera, stable geometry, no morphing or warping of mirror frames or fixtures"
     },
     {
-      "index": 15,
+      "index": 16,
       "category": "Cabin B",
       "start_image": "photos/Bella cabin b1.jpeg",
       "end_image": "photos/Bella cabin b2.jpeg",
@@ -141,7 +152,7 @@
       "prompt": "Slow interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
     },
     {
-      "index": 16,
+      "index": 17,
       "category": "Cabin B",
       "start_image": "photos/Bella cabin b3.jpeg",
       "end_image": null,
@@ -151,7 +162,7 @@
       "note": "bronfoto toont een merklogo op het douche-glas — extra no-logo guard in de prompt"
     },
     {
-      "index": 17,
+      "index": 18,
       "category": "Cabin C",
       "start_image": "photos/Bella cabin c1.jpeg",
       "end_image": "photos/Bella cabin c2.jpeg",
@@ -160,7 +171,7 @@
       "prompt": "Slow interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
     },
     {
-      "index": 18,
+      "index": 19,
       "category": "Cabin C",
       "start_image": "photos/Bella cabin c3.jpeg",
       "end_image": null,
@@ -170,7 +181,7 @@
       "note": "bronfoto toont een merklogo op het douche-glas — extra no-logo guard in de prompt"
     },
     {
-      "index": 19,
+      "index": 20,
       "category": "Cabin D",
       "start_image": "photos/Bella cabin d1.jpeg",
       "end_image": "photos/Bella cabin d2.jpeg",
@@ -179,7 +190,7 @@
       "prompt": "Slow interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
     },
     {
-      "index": 20,
+      "index": 21,
       "category": "Cabin D",
       "start_image": "photos/Bella cabin d3.jpeg",
       "end_image": null,

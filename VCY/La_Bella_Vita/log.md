@@ -100,9 +100,58 @@ Technische eindcontrole: 1920×1080, 30fps, h264, **geen audiospoor**, geen zwar
 aan begin/eind. Volgorde exact zoals shotlist: Exterior → Flybridge → Helm → Bow →
 Aft deck → Salon → Galley → Cabin A → B → C → D.
 
-## Oplevering
+## Oplevering (v1)
 - Bestand: `La_Bella_Vita.mp4` (1920×1080, 30fps, 59,1s, geen audio)
 - URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/35b807a0-abd7-43e3-8639-8abf0ec0e3bb.mp4
 - media_id: 35b807a0-abd7-43e3-8639-8abf0ec0e3bb (bevestigd)
+- **Vervangen door v2** — zie hieronder. Valentijn meldde een vervorming rond sec 16-17.
+
+## Fix (24-09-2026): vervorming rond sec 16-17 in v1 — flybridge start+end-paar
+
+**Melding Valentijn:** "bij sec 16 17 gebeurt er een rare start eind frame combo haal die
+eruit en vervang voor losse shots".
+
+**Root cause:** clip 5 (Flybridge, foto's 431866632 + 431954242 als start+end-paar) valt
+in de output-tijdlijn precies op ~14,5-17,2s — exact het gemelde tijdstip. De twee
+bronfoto's tonen de flybridge-lounge vanuit te verschillende hoeken/afstand om als geldig
+start+end-paar te dienen (zelfde faalpatroon als CLAUDE.md §16: "Clip morpht in het midden
+| start/end frames te verschillend"). Geen gok — de output-tijdlijn (raw cumulative starts
+minus xfade-offset per clip) wees ondubbelzinnig naar clip 5.
+
+**Fix, akkoord/opdracht Valentijn:** opgesplitst in 2 losse single-image clips (reddingsprompt
+uit CLAUDE.md §15: één bewegingsas, geen interpolatie), geen `end_image` meer. Shotlist
+herzien: index 5 en 6 zijn nu de twee losse flybridge-clips, index 6 t/m 20 uit v1 zijn
+allemaal met 1 opgeschoven naar 7 t/m 21.
+
+**Generaties:**
+
+| Clip | Bron | Job ID | Kosten |
+|---|---|---|---|
+| Nieuw index 5 | 431866632 (was start van het paar) | 1113a215-70dc-4244-b60c-383c50c15afe | 4,5 |
+| Nieuw index 6 | 431954242 (was end van het paar) | efc77c3e-559a-4cae-89bf-4cd001a6e7e3 | 4,5 |
+
+**Kosten:** 2 × 4,5 = 9 credits. Saldo: 1845,5 → 1836,5.
+
+**QC laag 1 (automatisch):** beide clips schoon — index 5: JERK 1,91 / EDGE 0,030 / TEXT 0.
+Index 6: JERK 1,86 / EDGE 0,015 / TEXT 0. Geen enkele flag.
+
+**Montage (v2):** clip 5 (paar) verwijderd uit `clips_norm`, alle bestanden 06-20 hernummerd
+naar 07-21, de 2 nieuwe single-image clips ingevoegd als 05 en 06. 21 clips totaal,
+opnieuw genormaliseerd en gemonteerd met `assemble.py` (xfade 0,4s, 20 crossfades).
+
+**Transition QC:** de 3 nieuwe naden (clip 4→5, 5→6, 6→7) visueel gecontroleerd — telkens
+een middenframe van de crossfade geëxtraheerd (chunked base64-relay + sha256-verificatie
+per chunk). Alle drie tonen een normale, coherente blend tussen vergelijkbare
+flybridge/marina-scenes, geen spookbeelden of onverwachte content. Geen verdere
+verificatie nodig — geen surgical splice, alle betrokken clips zijn vers gegenereerd of
+ongewijzigd overgenomen uit v1.
+
+**Resultaat (v2):** 1920x1080, 30fps, **61,73s** (was 59,1s), geen audiospoor. Technische
+eindcontrole: geen zwarte frames, volgorde ongewijzigd.
+
+## Oplevering (v2, huidige versie)
+- Bestand: `La_Bella_Vita_v2.mp4` (1920×1080, 30fps, 61,73s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/e4e3e667-3940-4be9-b347-90307098cdc5.mp4
+- media_id: e4e3e667-3940-4be9-b347-90307098cdc5 (bevestigd)
+- Kosten deze fix: 9 credits. Saldo: 1836,5.
 - **Nog niet opgeleverd aan klant** — Valentijn levert, per de vaste regel in CLAUDE.md.
-- Resterend saldo (na beide jachten): 1845,5 credits.
