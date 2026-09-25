@@ -275,3 +275,123 @@ door de reorder). Aanbevolen: Valentijn checkt bij het doorkijken vooral de
 - **Nog niet opgeleverd aan klant** — Valentijn levert.
 - **Openstaand:** eigen visuele eindcontrole door Valentijn vóór levering
   (zie beperking hierboven).
+
+---
+
+## Revisie v3 (25-09-2026) — reorder + nieuwe afsluiter op klantverzoek
+
+Alexia's tweede feedbackronde (via Valentijn doorgestuurd): "1-27 is all good but
+then the order needs to change - after 27 seconds insert 34-35, it is another
+flybridge shot that is out of order - after 34-35 seconds add 30-32, that is the
+bow images - after 30-32 seconds add 28, that is the aft deck seat - after 28
+seconds then it can go to 36 seconds, which starts with the outside staircase.
+Then from 36 on is fine - at the end, can you add one of the same photos from
+the beginning, zooming out on Calypso, like you did on Sandpiper?"
+
+### Diagnose: waarom niet op nominale duur vertrouwd
+
+v2's 23 herbruikte clips zijn destijds ge-extraheerd uit de al-gemonteerde v1-video
+(gecorrigeerde crossfade-boundary-trimming), waardoor hun werkelijke lengte niet
+meer gelijk is aan de nominale shotlist-duur (nominaal 88s vs. daadwerkelijk 80,12s
+ruw — zie v2 hierboven). Tijdlijnreconstructie op basis van nominale duren zou dus
+onbetrouwbaar zijn geweest voor het mappen van Alexia's tijdstippen naar clips.
+
+**Methode:** de daadwerkelijke v2-video gedownload in de Higgsfield-sandbox en
+per seconde een frame vergeleken (genormaliseerde grijswaarde-kruiscorrelatie,
+64x36) tegen alle 26 bronfoto's van de shotlist — dezelfde correlatie-matching-
+methode als bij het Unwinding-defect (sectie 12 van CLAUDE.md), nu gebruikt om
+content-per-seconde te bepalen i.p.v. gemiste restmateriaal. Resultaat: een
+schone, ondubbelzinnige bevestiging van de volgorde Exterior → Flybridge(4) →
+Bow(~30-31s) → Aft deck wetbar(~32-33s) → Aft deck trap/stairway(~34-36s) →
+overgang → Salon. De bow-match viel exact op Alexia's genoemde "30-32" zonder
+enige correctie nodig — dat anker gaf voldoende vertrouwen in de rest van de
+mapping. Alexia's eigen labels "flybridge" (voor de trap/stairway-clip, die de
+flybridge-toegang toont) en "aft deck seat" (voor de wetbar-met-zitjes-clip) zijn
+begrijpelijke, niet-exacte beschrijvingen van een leek die naar de video kijkt —
+de inhoud zelf is via de bronfoto's ondubbelzinnig geïdentificeerd.
+
+**Conclusie:** 3 clips stonden inderdaad na elkaar maar in een volgorde die
+Alexia niet logisch vond: Bow (index 11) → Aft deck wetbar (12) → Aft deck trap/
+stairway (13). Gevraagde nieuwe volgorde: trap/stairway eerst, dan bow, dan
+wetbar, waarna de rest (overgang, Salon, Cabins) ongewijzigd doorloopt.
+
+### Fix — reorder (surgical splice, geen nieuwe generaties)
+
+v2-video gesplitst in 5 segmenten met een veiligheidsmarge van 0,15s aan elke
+kant van elk knippunt (om restmateriaal van de oude crossfades te vermijden,
+conform de Unwinding-regel "ken je de exacte grens niet zeker, neem dan extra
+marge"):
+
+| Segment | Inhoud | Bereik in v2 (incl. marge) |
+|---|---|---|
+| A | clips 1-10 (Exterior×6 + Flybridge×4), ongewijzigd | 0 - 29,35s |
+| D | clip 13 (Aft deck trap/stairway) | 29,65 - 31,55s → 33,85 - 36,65s* |
+| B | clip 11 (Bow) | 29,65 - 31,55s |
+| C | clip 12 (Aft deck wetbar) | 31,85 - 33,55s |
+| E | clip 14 t/m 26 (overgang → Cabin D), ongewijzigd | 36,95 - 70,13s |
+
+*Nieuwe volgorde: A + D + B + C + E. Zie shotlist.json voor de herziene indices
+(11=trap/stairway, 12=bow, 13=wetbar).
+
+**Transitie-QC:** de 5 nieuwe naden gecontroleerd met dezelfde correlatie-
+methode (frame op het transitie-middelpunt vergeleken tegen alle bronfoto's).
+2 van de 5 naden gaven een heldere bevestiging van de juiste inkomende clip
+(naad C→E bevestigt "aftdeck_transition", naad E→nieuwe-clip-27 bevestigt de
+eigen bronfoto van clip 27). De overige 3 naden gaven geen foutieve/onverwachte
+match (geen enkel signaal wees op een verkeerde categorie), maar ook geen
+scherpe bevestiging — dat is een bekende beperking van deze lage-resolutie
+correlatiemethode bij het onderscheiden van visueel vergelijkbare buitendek-
+scènes (flybridge/aft deck delen allemaal teak-dek, reling, lucht). **Geen
+volledige frame-voor-frame visuele relay-verificatie uitgevoerd deze ronde**
+(zie beperking hieronder) — eerlijkheidshalve gemeld, geen afkeuring gevonden,
+maar ook geen 100%-visuele bevestiging per naad.
+
+### Nieuwe clip — afsluiter op klantverzoek
+
+Clip 27 (nieuw): "one of the same photos from the beginning, zooming out on
+Calypso, like you did on Sandpiper" — er bestaat geen Sandpiper-project in deze
+repository om als exact referentievoorbeeld te raadplegen; de eigen bewoording
+van de klant (zoom-out/pull-back reveal, einde op een exterieurshot) is gevolgd
+zonder verder te gokken. Bronfoto: 256552988 (de originele v1-opener, nu ook
+clip 6) — al eerder geüpload, geen nieuwe upload nodig.
+
+| Clip | Bron | Duur/mode | job_id | Credits |
+|---|---|---|---|---|
+| 27 (zoom-out afsluiter) | 256552988 | 5s std | c3dba28b-483d-4710-9a38-3d7ad564e0a5 | 7,5 |
+
+**Kosten:** 7,5 credits (reorder zelf was gratis, alleen deze 1 nieuwe generatie).
+Saldo: zie gecombineerd overzicht in Dont_Blink/log.md (zelfde sessie, beide
+boten samen 67,5 credits) — voor Calypso alleen: 7,5 credits.
+
+### QC laag 1 — nieuwe clip
+
+JERK 1,24 / EDGE 0,062 / TEXT 0 — ruim binnen de normen, geen afkeuring.
+
+### Montage v3
+
+`assemble.py`, xfade 0,4s, 5 nieuwe clips (A,D,B,C,E) + 1 nieuwe clip (27) = 6
+inputs, 5 crossfades.
+
+- Ruwe totaallengte: 74,00s
+- Crossfade-verlies: 2,00s (5 × 0,4s)
+- **Eindlengte: 72,00s** (binnen 60-90s doel)
+
+Technische eindcontrole: 1920×1080, 30fps, h264, geen audiospoor.
+
+**Beperking, eerlijk gemeld:** conform de afspraak in deze sessie is de volledige
+Laag-2-visuele contactsheet-review (mensen/verzonnen-objecten-check) dit keer
+niet uitgevoerd — de gebruikelijke chunked-relay-methode voor het bekijken van
+sandbox-pixels werd deze sessie vermeden. In plaats daarvan is vertrouwd op: (1)
+de automatische JERK/EDGE/TEXT-scores van de nieuwe clip, (2) de correlatie-
+matching voor content-plaatsing en transitie-QC. **Aanbevolen: Valentijn bekijkt
+de eindvideo zelf één keer door voordat deze naar Alexia gaat**, met name de 3
+nieuwe naden rond de reorder (~29s, ~31,5s, ~33,5s in de nieuwe tijdlijn) en de
+nieuwe afsluitende clip.
+
+### Oplevering (v3, huidige versie)
+
+- Bestand: `Calypso_v3.mp4` (1920×1080, 30fps, 72,00s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/6821f284-6b01-4419-9a85-b500b8af6041.mp4
+- media_id: 6821f284-6b01-4419-9a85-b500b8af6041 (bevestigd)
+- Kosten deze revisie: 7,5 credits
+- **Nog niet opgeleverd aan klant** — Valentijn levert.

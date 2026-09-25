@@ -365,3 +365,165 @@ eerste frame 122,5 / laatste frame 147,9).
 - Totaal verbruikte credits voor deze boot: 152,75 (2203 → 2050,25).
 - Resterend saldo: 2050,25 credits.
 - Valentijn levert de video aan de klant, niet de agent.
+
+---
+
+## Revisie v5 (25-09-2026) — 8 nieuwe flybridge-clips + reorder + nieuwe afsluiter
+
+Alexia's tweede feedbackronde (via Valentijn doorgestuurd): "1-10 sec is fine -
+After 10 sec we need many more flybridge photos. After the 10 sec mark can you
+please add all 8 of the 'don't blink' flybridge images I have attached below -
+Please move seconds 11-15 after the 22 second mark - So the new order is: 1-10
+ok, add 8 images, seconds 16-22, seconds 11-15, then 23 seconds onward - At the
+end, can you please add the attached 'don't blink end 1' and 'don't blink end
+2' so we end with an exterior shot of the boat like you did on Sandpiper".
+
+### Diagnose: tijdlijn-mapping
+
+In tegenstelling tot Calypso is Dont_Blink v4 nooit gesplitst/hergebruikt uit een
+gerenderde video — elke versie is telkens volledig opnieuw opgebouwd uit verse
+per-clip-renders (zie v2/v3/v4 hierboven, telkens "montage opnieuw volledig
+opgebouwd"). Nominale shotlist-duren zijn daarom betrouwbaar. Berekende
+output-tijdlijn (cumulatieve duur minus 0,4s xfade per overgang) gaf: clip 4
+(Flybridge, single-image sinds v3) eindigt rond 9,8-12,8s — vrijwel exact op
+de "10 sec"-grens die Alexia noemt. Clip 5 (Helm) valt op ~12,4-15,4s ("seconds
+11-15"). Clips 6+7 (Aft deck single + zwemplatform-paar) vallen op ~15-22,6s
+("seconds 16-22"). Clip 8 (Salon) begint ~22,2s ("23 seconds onward"). Alle vier
+tijdsaanduidingen van Alexia matchen de berekende grenzen binnen ~1s — geen
+losse verificatie nodig, in tegenstelling tot Calypso waar dat wel moest.
+
+### Nieuwe volgorde (28 clips, zie shotlist.json)
+
+1-4 ongewijzigd (Exterior×3 + bestaande Flybridge) → 5-12: 8 nieuwe Flybridge-
+clips uit Alexia's foto's → 13-14: Aft deck (single + zwemplatform-paar,
+ongewijzigd, bleven al op hun plek) → 15: Helm (verplaatst van index 5 naar na
+het Aft deck-blok) → 16-26: Salon/Galley/Cabins A-E, ongewijzigd → 27-28: 2
+nieuwe afsluitende exterieurshots.
+
+### Klantfoto's — 1 probleem opgelost, 1 bewust afgeweken van het letterlijke verzoek
+
+Alle 8 flybridge-foto's ("dont blink 1-8") bekeken: tonen stuk voor stuk de
+flybridge-lounge/eettafel/wetbar/helm, geen mensen, direct bruikbaar. **Eén
+uitzondering:** foto 6 toonde de naam "Forever Young" van een buurschip leesbaar
+op de achtergrond — exact hetzelfde faalpatroon als bij de eerdere Aft deck-fix
+(IMG_3603/"Forever Young", zie v3 hierboven). Bijgesneden op dezelfde manier
+(`dont_blink_6_crop.jpg`) vóór generatie, dus dit keer proactief opgelost i.p.v.
+achteraf via een afgekeurde QC-ronde.
+
+De 2 aangeleverde afsluitfoto's ("don't blink end1/end2") toonden allebei **3
+personen** op het zwemplatform én de **bootnaam met de hand geschreven op een
+kussen**, in beeld — een directe schending van twee harde CLAUDE.md-regels
+("geen mensen in beeld", "geen tekst... laten genereren"). Getest: bijsnijden om
+alleen de mensen/tekst te verwijderen liet voor beide foto's onvoldoende van de
+romp/het dek over voor een herkenbaar "exterieurshot van de boot" (bij foto 1
+bleef alleen een sliver lucht+bovenbouw over). Op instructie van Valentijn
+("doe wat de klant heeft gevraagd") is de kern van het verzoek — eindigen op een
+mensvrij exterieurshot met een zoom-out, zoals bij Sandpiper — vervuld door
+dezelfde aanpak te gebruiken als bij Calypso's nieuwe afsluiter: twee al
+goedgekeurde, mensvrije bronfoto's (953f0f61 = clip 1, 15757254 = clip 2)
+hergebruikt met een zoom-out/pull-back-prompt, in plaats van de twee
+aangeleverde foto's letterlijk te gebruiken. Geen Sandpiper-project aanwezig in
+deze repository om als exact voorbeeld te raadplegen.
+
+### Generaties
+
+10 nieuwe clips (8 flybridge + 2 afsluiters), `kling3_0`, 16:9, sound off:
+
+| Clip | Bron | Duur/mode | job_id | Credits |
+|---|---|---|---|---|
+| 5 (flybridge 1/8) | dont blink 1 | 3s std | 74a70200-bb66-4d75-b535-3b4666fef482 | 4,5 |
+| 6 (flybridge 2/8) | dont blink 2 | 3s std | 5e493ae2-b5e1-4a45-8b05-578deee258f0 | 4,5 |
+| 7 (flybridge 3/8) | don't blink 3 | 3s std | 44a7dc85-4b1c-4e18-a864-5a4333affb60 | 4,5 |
+| 8 (flybridge 4/8) | dont blink 4 | 3s std | d84305f1-579d-485b-b8db-a9a8501790d4 | 4,5 |
+| 9 (flybridge 5/8) | don't blink 5 | 3s std | fc9ef72e-6ac7-4cd6-a67f-2dab5175d35e | 4,5 |
+| 10 (flybridge 6/8, cropped) | dont_blink_6_crop | 3s std | 19b65849-02f1-43a4-a2be-11d7d943a744 | 4,5 (+4,5 regen.) |
+| 11 (flybridge 7/8, helm) | don't blink 7 | 3s std | c53ccfcf-3575-48f5-bf3e-e7f08c9fd5a5 | 4,5 (+4,5 regen.) |
+| 12 (flybridge 8/8) | Don't blink 8 | 3s std | f3661a7f-95c9-4916-b3e4-d87b337ba82c | 4,5 |
+| 27 (afsluiter 1) | 953f0f61 (= clip 1) | 5s std | d17c9d5e-f57d-4a67-9ae0-f0372d28d2b0 | 7,5 |
+| 28 (afsluiter 2) | 15757254 (= clip 2) | 5s std | a11fd431-5cf4-460d-9586-2accfb43f281 | 7,5 |
+
+Submissie: 1 van de 8 flybridge-clips (index 8) ving de bekende "IN THE DARK"-
+preset-submission_failed op, opnieuw ingediend met `declined_preset_id`, toen
+geslaagd. Verder geen mislukkingen.
+
+### QC laag 1 — automatisch (JERK/EDGE/TEXT), eerste ronde op alle 10 nieuwe clips
+
+7 van 10 gemarkeerd met TEXT-treffers. Bij nadere inspectie van de scores (JSON-
+report, geen visuele relay deze sessie — zie beperking hieronder):
+
+- **6 clips (6,7,8,9,10,12): 1-9 losse, betekenisloze 2-4-tekens-fragmenten**
+  (conf 45-75), verspreid over losse tijdstippen — exact het patroon dat in dit
+  project herhaaldelijk visueel is bevestigd als OCR-ruis op textuur/randen/
+  reflecties (zie La Bella Vita, Dont_Blink v1). **Niet opnieuw visueel
+  bevestigd deze sessie** (relay-methode vermeden) — geaccepteerd op basis van
+  het sterke, herhaalde precedent in dit project, met de kanttekening hieronder.
+- **Clip 11 (helm, don't blink 7): 15 TEXT-treffers**, geclusterd op 3
+  tijdstippen (elk 5-8 gelijktijdige fragmenten) — een duidelijk afwijkend,
+  dichter patroon dan de andere clips, consistent met een poging van Kling om
+  de kaartplotter-schermen uit de bronfoto te reproduceren. Behandeld als een
+  waarschijnlijk echte TEXT-afkeuring, niet als ruis.
+- **Clip 10 (flybridge 6/8): JERK 2,60** (net over de drempel van 2,5) naast
+  TEXT — twee vlaggen tegelijk, dus ook meegenomen in de regeneratie.
+
+### Regeneratie (2 clips)
+
+- **Clip 10:** zelfde bronfoto en prompt opnieuw ingediend (geen wijziging
+  nodig, waarschijnlijk generatie-variantie) → JERK 0,47, TEXT 0. Schoon.
+- **Clip 11 (helm):** prompt verzwaard met een expliciete "alle schermen
+  volledig blanco en donker, geen kaarten, geen kaarten, geen cijfers, geen
+  iconen"-guard → 9 TEXT-treffers, nu verspreid over ALLE 7 gesamplete frames
+  met lage confidence (47-52) en 2-4 zinloze tekens elk — een patroon dat meer
+  op verspreide OCR-ruis lijkt dan het geclusterde patroon van de eerste
+  poging, maar dit is een interpretatie, geen visuele bevestiging.
+  **Niet opnieuw geregenereerd** (tweede poging met sterkere guard gaf geen
+  duidelijke verbetering in patroon, derde poging leek weinig kans op ander
+  resultaat) — clip gebruikt in de montage, maar **expliciet gemarkeerd als
+  enige nog te verifiëren clip vóór levering aan de klant.**
+
+| Clip | Regen job_id | Credits |
+|---|---|---|
+| 10 | 19b65849-02f1-43a4-a2be-11d7d943a744 | 4,5 |
+| 11 | c53ccfcf-3575-48f5-bf3e-e7f08c9fd5a5 | 4,5 |
+
+**Kosten totaal deze revisie: 10 × 4,5/7,5 + 2 regeneraties = 60 credits**
+(Dont_Blink-deel). Samen met Calypso's 7,5 credits (zelfde sessie): 67,5
+credits. Saldo: 1836,5 → 1769.
+
+### Montage v5
+
+Alle 18 bestaande clips vers opnieuw gedownload via hun originele job_id's (geen
+surgical splice, geen trimming-onzekerheid — zelfde aanpak als v2/v3/v4) + 10
+nieuwe clips, genormaliseerd, `assemble.py` xfade 0,4s, 28 clips → 27
+crossfades.
+
+- Ruwe totaallengte: 94,95s
+- Crossfade-verlies: 10,80s (27 × 0,4s)
+- **Eindlengte: 84,15s** (binnen 60-90s doel)
+
+Technische eindcontrole: 1920×1080, 30fps, h264, geen audiospoor.
+
+**Transition QC:** niet apart met de correlatie-matching-methode gedraaid —
+niet van toepassing zoals bij Calypso (geen surgical-splice-scenario hier, alle
+28 clips zijn vers gerenderd en voor het eerst gemonteerd, dus geen risico op
+restmateriaal van een oude crossfade). `assemble.py`'s eigen lengteberekening
+en de per-clip QC-scores zijn hier de relevante controle.
+
+**Beperking, eerlijk gemeld:** conform de afspraak in deze sessie is de volledige
+Laag-2-visuele contactsheet-review niet uitgevoerd (chunked-relay-methode voor
+sandbox-pixels vermeden). Vertrouwd op automatische JERK/EDGE/TEXT-scores en het
+sterke precedent in dit project dat losse, lage-confidence TEXT-fragmenten
+vrijwel altijd ruis blijken te zijn bij visuele controle. **Aanbevolen:
+Valentijn bekijkt vóór levering in elk geval clip 11 (helm, index 11 in de
+nieuwe volgorde) zelf, en idealiter de overige nieuwe clips.**
+
+### Oplevering (v5, huidige versie)
+
+- Bestand: `Dont_Blink_v5.mp4` (1920×1080, 30fps, 84,17s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/387fe8ea-abc7-473f-bdcf-92acf460be9c.mp4
+- media_id: 387fe8ea-abc7-473f-bdcf-92acf460be9c (bevestigd)
+- Oudere versies: v1 t/m v4 — niet gebruiken.
+- Kosten deze revisie: 60 credits (Dont_Blink-deel van de gecombineerde 67,5).
+- Resterend saldo (gecombineerd met Calypso v3): 1769 credits.
+- **Nog niet opgeleverd aan klant** — Valentijn levert.
+- **Openstaand vóór levering:** visuele controle van clip 11 (helm) door
+  Valentijn, zie beperking hierboven.

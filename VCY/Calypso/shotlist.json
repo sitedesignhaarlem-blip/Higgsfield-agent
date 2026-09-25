@@ -1,7 +1,7 @@
 {
   "yacht": "Calypso",
   "aspect_ratio": "16:9",
-  "target_length_sec": 70,
+  "target_length_sec": 72,
   "clips": [
     {
       "index": 1,
@@ -107,32 +107,33 @@
     },
     {
       "index": 11,
-      "category": "Bow",
-      "start_image": "photos/247738435_177508617925518_3069444985601529653_n.jpg",
-      "end_image": null,
-      "duration": 3,
-      "mode": "std",
-      "prompt": "Forward glide across the bow sunpad toward the marina, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
-    },
-    {
-      "index": 12,
-      "category": "Aft deck",
-      "start_image": "photos/256452891_175431401468665_2141805555552657939_n.jpg",
-      "end_image": null,
-      "duration": 3,
-      "mode": "std",
-      "prompt": "Gentle slow pan across the aft deck wet bar and grill station, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, stainless steel fixtures and teak counter, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional boats in the background, stable geometry, no morphing or warping of cabinetry edges",
-      "note": "was clip 10 in v1"
-    },
-    {
-      "index": 13,
       "category": "Aft deck",
       "start_image": "photos/256510778_364066742133889_1594569518277453090_n.jpg",
       "end_image": null,
       "duration": 3,
       "mode": "std",
       "prompt": "Gentle slow pan across the aft deck toward the spiral stairway leading up to the flybridge, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, teak decking, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings or stairway edges",
-      "note": "was clip 11 in v1"
+      "note": "v3 (klantverzoek 25-09-2026): verplaatst van index 13 (v2) naar index 11 - klant herkende dit als een losstaand 'flybridge'-shot dat uit de volgorde lag en vroeg dit direct na de flybridge/exterieur-reeks te zetten. Reorder via surgical splice uit de v2-render (correlatie-matching tegen de bronfoto's ter bevestiging, geen visuele frame-relay uitgevoerd - zie log.md)."
+    },
+    {
+      "index": 12,
+      "category": "Bow",
+      "start_image": "photos/247738435_177508617925518_3069444985601529653_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Forward glide across the bow sunpad toward the marina, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "v3 (klantverzoek 25-09-2026): verplaatst van index 11 (v2) naar index 12, ongewijzigde content"
+    },
+    {
+      "index": 13,
+      "category": "Aft deck",
+      "start_image": "photos/256452891_175431401468665_2141805555552657939_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle slow pan across the aft deck wet bar and grill station, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, stainless steel fixtures and teak counter, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional boats in the background, stable geometry, no morphing or warping of cabinetry edges",
+      "note": "was clip 10 in v1, index 12 in v2. v3 (klantverzoek 25-09-2026): verplaatst naar index 13, ongewijzigde content ('aft deck seat')"
     },
     {
       "index": 14,
@@ -252,6 +253,18 @@
       "duration": 3,
       "mode": "std",
       "prompt": "Slow interior reveal of the guest berth, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp navy and white linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames"
+    },
+    {
+      "index": 27,
+      "category": "Exterior",
+      "start_image": "photos/256552988_610293460019884_1181816969588462487_n.jpg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Slow cinematic pull-back revealing the full profile of a luxury motor yacht at anchor, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, calm turquoise water, soft daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boat name, no vessel name painted on the hull, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "v3 (klantverzoek 25-09-2026): nieuwe afsluitende clip, zoom-out/pull-back op dezelfde bronfoto als de v1-openingsshot (256552988, nu ook clip 6), zoals gevraagd ('zooming out on Calypso, like you did on Sandpiper'). Geen nieuwe upload nodig - bestaande media_id hergebruikt.",
+      "job_id": "c3dba28b-483d-4710-9a38-3d7ad564e0a5",
+      "media_id": "5d1f14f7-9a95-4b40-af5d-6efcbf1ad4b8"
     }
   ]
 }
