@@ -102,3 +102,64 @@ Galley → Cabin A → B → C → D.
 - media_id: b552d088-b514-49b2-aafd-fbcc59acbca6 (bevestigd)
 - **Nog niet opgeleverd aan klant** — Valentijn levert, per de vaste regel in CLAUDE.md.
 - Resterend saldo (na beide jachten): 1845,5 credits.
+
+---
+
+## Revisie v2 (26-09-2026) — verzonnen wijnglas + nieuwe afsluiter
+
+**Melding Valentijn (namens de klant):** "Blue Gypsea looks good but in the last frame there
+is what looks to be a wine glass sitting on the bed? I know that wasn't in my photo, could
+you take that out? Then could you add one of the same exterior photos from the beginning at
+the end as well, like you did for Sandpiper?"
+
+**Diagnose:** de video heeft geen reorder-ambiguïteit — "laatste frame" wijst ondubbelzinnig
+naar clip 17 (Cabin D bed, de laatste clip in de shotlist, single-image zonder bath-shot).
+Geen tijdlijnberekening nodig.
+
+**Fix clip 17:** geregenereerd met dezelfde bronfoto en een verzwaarde prompt
+("no additional objects on the bed, no glasses, no bottles, no drinkware, no floating or
+invented items"). QC laag 1: JERK 0,64 / EDGE 0,073 / TEXT 0 — schoon. Geen Laag-2-visuele
+bevestiging deze sessie (relay-methode vermeden, zie onderstaande kanttekening) — de
+prompt-guard pakt het gemelde probleem direct aan, maar is niet met eigen ogen herbevestigd.
+
+**Nieuwe clip 18 (afsluiter):** zoom-out/pull-back op de openingsfoto (image17, ook clip 1),
+zoals gevraagd. Eerste poging: 11 TEXT-treffers (losse ruis-fragmenten op meerdere
+tijdstippen, waarschijnlijk OCR op achtergronddetail dat door de bredere zoom-out-framing
+in beeld kwam). Prompt verzwaard (expliciete no-signage/no-markings-in-background-guard) en
+opnieuw gegenereerd: 2 lage-confidence fragmenten (conf 53-84, 2-3 tekens) — binnen het
+normale ruispatroon, geaccepteerd.
+
+**Generaties:**
+
+| Clip | Bron | Duur/mode | job_id | Credits |
+|---|---|---|---|---|
+| 17 (Cabin D bed, regen.) | blue gypsea cabin d1.jpg | 3s std | 52908298-3521-491e-b4e0-2726598f9de5 | 4,5 |
+| 18 (afsluiter, poging 1, afgekeurd) | image17.jpeg | 5s std | f5b708ca-72a5-4e69-bd15-fd611763d4e2 | 7,5 |
+| 18 (afsluiter, poging 2, gebruikt) | image17.jpeg | 5s std | 03f633f3-9e26-4a14-b452-4bd3033190eb | 7,5 |
+
+**Kosten deze revisie:** 4,5 + 7,5 + 7,5 = 19,5 credits (Blue Gypsea-deel; zie La Bella
+Vita/log.md voor de gecombineerde sessietotaal). Saldo na deze fix + La Bella Vita's fix
+samen: 1769 → 1715.
+
+**Montage v2:** alle 17 originele clips vers gedownload via hun job_id's (geen surgical
+splice), clip 17 vervangen door de regeneratie, clip 18 toegevoegd. `assemble.py`, xfade
+0,4s, 18 clips → 17 crossfades.
+
+- Ruwe totaallengte: 62,61s
+- Crossfade-verlies: 6,80s (17 × 0,4s)
+- **Eindlengte: 55,81s** — onder de gebruikelijke 60-90s, zoals bij v1 al besproken en
+  geaccepteerd (beperkt bronmateriaal voor dit jacht).
+
+Technische eindcontrole: 1920×1080, 30fps, h264, geen audiospoor.
+
+**Beperking, eerlijk gemeld:** conform de afspraak deze sessie is de volledige Laag-2-
+visuele contactsheet-review niet uitgevoerd (chunked-relay-methode voor sandbox-pixels
+vermeden). Beide gewijzigde clips (17 en 18) zijn alleen automatisch gecontroleerd.
+**Aanbevolen: Valentijn bekijkt vóór levering in elk geval clip 17 (bevestigen dat het
+wijnglas weg is) en de nieuwe afsluitclip 18.**
+
+## Oplevering (v2, huidige versie)
+- Bestand: `Blue_Gypsea_v2.mp4` (1920×1080, 30fps, 55,81s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/3319e13a-58e6-44a9-a455-51661d225c0e.mp4
+- media_id: 3319e13a-58e6-44a9-a455-51661d225c0e (bevestigd)
+- **Nog niet opgeleverd aan klant** — Valentijn levert.

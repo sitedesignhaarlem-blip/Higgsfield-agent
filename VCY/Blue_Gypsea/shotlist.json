@@ -1,7 +1,7 @@
 {
   "yacht": "Blue Gypsea",
   "aspect_ratio": "16:9",
-  "target_length_sec": 55,
+  "target_length_sec": 56,
   "clips": [
     {
       "index": 1,
@@ -156,8 +156,22 @@
       "end_image": null,
       "duration": 3,
       "mode": "std",
-      "prompt": "Slow interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
-      "note": "geen en-suite badkamerfoto aangeleverd voor Cabin D — single-image, geen tweede clip"
+      "prompt": "Slow interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens exactly as shown, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional objects on the bed, no glasses, no bottles, no drinkware, no floating or invented items, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
+      "note": "v2 (klantverzoek 26-09-2026): geregenereerd — klant meldde een verzonnen wijnglas op het bed in het laatste frame (de bronfoto toont dat niet). Prompt verzwaard met een expliciete no-objects-on-bed-guard. Geen en-suite badkamerfoto aangeleverd voor Cabin D — single-image, geen tweede clip.",
+      "job_id": "52908298-3521-491e-b4e0-2726598f9de5",
+      "media_id": "12bdad63-2ea4-42ef-86a6-3d86f1414613"
+    },
+    {
+      "index": 18,
+      "category": "Exterior",
+      "start_image": "photos/image17.jpeg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Slow cinematic pull-back revealing the full profile of a luxury catamaran at anchor, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, glassy turquoise water near a beach anchorage, distant hills and shoreline kept soft and out of sharp focus, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boat name, no vessel name painted on the hull, no signage, no markings on any building, dock or vessel in the background, no readable text of any kind anywhere in frame, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "v2 (klantverzoek 26-09-2026): nieuwe afsluitende clip, zoom-out/pull-back op dezelfde bronfoto als de openingsshot (image17, ook clip 1), zoals gevraagd ('like you did for Sandpiper'). Eerste poging gaf 11 TEXT-treffers (losse ruis-fragmenten), tweede poging met verzwaarde no-text-guard gaf 2 lage-confidence fragmenten — geaccepteerd.",
+      "job_id": "03f633f3-9e26-4a14-b452-4bd3033190eb",
+      "media_id": "d075f366-8508-4bd5-ba82-49d10d26ce21"
     }
   ]
 }

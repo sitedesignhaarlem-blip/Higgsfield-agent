@@ -1,7 +1,7 @@
 {
   "yacht": "La Bella Vita",
   "aspect_ratio": "16:9",
-  "target_length_sec": 58,
+  "target_length_sec": 77,
   "clips": [
     {
       "index": 1,
@@ -43,41 +43,43 @@
     },
     {
       "index": 5,
+      "category": "Helm",
+      "start_image": "photos/431859910_876130247857363_5257580489891330064_n-1280x950.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Push-in toward the helm station, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, navigation instruments and wheel, marina view beyond, soft daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable screens or displays, stable geometry, no morphing or warping of instrument panels or window frames",
+      "note": "v3 (klantverzoek 26-09-2026): verplaatst van index 8 (v2) naar index 5, direct na de brede flybridge-opname ('after second 16 insert the photo of the flybridge helm'), ongewijzigde content"
+    },
+    {
+      "index": 6,
       "category": "Flybridge",
       "start_image": "photos/431866632_344767475237569_1114690973904015689_n-1280x950.jpeg",
       "end_image": null,
       "duration": 3,
       "mode": "std",
       "prompt": "Smooth, moderately-paced camera movement along a single clear axis, gimbal-stabilized, locked horizon, confident and continuous motion, no hesitation or drift, flybridge lounge seating, marina view beyond, natural daylight, photorealistic, no people, no text, no lettering, no logos, absolutely stable geometry, no morphing, no warping, no deformation of any straight lines or edges",
-      "note": "gecorrigeerd 24-09-2026: was een start+end-paar met foto 431954242, veroorzaakte een vervorming rond sec 16-17 in v1 (twee te verschillende hoeken van dezelfde lounge). Opgesplitst in twee losse single-image clips (deze + index 6)."
+      "note": "gecorrigeerd 24-09-2026 (zie oude v1->v2 fix). v3 (klantverzoek 26-09-2026): verplaatst van index 5 (v2) naar index 6, ongewijzigde content"
     },
     {
-      "index": 6,
+      "index": 7,
       "category": "Flybridge",
       "start_image": "photos/431954242_790425182617288_2060398115097196365_n-1280x950.jpeg",
       "end_image": null,
       "duration": 3,
       "mode": "std",
       "prompt": "Smooth, moderately-paced camera movement along a single clear axis, gimbal-stabilized, locked horizon, confident and continuous motion, no hesitation or drift, flybridge lounge seating, marina view beyond, natural daylight, photorealistic, no people, no text, no lettering, no logos, absolutely stable geometry, no morphing, no warping, no deformation of any straight lines or edges",
-      "note": "gecorrigeerd 24-09-2026: zie note bij index 5 — tweede helft van het gesplitste paar"
+      "note": "gecorrigeerd 24-09-2026 (zie oude v1->v2 fix). v3 (klantverzoek 26-09-2026): verplaatst van index 6 (v2) naar index 7, ongewijzigde content"
     },
     {
-      "index": 7,
+      "index": 8,
       "category": "Flybridge",
       "start_image": "photos/431777286_2129208264105999_8654403080595403626_n-1280x950.jpeg",
       "end_image": null,
       "duration": 3,
       "mode": "std",
-      "prompt": "Gentle slow pan across the flybridge dining table, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marina view beyond, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings"
-    },
-    {
-      "index": 8,
-      "category": "Helm",
-      "start_image": "photos/431859910_876130247857363_5257580489891330064_n-1280x950.jpeg",
-      "end_image": null,
-      "duration": 3,
-      "mode": "std",
-      "prompt": "Push-in toward the helm station, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, navigation instruments and wheel, marina view beyond, soft daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable screens or displays, stable geometry, no morphing or warping of instrument panels or window frames"
+      "prompt": "Gentle slow pan across the flybridge dining table, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marina view beyond, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings",
+      "note": "v3 (klantverzoek 26-09-2026): verplaatst van index 7 (v2) naar index 8, ongewijzigde content"
     },
     {
       "index": 9,
@@ -86,7 +88,8 @@
       "end_image": null,
       "duration": 3,
       "mode": "std",
-      "prompt": "Forward glide across the bow toward the horizon, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open sea ahead, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+      "prompt": "Forward glide across the bow toward the horizon, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open sea ahead, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "positie ongewijzigd (was ook index 9 in v2)"
     },
     {
       "index": 10,
@@ -95,7 +98,10 @@
       "end_image": null,
       "duration": 3,
       "mode": "std",
-      "prompt": "Gentle slow pan across the aft deck dining table, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, teak decking, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings or furniture edges"
+      "prompt": "Gentle slow pan across the aft deck dining table, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, teak decking, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no branded products, no drinkware, no tumblers, no coolers, no additional objects not present in the original scene, stable geometry, no morphing or warping of railings or furniture edges",
+      "note": "v3 (klantverzoek 26-09-2026): geregenereerd — klant meldde een verzonnen 'YETI'-merk op twee plekken op het achterdek. Prompt verzwaard met een expliciete no-branded-drinkware-guard. Positie ongewijzigd (was ook index 10 in v2).",
+      "job_id": "8b207823-a7c6-42f1-b7bd-7304b173968e",
+      "media_id": "d65f1e38-dd35-417c-9dde-658e78ca88b4"
     },
     {
       "index": 11,
@@ -196,7 +202,70 @@
       "end_image": null,
       "duration": 3,
       "mode": "std",
-      "prompt": "Push-in into the ensuite bathroom, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marble surfaces and polished fixtures, soft light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera, stable geometry, no morphing or warping of mirror frames or fixtures"
+      "prompt": "Push-in into the ensuite bathroom, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marble surfaces and polished fixtures exactly as shown, soft light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional fixtures, no extra sink, no towel rack, no objects not present in the original photo, no mirror reflections of a camera, stable geometry, no morphing or warping of mirror frames or fixtures",
+      "note": "v3 (klantverzoek 26-09-2026): geregenereerd — klant meldde een verzonnen handdoekrek aan de muur en een marmeren wastafel rechts die niet bij deze badkamer horen. Prompt verzwaard met een expliciete no-extra-fixtures-guard. Positie ongewijzigd (was ook index 21 in v2).",
+      "job_id": "a75711c0-0ad6-49c3-842d-840c93564efc",
+      "media_id": "ed8cc816-d8b2-48d6-9c2f-3ade24d148be"
+    },
+    {
+      "index": 22,
+      "category": "Cabin E",
+      "start_image": "photos/bella1.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow reveal of the open deck hatch leading down to the guest cabin below, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marina beyond, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no readable website address, no boat names, no legible text of any kind, stable geometry, no morphing or warping of hatch frames or railings",
+      "note": "v3 (klantverzoek 26-09-2026): nieuw, 5e hut (Cabin E) toegevoegd — eerder in de inventarisatie bewust overgeslagen (foto's te dubbelzinnig), klant leverde nu 4 duidelijke foto's aan in genummerde volgorde. Bronfoto toont een leesbare 'www.VirginCharterYachts.com'-tekst op het luikglas en de naam 'Aquila' van een buurschip — expliciete no-text/no-website/no-boat-name guard toegevoegd.",
+      "job_id": "083ed2f4-17d7-4209-b482-2d24a14fc1ec",
+      "media_id": "394c624b-6b01-4121-b931-a9b7dd2f9595"
+    },
+    {
+      "index": 23,
+      "category": "Cabin E",
+      "start_image": "photos/bella2.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Smooth glide down through the open hatch into the cabin below, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, teak stairs, warm light from below, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of hatch frames or stairway edges",
+      "note": "v3 (klantverzoek 26-09-2026): nieuw, 2 van 4 Cabin E-foto's",
+      "job_id": "de281c34-ea8b-480d-9f07-8aaa24e10941",
+      "media_id": "de2d482e-a0ed-4e51-915f-8e47da6f5530"
+    },
+    {
+      "index": 24,
+      "category": "Cabin E",
+      "start_image": "photos/bella3.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
+      "note": "v3 (klantverzoek 26-09-2026): nieuw, 3 van 4 Cabin E-foto's",
+      "job_id": "e00dd68e-8246-4bbf-a073-2b6476b30155",
+      "media_id": "ab7f1e4c-c610-44e6-8a92-4e49793b993c"
+    },
+    {
+      "index": 25,
+      "category": "Cabin E",
+      "start_image": "photos/bella4.jpeg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Push-in into the ensuite bathroom, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marble surfaces and polished fixtures, soft light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera, stable geometry, no morphing or warping of mirror frames or fixtures",
+      "note": "v3 (klantverzoek 26-09-2026): nieuw, 4 van 4 Cabin E-foto's",
+      "job_id": "27dc82f6-3011-4893-9db3-ed19d9f76bad",
+      "media_id": "3a2393f0-9080-47fa-b90b-5b53976b25f9"
+    },
+    {
+      "index": 26,
+      "category": "Exterior",
+      "start_image": "photos/08175e36-9de9-4364-8953-203aa3ae8435.jpeg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Slow cinematic pull-back revealing the full profile of a luxury catamaran at anchor, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, glassy turquoise water near a beach anchorage, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boat name, no vessel name painted on the hull, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "v3 (klantverzoek 26-09-2026): nieuwe afsluitende clip, zoom-out/pull-back op dezelfde bronfoto als de openingsshot (08175e36, ook clip 1), zoals gevraagd ('one of the aerial photos at the end like at the beginning, like on Sandpiper'). Geen nieuwe upload nodig.",
+      "job_id": "44db2a51-890f-4665-b55c-258f2224ff13",
+      "media_id": "052bd965-8368-404f-9077-669358d12d20"
     }
   ]
 }
