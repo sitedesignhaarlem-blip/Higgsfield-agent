@@ -300,3 +300,22 @@ Cabin E-clips (22-25) en de afsluiter (26).**
 - media_id: 417ce24a-ccf6-4246-9e23-933f89fe6ea1 (bevestigd)
 - Kosten deze revisie: 34,5 credits. Saldo (gecombineerd met Blue Gypsea): 1715.
 - **Nog niet opgeleverd aan klant** — Valentijn levert.
+
+---
+
+## Experiment (28-09-2026): muziek onder de video — EENMALIG, geen beleidswijziging
+
+Zelfde verzoek/aanpak als bij Blue Gypsea (zie dat log.md voor de volledige toelichting
+over waarom dit een eenmalige proef is en geen wijziging van de vaste "geen audio"-regel
+uit CLAUDE.md §4). Zelfde track gebruikt voor herkenbaarheid binnen deze sessie:
+
+- **Track:** "Majestic" — Diego Nava (Mixkit Stock Music Free License, gratis commercieel
+  gebruik, geen naamsvermelding verplicht) — https://mixkit.co/free-stock-music/lounge/
+- Ingekort tot de videolengte (76,90s, dus vrijwel de volledige track van 1:49) met
+  fade-in (1,5s) en fade-out (2s), gemuxt met `-c:v copy` en AAC 192kbps audio.
+
+## Oplevering met muziek (proefversie)
+- Bestand: `La_Bella_Vita_v3_music.mp4` (1920×1080, 30fps, 76,90s, AAC audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/fa615ee5-8de0-4639-a729-565976a84ad9.mp4
+- media_id: fa615ee5-8de0-4639-a729-565976a84ad9 (bevestigd)
+- De stille versie (zonder muziek) hierboven blijft de "officiële" v3-oplevering.

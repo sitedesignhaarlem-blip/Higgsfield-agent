@@ -163,3 +163,30 @@ wijnglas weg is) en de nieuwe afsluitclip 18.**
 - URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/3319e13a-58e6-44a9-a455-51661d225c0e.mp4
 - media_id: 3319e13a-58e6-44a9-a455-51661d225c0e (bevestigd)
 - **Nog niet opgeleverd aan klant** — Valentijn levert.
+
+---
+
+## Experiment (28-09-2026): muziek onder de video — EENMALIG, geen beleidswijziging
+
+Op uitdrukkelijk verzoek van Valentijn ("kan je er een muziekje onder plakken? iets
+copyrights vrij misschien") is er **als eenmalige proef** een audiospoor toegevoegd.
+**Dit wijzigt de vaste "geen audio"-regel uit CLAUDE.md §4 niet** — dat blijft de
+standaard voor toekomstige jachten tenzij expliciet opnieuw gevraagd.
+
+Higgsfield's eigen audiogeneratie ondersteunt alleen spraak (text-to-speech), geen
+instrumentale muziek — de muziekmodellen die wel bestaan (sonilo_music) zijn uitsluitend
+voor de game-generatiepijplijn en mogen niet los gebruikt worden. In plaats daarvan is een
+track gehaald van Mixkit (mixkit.co), een bibliotheek met expliciet rechtenvrije stockmuziek
+(Mixkit Stock Music Free License: gratis commercieel gebruik, geen naamsvermelding
+verplicht; niet toegestaan voor cd/dvd/games/tv-radio-uitzending — een online marketingvideo
+valt hier ruim binnen).
+
+- **Track:** "Majestic" — Diego Nava (Mixkit, 1:49) — https://mixkit.co/free-stock-music/lounge/
+- Ingekort tot de videolengte (55,83s) met fade-in (1,5s) en fade-out (2s), gemuxt met
+  `-c:v copy` (beeld ongewijzigd) en AAC 192kbps audio.
+
+## Oplevering met muziek (proefversie)
+- Bestand: `Blue_Gypsea_v2_music.mp4` (1920×1080, 30fps, 55,83s, AAC audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/3b1ea6e9-6ad7-4188-89df-a040f49fcd74.mp4
+- media_id: 3b1ea6e9-6ad7-4188-89df-a040f49fcd74 (bevestigd)
+- De stille versie (zonder muziek) hierboven blijft de "officiële" v2-oplevering.
