@@ -1,0 +1,226 @@
+{
+  "yacht": "Sandpiper",
+  "aspect_ratio": "16:9",
+  "target_length_sec": 67,
+  "source": "virgincharteryachts.com/yachts/sandpiper (Alexia stuurt geen foto's meer aan; site is enige bron)",
+  "note_general": "Categorieen afgeleid uit de zelf-beschrijvende bestandsnamen op de VCY-site (enige van de 10 resterende boten met bruikbare namen). Cabin-lettering (A/B/C) kon NIET bevestigd worden: de 3 hutfoto's heten 'port-aft-cabin', 'port-cabin-foreward', 'stb-forward-cabin' zonder letter/nummer-conventie uit sectie 6. Daarom hier genummerd Cabin 1/2/3 i.p.v. A/B/C -- Alexia moet bevestigen welke hut welke is voor de definitieve oplevering. QC (29-09-2026): clip 1 (opener) kreeg TEXT-treffer 'LEOPARD' (bootmerk, waarschijnlijk zichtbaar op de romp in de bronfoto) -- opgelost met expliciete no-brandname-guard, job_id 6e8d0d6a-f6af-4a84-be9c-526d485d1911. Clip 7 (bow) faalde tweemaal op JERK ondanks reddingsprompt -- bronfoto vervangen door sandpiper-bow-seating7-1280x950.jpg (media_id 80b72bd1-166f-4695-b07f-c0ac0d825e6c), standaardprompt hersteld.",
+  "clips": [
+    {
+      "index": 1,
+      "category": "Exterior",
+      "start_image_media_id": "2835ee32-05f2-449c-9573-d026abe97834",
+      "start_image_source": "sandpiper-main2-1280x881.jpg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "pro",
+      "prompt": "Cinematic dolly forward along the hull of a luxury catamaran at anchor, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, calm turquoise water, soft daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boat name, no vessel name, no brand name, no model name, no 'LEOPARD' text, no badges or nameplates painted or mounted on the hull, no signage, no readable text of any kind anywhere in frame, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "openingsshot. QC: 3 pogingen, telkens een fragment van een naam (v1 onduidelijk, v2 'LEOPARD' conf80, v3 'Sand' conf90 -- vermoedelijk de eigen bootnaam/merk zichtbaar op de romp in de bronfoto, dus geen hallucinatie maar een getrouwe reproductie die de no-text-guard niet wegkrijgt). GEACCEPTEERD na 3e poging (job_id 6e8d0d6a-f6af-4a84-be9c-526d485d1911) i.p.v. verder door te regenereren -- gemeld aan Valentijn/Alexia, mogelijk zichtbare bootnaam in de openingsshot."
+    },
+    {
+      "index": 2,
+      "category": "Flybridge",
+      "start_image_media_id": "4e3aab0b-0076-4588-b6b5-0cb5fef7bf31",
+      "start_image_source": "sandpiper-bridge8-1280x950.jpg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Smooth walkthrough across the flybridge deck, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, teak decking and upholstered seating, open sky, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 3,
+      "category": "Flybridge",
+      "start_image_media_id": "2fe1ed1a-2caf-48ff-a90f-9f45978ff20d",
+      "start_image_source": "sandpiper-bridge-seating6-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle slow pan across the flybridge lounge seating, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marina or open water view beyond, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings"
+    },
+    {
+      "index": 4,
+      "category": "Flybridge",
+      "start_image_media_id": "a6f516aa-9cb7-4304-bfc0-5779477e94a5",
+      "start_image_source": "sandpiper-wetbar-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across the flybridge wet bar and seating area, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable labels, stable geometry, no morphing or warping of cabinetry edges"
+    },
+    {
+      "index": 5,
+      "category": "Helm",
+      "start_image_media_id": "5be4f0da-e269-4a11-8663-76d347af74a6",
+      "start_image_source": "sandpiper-helm2-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Push-in toward the helm station, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, navigation instruments and wheel, soft daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable screens or displays, stable geometry, no morphing or warping of instrument panels or window frames"
+    },
+    {
+      "index": 6,
+      "category": "Helm",
+      "start_image_media_id": "90b7ef6e-9f03-49f8-aae3-46dda3291b7c",
+      "start_image_source": "sandpiper-helm3-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across the helm station and adjacent seating, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, soft daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no readable screens or displays, stable geometry, no morphing or warping of instrument panels"
+    },
+    {
+      "index": 7,
+      "category": "Bow",
+      "start_image_media_id": "80b72bd1-166f-4695-b07f-c0ac0d825e6c",
+      "start_image_source": "sandpiper-bow-seating7-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Forward glide across the bow seating area toward the horizon, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open sea ahead, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "QC-fix: origineel (sandpiper-bow-seating, 5s) faalde tweemaal op JERK (0.84->3.59 na reddingsprompt) -- vervangen door andere bronfoto (bow-seating7) en duration verlaagd naar 3s, job_id ae8a54cd-7c14-448a-acf4-a4ff34d208f1"
+    },
+    {
+      "index": 8,
+      "category": "Bow",
+      "start_image_media_id": "f4fe591f-3c42-4451-b277-eb7a362aef12",
+      "start_image_source": "sandpiper-bow-seating2-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across the bow seating and cushioned loungers, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open sea, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings"
+    },
+    {
+      "index": 9,
+      "category": "Bow",
+      "start_image_media_id": "8bf5b455-3a4e-462b-9b94-a31af2185e8e",
+      "start_image_source": "sandpiper-bow-seating4-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across the bow seating area, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open sea, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings"
+    },
+    {
+      "index": 10,
+      "category": "Aft deck",
+      "start_image_media_id": "9f33f832-5a4e-4704-a4e2-c40d24674384",
+      "start_image_source": "sandpiper-aft-wide-rsz-1280x950.jpg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Smooth walkthrough of the aft deck lounge, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, dining table and cushioned seating under the overhang, warm natural light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, furniture edges or window frames"
+    },
+    {
+      "index": 11,
+      "category": "Aft deck",
+      "start_image_media_id": "7ad5a8db-ce62-4209-9fc0-dd12d0876b3c",
+      "start_image_source": "sandpiper-aft-dining-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across the aft deck dining area, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, warm natural light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges"
+    },
+    {
+      "index": 12,
+      "category": "Aft deck",
+      "start_image_media_id": "5f7e637e-5149-4d47-b769-dcf62454f251",
+      "start_image_source": "sandpiper-aft-port-seating-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across the aft deck lounge seating, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, warm natural light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional boats in the background, stable geometry, no morphing or warping of railings or furniture edges"
+    },
+    {
+      "index": 13,
+      "category": "Salon",
+      "start_image_media_id": "fa12fbd3-2a32-445b-a0cd-132e9f6c2d8a",
+      "start_image_source": "sandpiper-salon9-1280x950.jpg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Interior walkthrough through the main salon, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, polished joinery and soft furnishings, daylight through panoramic windows, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges or window frames"
+    },
+    {
+      "index": 14,
+      "category": "Salon",
+      "start_image_media_id": "a35e9e7f-eef8-482b-bf20-03257d3d07c1",
+      "start_image_source": "sandpiper-salon8-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow interior reveal of the salon lounge seating, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, daylight through panoramic windows, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges or window frames"
+    },
+    {
+      "index": 15,
+      "category": "Salon",
+      "start_image_media_id": "2862f720-8443-4775-bc45-0fd2ae6ff706",
+      "start_image_source": "sandpiper-salon1-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow interior reveal of the salon entrance and seating, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, daylight through panoramic windows, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges or window frames"
+    },
+    {
+      "index": 16,
+      "category": "Salon",
+      "start_image_media_id": "9d6154fb-4c48-49f7-aa09-9f74d85b43a5",
+      "start_image_source": "sandpiper-salon6-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across the salon seating and dining area, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, daylight through panoramic windows, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges or window frames"
+    },
+    {
+      "index": 17,
+      "category": "Cabin 1",
+      "start_image_media_id": "883fd94c-aa7d-433c-989d-4cb9e0060177",
+      "start_image_source": "sandpiper-port-aft-cabin-rsz-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
+      "note": "bestandsnaam 'port aft cabin' -- letter/positie in de hut-volgorde niet bevestigd"
+    },
+    {
+      "index": 18,
+      "category": "Cabin 2",
+      "start_image_media_id": "4dc9cfe1-2b14-43e0-bebc-0cf90b7b6e3f",
+      "start_image_source": "sandpiper-port-cabin-foreward-rsz-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
+      "note": "bestandsnaam 'port cabin foreward' -- letter/positie in de hut-volgorde niet bevestigd"
+    },
+    {
+      "index": 19,
+      "category": "Cabin 3",
+      "start_image_media_id": "57a48226-6408-484b-85de-10dbe5118fac",
+      "start_image_source": "sandpiper-stb-forward-cabin-rsz-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow interior reveal of the guest cabin, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, made bed with crisp linens, warm ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of furniture edges, bedding or window frames",
+      "note": "bestandsnaam 'stb forward cabin' -- letter/positie in de hut-volgorde niet bevestigd"
+    },
+    {
+      "index": 20,
+      "category": "Ensuite",
+      "start_image_media_id": "53657373-fc26-4048-8d49-993199ec3ac4",
+      "start_image_source": "leopard-51pc-head-1280x950.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Push-in into the ensuite bathroom, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, marble surfaces and polished fixtures, soft light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no mirror reflections of a camera, stable geometry, no morphing or warping of mirror frames or fixtures",
+      "note": "bestandsnaam 'leopard-51pc-head' -- welke hut dit bij hoort niet bevestigd"
+    },
+    {
+      "index": 21,
+      "category": "Exterior",
+      "start_image_media_id": "2835ee32-05f2-449c-9573-d026abe97834",
+      "start_image_source": "sandpiper-main2-1280x881.jpg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Slow cinematic pull-back revealing the full profile of a luxury catamaran at anchor, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, calm turquoise water, distant shoreline kept soft and out of sharp focus, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boat name, no vessel name painted on the hull, no signage, no readable text of any kind anywhere in frame, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "afsluitende zoom-out op dezelfde bronfoto als de openingsshot (clip 1), zelfde techniek als Blue Gypsea/La Bella Vita"
+    }
+  ]
+}
