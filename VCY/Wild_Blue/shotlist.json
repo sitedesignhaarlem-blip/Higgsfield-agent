@@ -1,0 +1,189 @@
+{
+  "yacht": "Wild Blue",
+  "aspect_ratio": "16:9",
+  "target_length_sec": 63,
+  "source": "virgincharteryachts.com/yachts/wild-blue",
+  "note_general": "BASELINE, GEEN ROOM-CATEGORIEEN BEVESTIGD. Zelfde methodologie als de vorige boten in deze batch (numerieke wide/detail-classificatie via blue_ratio/top_blue heuristiek, geen visuele inspectie mogelijk in deze sessie). 3 bestanden uit de bekende gedeelde cluster met Elysium/Southern Mist/Tidewater (19A8645, 19A8647-2, 19A8872_1) zijn uitgesloten -- dit zijn Wild Blue's EIGEN 'wildblue-N'-bestanden die eerder bij Elysium/Southern Mist als vreemd/gedeeld materiaal werden uitgesloten, dus hier terecht wel gebruikt. 1 layout-diagram (MY44-layout.png) uitgesloten. 1 extra bestand (19A8895) is uit voorzorg NIET gebruikt: exact dezelfde top_blue-score en resolutie als een foto die ook in Tidewater's gallery voorkwam, wat duidt op eenzelfde gedeeld/generiek bestand -- niet met zekerheid te bevestigen zonder visuele inspectie, dus veiligheidshalve overgeslagen. Klip-volgorde = site-gallery volgorde, GEEN bevestigde kamer-volgorde. Alexia moet dit reviewen voor definitieve oplevering.",
+  "clips": [
+    {
+      "index": 1,
+      "category": "Exterior (opener, wide)",
+      "start_image_media_id": "2468d136-cc64-49fc-869d-73a2f97fd5af",
+      "start_image_source": "wildblue-12-1-1280x800.jpg",
+      "duration": 5,
+      "mode": "pro",
+      "prompt": "Cinematic dolly forward along the hull of a luxury motor yacht at anchor, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, calm water, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boat name, no vessel name painted on the hull, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "openingsshot, geclassificeerd als 'wide' (top_blue 1.0, hoogste score)."
+    },
+    {
+      "index": 2,
+      "category": "Exterior (wide, ongecategoriseerd)",
+      "start_image_media_id": "9940e81a-ae61-4a28-8698-7f83ee7b1445",
+      "start_image_source": "19A9039-1280x950.jpg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle slow pan across the exterior deck of a luxury motor yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open water and sky, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "geclassificeerd als 'wide' (top_blue 0.999)."
+    },
+    {
+      "index": 3,
+      "category": "Exterior (wide, ongecategoriseerd)",
+      "start_image_media_id": "45dbcbb6-e469-4efe-8332-44ea45b92604",
+      "start_image_source": "19A9031_1-1280x950.jpg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle slow pan across the exterior deck of a luxury motor yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open water and sky, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "geclassificeerd als 'wide' (top_blue 0.852)."
+    },
+    {
+      "index": 4,
+      "category": "Exterior (wide, ongecategoriseerd)",
+      "start_image_media_id": "beacba58-cff2-4b3a-92f4-3771ccfb5d5b",
+      "start_image_source": "wildblue-4-1-1280x800.jpg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle slow pan across the exterior deck of a luxury motor yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open water and sky, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "geclassificeerd als 'wide' (top_blue 0.77)."
+    },
+    {
+      "index": 5,
+      "category": "Detail (ongecategoriseerd)",
+      "start_image_media_id": "a9ffcd70-9e34-426b-9936-810a9d804ba9",
+      "start_image_source": "19A8630-1280x950.jpg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Slow interior reveal aboard a luxury charter yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, natural ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional furniture, no invented objects, no boats in the background, no animals, stable geometry, no morphing or warping of edges, furniture or window frames",
+      "note": "geclassificeerd als 'detail' (top_blue 0.0)."
+    },
+    {
+      "index": 6,
+      "category": "Detail (ongecategoriseerd)",
+      "start_image_media_id": "b757b00c-433e-4d73-8f80-a2e086d93e19",
+      "start_image_source": "19A8631-1-1280x950.jpg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across an interior or covered deck space aboard a luxury charter yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, natural ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional furniture, no invented objects, no boats in the background, no animals, stable geometry, no morphing or warping of edges, furniture or window frames",
+      "note": "geclassificeerd als 'detail' (top_blue 0.0)."
+    },
+    {
+      "index": 7,
+      "category": "Detail (ongecategoriseerd)",
+      "start_image_media_id": "51a2f2f7-f822-4111-9589-cbca48796259",
+      "start_image_source": "19A8650-1280x932.jpg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Slow interior reveal aboard a luxury charter yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, natural ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional furniture, no invented objects, no boats in the background, no animals, stable geometry, no morphing or warping of edges, furniture or window frames",
+      "note": "geclassificeerd als 'detail' (top_blue 0.002)."
+    },
+    {
+      "index": 8,
+      "category": "Detail (ongecategoriseerd)",
+      "start_image_media_id": "fff09474-9530-4344-8f6d-35f9c2b78c1f",
+      "start_image_source": "19A8704-1280x822.jpg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across an interior or covered deck space aboard a luxury charter yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, natural ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional furniture, no invented objects, no boats in the background, no animals, stable geometry, no morphing or warping of edges, furniture or window frames",
+      "note": "geclassificeerd als 'detail' (top_blue 0.0)."
+    },
+    {
+      "index": 9,
+      "category": "Detail (ongecategoriseerd)",
+      "start_image_media_id": "0063f7a8-2be9-41c3-81ba-03c9030e2b2f",
+      "start_image_source": "19A8720-1280x836.jpg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Slow interior reveal aboard a luxury charter yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, natural ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional furniture, no invented objects, no boats in the background, no animals, stable geometry, no morphing or warping of edges, furniture or window frames",
+      "note": "geclassificeerd als 'detail' (top_blue 0.002)."
+    },
+    {
+      "index": 10,
+      "category": "Detail (ongecategoriseerd)",
+      "start_image_media_id": "88d16f57-d6f5-4dd2-90cc-ec8ca9549e2f",
+      "start_image_source": "19A8758_1-1280x921.jpg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across an interior or covered deck space aboard a luxury charter yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, natural ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional furniture, no invented objects, no boats in the background, no animals, stable geometry, no morphing or warping of edges, furniture or window frames",
+      "note": "geclassificeerd als 'detail' (top_blue 0.0)."
+    },
+    {
+      "index": 11,
+      "category": "Detail (ongecategoriseerd)",
+      "start_image_media_id": "48e242b2-be56-45e6-988b-0cffc3fc185c",
+      "start_image_source": "19A8762_1-1280x916.jpg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Slow interior reveal aboard a luxury charter yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, natural ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional furniture, no invented objects, no boats in the background, no animals, stable geometry, no morphing or warping of edges, furniture or window frames",
+      "note": "geclassificeerd als 'detail' (top_blue 0.0)."
+    },
+    {
+      "index": 12,
+      "category": "Detail (ongecategoriseerd)",
+      "start_image_media_id": "bde616dd-b75e-4b79-aeac-f00e91f2d425",
+      "start_image_source": "19A8776_1-1280x950.jpg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across an interior or covered deck space aboard a luxury charter yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, natural ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional furniture, no invented objects, no boats in the background, no animals, stable geometry, no morphing or warping of edges, furniture or window frames",
+      "note": "geclassificeerd als 'detail' (top_blue 0.027)."
+    },
+    {
+      "index": 13,
+      "category": "Detail (ongecategoriseerd)",
+      "start_image_media_id": "ed8a91b8-5a05-445d-9b6d-280c439460eb",
+      "start_image_source": "19A8798-1280x950.jpg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Slow interior reveal aboard a luxury charter yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, natural ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional furniture, no invented objects, no boats in the background, no animals, stable geometry, no morphing or warping of edges, furniture or window frames",
+      "note": "geclassificeerd als 'detail' (top_blue 0.0)."
+    },
+    {
+      "index": 14,
+      "category": "Detail (ongecategoriseerd)",
+      "start_image_media_id": "b299f516-efaa-4627-be48-283f7a892a5c",
+      "start_image_source": "19A8881-1280x950.jpg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle push-in on an interior or covered deck space aboard a luxury charter yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, natural ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional furniture, no invented objects, no boats in the background, no animals, stable geometry, no morphing or warping of edges, furniture or window frames",
+      "note": "geclassificeerd als 'detail' (top_blue 0.023)."
+    },
+    {
+      "index": 15,
+      "category": "Detail (ongecategoriseerd)",
+      "start_image_media_id": "295bc38b-efeb-4f39-a2d0-a1f7087b8395",
+      "start_image_source": "19A8892-1280x950.jpg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Slow interior reveal aboard a luxury charter yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, natural ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional furniture, no invented objects, no boats in the background, no animals, stable geometry, no morphing or warping of edges, furniture or window frames",
+      "note": "geclassificeerd als 'detail' (top_blue 0.016)."
+    },
+    {
+      "index": 16,
+      "category": "Detail (ongecategoriseerd)",
+      "start_image_media_id": "47aa9171-944f-40fe-b197-371ce27ff858",
+      "start_image_source": "wildblue-13-1-1280x800.jpg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle pan across an interior or covered deck space aboard a luxury charter yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, natural ambient light, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional furniture, no invented objects, no boats in the background, no animals, stable geometry, no morphing or warping of edges, furniture or window frames",
+      "note": "geclassificeerd als 'detail' (top_blue 0.203)."
+    },
+    {
+      "index": 17,
+      "category": "Exterior (wide, ongecategoriseerd)",
+      "start_image_media_id": "16b8ea09-8bf8-49a6-b9ea-d3f730b0c9cb",
+      "start_image_source": "19A9003-1280x854.jpg",
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle slow pan across the exterior deck of a luxury motor yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open water and sky, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "geclassificeerd als 'wide' (top_blue 0.513)."
+    },
+    {
+      "index": 18,
+      "category": "Exterior (closer)",
+      "start_image_media_id": "2468d136-cc64-49fc-869d-73a2f97fd5af",
+      "start_image_source": "wildblue-12-1-1280x800.jpg",
+      "duration": 5,
+      "mode": "std",
+      "prompt": "Slow cinematic pull-back revealing the full profile of a luxury motor yacht at anchor, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, calm water, distant shoreline kept soft and out of sharp focus, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boat name, no vessel name painted on the hull, no signage, no readable text of any kind anywhere in frame, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "afsluitende zoom-out op dezelfde bronfoto als de openingsshot."
+    }
+  ]
+}
