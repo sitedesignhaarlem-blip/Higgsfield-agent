@@ -395,3 +395,100 @@ nieuwe afsluitende clip.
 - media_id: 6821f284-6b01-4419-9a85-b500b8af6041 (bevestigd)
 - Kosten deze revisie: 7,5 credits
 - **Nog niet opgeleverd aan klant** — Valentijn levert.
+
+---
+
+## Revisie v4 (05-10-2026) — flash weggesneden + bow/wetbar omgewisseld
+
+Valentijn's feedback op v3:
+> "At 28 to 29 seconds there is a flash of a flybridge photo around the 29 sec
+> incorrectly - it is a photo of the table on the flybridge. The photo at 33
+> seconds of the bow should move to after the 35th second."
+
+### Belangrijke constatering vooraf: credits op
+
+`balance` gaf **0 credits, subscription_plan_type "free"** (de Ultra-abonnement
+is tussen v3 en nu verlopen). Beide fixes zijn daarom uitgevoerd als **pure
+ffmpeg-re-splice van reeds bestaand materiaal uit `Calypso_v3.mp4`** — geen
+enkele `generate_*`-aanroep, dus 0 credits verbruikt. Dit is gemeld zodat
+Valentijn weet dat nieuwe generaties (ook voor andere jachten) nu niet
+mogelijk zijn totdat het abonnement is vernieuwd.
+
+### Diagnose — methode
+
+v3 opnieuw gedownload in de sandbox. In plaats van de correlatie-matching
+tegen bronfoto's is deze keer **rechtstreekse frame-voor-frame visuele
+inspectie** gebruikt via `sandbox_exec`'s `image_paths`-optie (frames worden
+native als afbeelding teruggegeven, geen chunked base64-relay nodig — veel
+sneller en 100% betrouwbaar qua beeldintegriteit). Frames elke 0,1-0,3s
+rond beide gemelde tijdstippen bekeken en vergeleken tegen de 6 relevante
+bronfoto's (table, helm, flybridge wetbar, lounge, aft deck wetbar, bow).
+
+**Bevinding klacht 1 (28-29s):** tussen het einde van de Lounge-clip (clip 10,
+schoon t/m ±29,0s) en het schone begin van de Trap/stairway-clip (clip 11,
+schoon vanaf ±29,7s) zat een extra, niet-gedocumenteerde flits van ±0,5-0,7s
+(±29,0-29,7s) met content die niet bij de shotlist-volgorde hoort op die
+plek — een brede flybridge-opname met tafel, stoel en kastje in beeld. Geen
+zachte crossfade-ghosting maar een harde cut naar deze content en weer terug
+— klassiek restmateriaal van een oude naad (exact het faalmodel dat sectie 12
+van CLAUDE.md beschrijft na Unwinding), hier aanwezig in de ruwe `Calypso_v3`
+render zelf, niet geïntroduceerd door een eerdere surgical-splice-stap van
+déze sessie. Root cause niet verder herleid (geen credits om v1/v2 bronclips
+opnieuw te genereren ter vergelijking) — niet relevant voor de fix, die puur
+op het verwijderen van het stuk gericht is.
+
+**Bevinding klacht 2 (bow bij 33s):** bevestigd correct — in v3 stond de
+volgorde Trap → Bow (±32,0-33,1s) → Aft deck wetbar (±33,3-34,6s) → Salon.
+Klant wil Bow ná de wetbar-clip.
+
+### Fix — surgical re-splice uit Calypso_v3.mp4, geen nieuwe generaties
+
+5 schone segmenten geknipt uit `Calypso_v3.mp4` (met veiligheidsmarge
+weg van elke blend-zone, bevestigd met frame-sampling vóór het knippen):
+
+| Segment | Inhoud | Bron-range in v3 |
+|---|---|---|
+| A | Exterior×6 + Flybridge×4 (t/m Lounge), **de 29,0-29,7s flits eruit geknipt** | 0 - 28,90s |
+| D | Aft deck trap/stairway (clip 11) | 29,80 - 31,35s |
+| C | Aft deck wetbar (clip 13→12 in v4) | 33,35 - 34,25s |
+| B | Bow (clip 12→13 in v4) | 32,05 - 33,05s |
+| E | Aft→salon overgang t/m slotclip 27, ongewijzigd | 34,65s - einde |
+
+Nieuwe volgorde: **A + D + C + B + E** (was A+D+B+C+E) — Trap, dan Wetbar,
+dan Bow, dan Salon. Hermonteerd met dezelfde xfade-aanpak als `assemble.py`
+(0,4s crossfade per naad, 4 naden), 1920×1080, 30fps, geen audio.
+
+- Ruwe segmentlengtes: A 28,90s / D 1,57s / C 0,90s / B 1,00s / E 37,40s
+- **Eindlengte: 68,17s** (binnen 60-90s doel; korter dan v3's 72,00s omdat de
+  29,0-29,7s flits eruit is en de segmenten kort blijven zoals ze al in v3
+  stonden — geen enkele clip is korter gemaakt dan hij al was)
+
+### Transition QC — alle 4 nieuwe naden visueel bekeken (geen correlatie-matching nodig)
+
+Dankzij de `image_paths`-methode (native beeld, geen relay-risico) is ditmaal
+het middenframe van **elke** nieuwe naad met eigen ogen bekeken, zoals
+CLAUDE.md §12 voorschrijft:
+
+- A→D (±28,5-28,9s): schone crossfade Lounge → Trap, geen ghosting
+- D→C (±29,5-29,9s): schone crossfade Trap → Aft deck wetbar, geen ghosting
+- C→B (±30,0-30,4s): schone crossfade Wetbar → Bow, geen ghosting
+- B→E (±30,6-31,0s): schone crossfade Bow → Salon, geen ghosting
+
+Geen van de 4 naden toont restmateriaal, dubbele content of een verkeerde
+clip. Beide klachten zijn hiermee **volledig visueel bevestigd opgelost**,
+niet alleen via correlatie-aanname.
+
+### Oplevering (v4, huidige versie)
+
+- Bestand: `Calypso_v4.mp4` (1920×1080, 30fps, 68,17s, geen audio)
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/b12c7373-7810-4f2b-bb42-fb48377744d0.mp4
+- media_id: b12c7373-7810-4f2b-bb42-fb48377744d0 (bevestigd)
+- Kosten deze revisie: **0 credits** (pure re-splice, geen generaties)
+- Resterend saldo: **0 credits** (subscription "free" — zie waarschuwing
+  bovenaan deze sectie, geldt voor de hele VCY-vloot totdat vernieuwd)
+- **Nog niet opgeleverd aan klant** — Valentijn levert.
+- **Openstaand:** zelfde beperking als v2/v3 — de niet-geflagde clips uit
+  eerdere revisies zijn niet opnieuw stuk voor stuk visueel nagelopen op
+  verzonnen objecten (alleen de 4 nieuwe naden en de weggesneden flits-zone
+  zijn deze ronde bekeken, wat voor dít defect voldoende is). Root cause van
+  de 29s-flits in de oorspronkelijke v1/v2-footage is niet verder onderzocht.

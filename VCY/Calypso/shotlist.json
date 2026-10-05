@@ -117,23 +117,23 @@
     },
     {
       "index": 12,
-      "category": "Bow",
-      "start_image": "photos/247738435_177508617925518_3069444985601529653_n.jpg",
-      "end_image": null,
-      "duration": 3,
-      "mode": "std",
-      "prompt": "Forward glide across the bow sunpad toward the marina, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
-      "note": "v3 (klantverzoek 25-09-2026): verplaatst van index 11 (v2) naar index 12, ongewijzigde content"
-    },
-    {
-      "index": 13,
       "category": "Aft deck",
       "start_image": "photos/256452891_175431401468665_2141805555552657939_n.jpg",
       "end_image": null,
       "duration": 3,
       "mode": "std",
       "prompt": "Gentle slow pan across the aft deck wet bar and grill station, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, stainless steel fixtures and teak counter, natural daylight, photorealistic, cinematic color grade, shallow depth of field, no people, no text, no lettering, no logos, no additional boats in the background, stable geometry, no morphing or warping of cabinetry edges",
-      "note": "was clip 10 in v1, index 12 in v2. v3 (klantverzoek 25-09-2026): verplaatst naar index 13, ongewijzigde content ('aft deck seat')"
+      "note": "was clip 10 in v1, index 12 in v2, index 13 in v3. v4 (klantverzoek 05-10-2026): verplaatst van index 13 naar index 12 - klant vroeg de bow-clip ná dit shot te zetten in plaats van ervoor. Ongewijzigde content."
+    },
+    {
+      "index": 13,
+      "category": "Bow",
+      "start_image": "photos/247738435_177508617925518_3069444985601529653_n.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Forward glide across the bow sunpad toward the marina, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "v3: index 12. v4 (klantverzoek 05-10-2026): verplaatst van index 12 naar index 13 - klant: 'the photo at 33 seconds of the bow should move to after the 35th second', d.w.z. ná de aft deck wetbar i.p.v. ervoor. Ongewijzigde content."
     },
     {
       "index": 14,
