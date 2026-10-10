@@ -70,7 +70,7 @@ frames aan begin/eind.
 Track: "Majestic" — Diego Nava (Mixkit Stock Music Free License), zelfde track als de
 vorige boten in deze batch.
 
-## Oplevering
+## Oplevering (v1, afgekeurd — niet versturen)
 - Stille versie: Thumper.mp4 (61,83s) —
   https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/510c9479-abc9-4265-ba9f-85db4e1134a5.mp4
 - Met muziek: Thumper_music.mp4 —
@@ -79,14 +79,37 @@ vorige boten in deze batch.
 ## Credits
 Balance na deze boot: 804 (gecheckt tijdens productie, ruim boven de 300-credit-meldgrens).
 
+---
+
+## Revisie v2 (10-10-2026) — clips met mensen eruit geknipt
+
+Op verzoek van Valentijn: clips 1, 3 en 18 (opener, 3e clip, closer — alle
+3 met echte mensen aan boord, zie QC laag 2) verwijderd via surgical splice,
+0 credits. Schone segmenten (0,5s marge per knippunt) herverbonden met
+verse 0,4s crossfades: nu clip 2 → clip 4 t/m 17 (de video begint dus met
+de voormalige clip 2 en eindigt met de voormalige clip 17). Beide nieuwe
+naden gecontroleerd — schoon, geen ghosting, geen mensen.
+
+**Eindlengte: 46,6s — fors onder de 60-90s-norm.** Grootste impact van de
+hele batch: zowel opener als closer zijn weg. Dit is een tijdelijke
+noodgreep, geen definitieve oplossing — Thumper heeft het dringendst
+nieuwe, mensvrije bronfoto's nodig zodra credits beschikbaar zijn (vooral
+voor een nieuwe opener/closer).
+
+### Oplevering (v2, huidige versie)
+- Stille versie: Thumper.mp4 (46,6s) —
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/155369cf-66b4-4671-b73c-e5663cae031b.mp4
+- media_id: 155369cf-66b4-4671-b73c-e5663cae031b
+- **Met-muziek-versie nog niet opnieuw gemaakt** — zie Openstaande punten.
+- Kosten: 0 credits (pure re-splice).
+
 ## Openstaande punten voor Alexia/Valentijn
 1. **Bronmateriaal-kwaliteit**: de volledige gallery bestaat uit screenshot-achtige bestanden,
    niet uit normale fotografie. Alexia moet bevestigen of dit representatief en bruikbaar is.
-2. **AFGEKEURD: clips 1, 3 en 18 (opener, 3e clip, closer) tonen echte mensen aan boord —
-   harde regelovertreding, zie QC laag 2 hierboven.** Niet naar Alexia/eindklant sturen
-   voordat dit is opgelost. Opties: (a) uitknippen (gratis, surgical splice, maar de opener
-   én closer vervallen dan — grote impact op dit jacht) of (b) vervangen met mensvrije
-   bronfoto's zodra credits beschikbaar zijn (nu 0). Wacht op akkoord Valentijn.
-3. GEEN room-categorieen — volgorde is site-gallery-volgorde.
-4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
+2. **Eindlengte 46,6s, fors onder de 60-90s-norm** — gevolg van het verwijderen van opener,
+   3e clip én closer (alle 3 afgekeurd wegens mensen in beeld). Dit jacht heeft als eerste
+   nieuwe bronfoto's nodig zodra credits beschikbaar zijn.
+3. Met-muziek-versie nog opnieuw te maken op de nieuwe lengte.
+4. GEEN room-categorieen — volgorde is site-gallery-volgorde.
+5. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.

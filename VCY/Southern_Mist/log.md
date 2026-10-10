@@ -57,18 +57,45 @@ Eindlengte: 65,10s (binnen 60-90s doel).
 Track: "Majestic" — Diego Nava (Mixkit Stock Music Free License), zelfde track als de
 vorige boten in deze batch.
 
-## Oplevering
+## Oplevering (v1, afgekeurd — niet versturen)
 - Stille versie: Southern_Mist.mp4 (65,10s) —
   https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/45f31ad5-4e2f-41c2-84e0-c207139d60e6.mp4
 - Met muziek: Southern_Mist_music.mp4 —
   https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/96536b55-705c-46f8-9b19-68c27156c5ec.mp4
 
+---
+
+## Revisie v2 (10-10-2026) — clips met mensen eruit geknipt
+
+Op verzoek van Valentijn: clips 2, 3 en 4 (de 3 clips met echte mensen aan
+boord, zie QC laag 2 hierboven) verwijderd via surgical splice uit de v1-
+render, 0 credits (geen nieuwe generatie). Methode: schone segmenten
+geknipt met 0,5s veiligheidsmarge aan elke kant van elk knippunt (zelfde
+aanpak als de Calypso-reorders), opnieuw aan elkaar gezet met een verse
+0,4s crossfade.
+
+Nieuwe opbouw: clip 1 (opener, ongewijzigd) → crossfade → clip 5 t/m 20
+(ongewijzigd). Alle 4 nieuwe/overgebleven naden gecontroleerd met scherpe
+frame-crops rond de crossfade — schoon, geen ghosting, geen mensen.
+
+**Eindlengte: 55,9s — onder de 60-90s-norm.** Dit is een bewuste trade-off:
+de regelovertreding wegen zwaarder dan de lengte-norm. Geen vervangende
+mensvrije foto's beschikbaar binnen deze sessie om de 9,2s te compenseren.
+
+### Oplevering (v2, huidige versie)
+- Stille versie: Southern_Mist.mp4 (55,9s) —
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/9ae39ad1-3a13-4a86-824c-85b4b464ca39.mp4
+- media_id: 9ae39ad1-3a13-4a86-824c-85b4b464ca39
+- **Met-muziek-versie nog niet opnieuw gemaakt** — de v1-muziektrack was op
+  de oude (65,10s) lengte geknipt; moet opnieuw op 55,9s worden afgestemd.
+  Zie Openstaande punten.
+- Kosten: 0 credits (pure re-splice).
+
 ## Openstaande punten voor Alexia/Valentijn
 1. GEEN room-categorieen — volgorde is site-gallery-volgorde.
-2. **AFGEKEURD: clips 2-4 (t≈4,6-12,4s) tonen echte mensen aan boord — harde regelovertreding,
-   zie QC laag 2 hierboven.** Niet naar Alexia/eindklant sturen voordat dit is opgelost. Twee
-   opties: (a) deze 3 clips eruit knippen (gratis, surgical splice, -9s eindlengte) of
-   (b) met andere, mensvrije bronfoto's opnieuw genereren zodra credits beschikbaar zijn
-   (nu 0). Wacht op akkoord van Valentijn welke route.
-3. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
+2. **Eindlengte 55,9s, onder de 60-90s-norm** (gevolg van het verwijderen van de
+   afgekeurde mensen-clips). Permanente oplossing: 3 mensvrije bronfoto's voor
+   het exterior-blok zodra credits beschikbaar zijn.
+3. Met-muziek-versie nog opnieuw te maken op de nieuwe lengte.
+4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.

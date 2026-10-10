@@ -23,7 +23,8 @@
       "duration": 3,
       "mode": "std",
       "prompt": "Gentle slow pan across the exterior deck of a luxury motor yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open water and sky, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
-      "note": "geclassificeerd als 'wide' (top_blue 0.478)."
+      "note": "geclassificeerd als 'wide' (top_blue 0.478). | v2 (10-10-2026): UITGESLOTEN uit de gemonteerde video \u2014 bronfoto toont een echt persoon aan boord, harde CLAUDE.md-regelovertreding. Zie log.md QC laag 2.",
+      "excluded_v2": true
     },
     {
       "index": 3,
@@ -43,7 +44,8 @@
       "duration": 3,
       "mode": "std",
       "prompt": "Gentle slow pan across the exterior deck of a luxury motor yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open water and sky, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
-      "note": "geclassificeerd als 'wide' (top_blue 0.734). Bestandsnaam wijst op een Facebook/Instagram-export (mogelijk niet de originele hoge-resolutie bron). Resolutie 849x575, onder de 1280px-norm -- versoepeld zoals bij Thumper, want dit is een van de weinige beschikbare 'wide' shots."
+      "note": "geclassificeerd als 'wide' (top_blue 0.734). Bestandsnaam wijst op een Facebook/Instagram-export (mogelijk niet de originele hoge-resolutie bron). Resolutie 849x575, onder de 1280px-norm -- versoepeld zoals bij Thumper, want dit is een van de weinige beschikbare 'wide' shots. | v2 (10-10-2026): UITGESLOTEN uit de gemonteerde video \u2014 bronfoto toont een echt persoon aan boord, harde CLAUDE.md-regelovertreding. Zie log.md QC laag 2.",
+      "excluded_v2": true
     },
     {
       "index": 5,

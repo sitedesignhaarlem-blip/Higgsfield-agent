@@ -23,7 +23,8 @@
       "duration": 3,
       "mode": "std",
       "prompt": "Gentle slow pan across the exterior deck of a luxury motor yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open water and sky, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
-      "note": "geclassificeerd als 'wide' (top_blue 0.995)."
+      "note": "geclassificeerd als 'wide' (top_blue 0.995). | v2 (10-10-2026): UITGESLOTEN uit de gemonteerde video \u2014 bronfoto toont een echt persoon aan boord, harde CLAUDE.md-regelovertreding. Zie log.md QC laag 2.",
+      "excluded_v2": true
     },
     {
       "index": 3,

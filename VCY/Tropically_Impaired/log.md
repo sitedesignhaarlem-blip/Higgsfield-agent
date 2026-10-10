@@ -89,21 +89,39 @@ vorige boten in deze batch.
 23 gegenereerde clips totaal (19 shotlist + 4 vervangers, geen dubbele pogingen op dezelfde
 prompt). Balance vóór deze boot: 691,75. Ruim boven de 300-credit-meldgrens.
 
-## Oplevering
+## Oplevering (v1, afgekeurd — niet versturen)
 - Stille versie: Tropically_Impaired.mp4 (62,47s) —
   https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/bb55c57e-3582-41c6-996b-1d53d7b9e086.mp4
 - Met muziek: Tropically_Impaired_music.mp4 —
   https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/4512ca12-fcea-49ba-85f8-d5bf14f84725.mp4
+
+---
+
+## Revisie v2 (10-10-2026) — clip met persoon eruit geknipt
+
+Op verzoek van Valentijn: clip 2 (persoon aan het roer, zie QC laag 2)
+verwijderd via surgical splice, 0 credits. Schone segmenten herverbonden:
+clip 1 → clip 3 t/m 19, één verse 0,4s crossfade. Gecontroleerd — schoon,
+geen ghosting, geen persoon.
+
+**Eindlengte: 58,5s — net onder de 60-90s-norm** (was 62,47s). Kleinste
+impact van de 5 gefixte boten in deze batch.
+
+### Oplevering (v2, huidige versie)
+- Stille versie: Tropically_Impaired.mp4 (58,5s) —
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/2b67d10a-d371-4663-8f43-beef72fc252f.mp4
+- media_id: 2b67d10a-d371-4663-8f43-beef72fc252f
+- **Met-muziek-versie nog niet opnieuw gemaakt** — zie Openstaande punten.
+- Kosten: 0 credits (pure re-splice).
 
 ## Openstaande punten voor Alexia/Valentijn
 1. **Watermarkreeks ontdekt in bronmateriaal**: de foto's IMG_3447/3449/3451/3452 (mogelijk
    de hele upload-batch eromheen) hebben een gebrande "TROPICALLY IMPAIRED / New Castle, NH"
    caption. Dit is opgelost voor déze video door vervanging, maar is relevant voor Alexia om
    te weten voor toekomstig gebruik van diezelfde bronfoto's (ook buiten deze pijplijn).
-2. **AFGEKEURD: clip 2 toont een persoon aan het roer — harde regelovertreding, zie
-   QC laag 2 hierboven.** Niet naar Alexia/eindklant sturen voordat dit is opgelost.
-   Opties: (a) uitknippen (gratis, surgical splice) of (b) vervangen met een mensvrije
-   bronfoto zodra credits beschikbaar zijn (nu 0). Wacht op akkoord Valentijn.
-3. GEEN room-categorieen — volgorde is site-gallery-volgorde.
-4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
+2. **Eindlengte 58,5s, net onder de 60-90s-norm** — gevolg van het verwijderen van de
+   afgekeurde clip. Kleine marge, een vervangende mensvrije bronfoto zou dit oplossen.
+3. Met-muziek-versie nog opnieuw te maken op de nieuwe lengte.
+4. GEEN room-categorieen — volgorde is site-gallery-volgorde.
+5. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.

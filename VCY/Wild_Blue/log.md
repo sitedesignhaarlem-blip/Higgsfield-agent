@@ -82,23 +82,45 @@ vorige boten in deze batch.
 18 gegenereerde clips, geen regeneraties nodig. Balance vóór deze boot: 561,50.
 Ruim boven de 300-credit-meldgrens.
 
-## Oplevering
+## Oplevering (v1, afgekeurd — niet versturen)
 - Stille versie: Wild_Blue.mp4 (63,83s) —
   https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/0b903c43-dd5a-40a3-8ece-5d84d6492b33.mp4
 - Met muziek: Wild_Blue_music.mp4 —
   https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/d6d83704-86cc-48f2-84cd-156b30d8edc0.mp4
 
+---
+
+## Revisie v2 (10-10-2026) — clips met mensen eruit geknipt
+
+Op verzoek van Valentijn: clips 1, 14, 16 en 18 (opener, 2 mid-clips, closer
+— alle 4 met echte mensen aan boord, zie QC laag 2) verwijderd via surgical
+splice, 0 credits. Schone segmenten herverbonden: clip 2 t/m 13 → clip 15
+→ clip 17 (de video begint dus met de voormalige clip 2 en eindigt met de
+voormalige clip 17). Beide nieuwe naden gecontroleerd — schoon, geen
+ghosting, geen mensen.
+
+**Eindlengte: 44,6s — fors onder de 60-90s-norm**, het grootste verlies
+van de batch samen met Thumper. Zowel opener als closer zijn weg (beide
+gebruikten dezelfde bronfoto). Tijdelijke noodgreep — dit jacht heeft als
+eerste (samen met Thumper) nieuwe, mensvrije bronfoto's nodig.
+
+### Oplevering (v2, huidige versie)
+- Stille versie: Wild_Blue.mp4 (44,6s) —
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/9b7eef9d-e978-4417-b052-6f885966780b.mp4
+- media_id: 9b7eef9d-e978-4417-b052-6f885966780b
+- **Met-muziek-versie nog niet opnieuw gemaakt** — zie Openstaande punten.
+- Kosten: 0 credits (pure re-splice).
+
 ## Openstaande punten voor Alexia/Valentijn
 1. GEEN room-categorieen — volgorde is site-gallery-volgorde.
-2. **AFGEKEURD: clips 1, 14, 16 en 18 tonen echte mensen aan boord — harde regelovertreding,
-   ernstigste geval van de hele batch, zie QC laag 2 hierboven.** Niet naar Alexia/eindklant
-   sturen voordat dit is opgelost. Clips 1 en 18 delen dezelfde bronfoto (dus 1 vervangende
-   foto lost beide op). Opties: (a) uitknippen (gratis, surgical splice, -4 clips, incl.
-   opener én closer — grote impact) of (b) vervangen met mensvrije bronfoto's zodra credits
-   beschikbaar zijn (nu 0). Wacht op akkoord Valentijn.
-3. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
+2. **Eindlengte 44,6s, fors onder de 60-90s-norm** — gevolg van het verwijderen van opener,
+   2 mid-clips én closer (alle 4 afgekeurd wegens mensen in beeld). Dit jacht heeft als
+   eerste (samen met Thumper) nieuwe bronfoto's nodig zodra credits beschikbaar zijn —
+   vooral voor een nieuwe opener/closer (beide gebruikten dezelfde, nu verwijderde, foto).
+3. Met-muziek-versie nog opnieuw te maken op de nieuwe lengte.
+4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.
-4. 1 bestand (19A8895) uit voorzorg niet gebruikt wegens vermoeden van gedeeld/generiek
+5. 1 bestand (19A8895) uit voorzorg niet gebruikt wegens vermoeden van gedeeld/generiek
    materiaal met Tidewater — kan alsnog toegevoegd worden als Alexia bevestigt dat het een
    uniek Wild Blue-bestand is.
 

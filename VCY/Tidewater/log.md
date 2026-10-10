@@ -78,7 +78,7 @@ frames aan begin/eind.
 Track: "Majestic" — Diego Nava (Mixkit Stock Music Free License), zelfde track als de
 vorige boten in deze batch.
 
-## Oplevering
+## Oplevering (v1, afgekeurd — niet versturen)
 - Stille versie: Tidewater.mp4 (61,83s) —
   https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/b4b45afa-8c1e-48b2-90c2-f516310b9041.mp4
 - Met muziek: Tidewater_music.mp4 —
@@ -88,14 +88,34 @@ vorige boten in deze batch.
 Balance tijdens productie: 691,75 (gecheckt na de eerste batch-inzending, ruim boven de
 300-credit-meldgrens).
 
+---
+
+## Revisie v2 (10-10-2026) — clips met mensen eruit geknipt
+
+Op verzoek van Valentijn: clip 2 en clip 4 (beide met echte mensen aan
+boord, zie QC laag 2) verwijderd via surgical splice, 0 credits. Schone
+segmenten herverbonden: clip 1 → clip 3 → clip 5 t/m 19, met verse 0,4s
+crossfades op beide nieuwe naden. Beide gecontroleerd — schoon, geen
+ghosting, geen mensen.
+
+**Eindlengte: 53,8s — onder de 60-90s-norm.** Bewuste trade-off, zie
+Southern Mist voor dezelfde afweging.
+
+### Oplevering (v2, huidige versie)
+- Stille versie: Tidewater.mp4 (53,8s) —
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/0c0215a3-5dc9-4738-8da0-3d0b5e7e051d.mp4
+- media_id: 0c0215a3-5dc9-4738-8da0-3d0b5e7e051d
+- **Met-muziek-versie nog niet opnieuw gemaakt** — zie Openstaande punten.
+- Kosten: 0 credits (pure re-splice).
+
 ## Openstaande punten voor Alexia/Valentijn
 1. **Clip 18 (opnieuw exterieur-wide) is uit de video gehaald** omdat de bronfoto een gebrande
    naam+locatie-caption bevatte die niet te verwijderen was. Als Alexia een schone versie van
    deze bronfoto (zonder caption) kan aanleveren, kan dit shot alsnog worden toegevoegd.
-2. **AFGEKEURD: clip 2 en clip 4 tonen echte mensen aan boord — harde regelovertreding,
-   zie QC laag 2 hierboven.** Niet naar Alexia/eindklant sturen voordat dit is opgelost.
-   Opties: (a) uitknippen (gratis, surgical splice, -2 clips) of (b) vervangen met
-   mensvrije bronfoto's zodra credits beschikbaar zijn (nu 0). Wacht op akkoord Valentijn.
-3. GEEN room-categorieen — volgorde is site-gallery-volgorde.
-4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
+2. **Eindlengte 53,8s, onder de 60-90s-norm** — gevolg van het verwijderen van de 2 afgekeurde
+   mensen-clips. Permanente oplossing: mensvrije vervangende bronfoto's zodra credits
+   beschikbaar zijn.
+3. Met-muziek-versie nog opnieuw te maken op de nieuwe lengte.
+4. GEEN room-categorieen — volgorde is site-gallery-volgorde.
+5. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.

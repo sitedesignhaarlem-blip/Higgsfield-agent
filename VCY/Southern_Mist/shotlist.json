@@ -22,7 +22,9 @@
       "start_image_source": "Southern-mist-2.jpg",
       "duration": 3,
       "mode": "std",
-      "prompt": "Gentle slow pan across the exterior deck of a luxury motor yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open water and sky, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+      "prompt": "Gentle slow pan across the exterior deck of a luxury motor yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open water and sky, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "excluded_v2": true,
+      "note": "v2 (10-10-2026): UITGESLOTEN uit de gemonteerde video \u2014 bronfoto toont een echt persoon aan boord, harde CLAUDE.md-regelovertreding. Zie log.md QC laag 2."
     },
     {
       "index": 3,
@@ -31,7 +33,9 @@
       "start_image_source": "image6.jpeg",
       "duration": 3,
       "mode": "std",
-      "prompt": "Gentle slow pan across the exterior deck of a luxury motor yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open water and sky, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+      "prompt": "Gentle slow pan across the exterior deck of a luxury motor yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open water and sky, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "excluded_v2": true,
+      "note": "v2 (10-10-2026): UITGESLOTEN uit de gemonteerde video \u2014 bronfoto toont een echt persoon aan boord, harde CLAUDE.md-regelovertreding. Zie log.md QC laag 2."
     },
     {
       "index": 4,
@@ -40,7 +44,9 @@
       "start_image_source": "image4.jpeg",
       "duration": 3,
       "mode": "std",
-      "prompt": "Gentle slow pan across the exterior deck of a luxury motor yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open water and sky, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames"
+      "prompt": "Gentle slow pan across the exterior deck of a luxury motor yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open water and sky, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "excluded_v2": true,
+      "note": "v2 (10-10-2026): UITGESLOTEN uit de gemonteerde video \u2014 bronfoto toont een echt persoon aan boord, harde CLAUDE.md-regelovertreding. Zie log.md QC laag 2."
     },
     {
       "index": 5,

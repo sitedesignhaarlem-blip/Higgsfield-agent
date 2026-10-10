@@ -13,7 +13,8 @@
       "duration": 5,
       "mode": "pro",
       "prompt": "Cinematic dolly forward along the hull of a luxury motor yacht at anchor, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, calm water, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boat name, no vessel name painted on the hull, stable geometry, no morphing or warping of railings, hull lines or window frames",
-      "note": "openingsshot. Bronbestand is een 'Screenshot'-benoemd bestand uit de VCY-gallery (geen normale fotografie-bestandsnaam) -- mogelijk een export uit een virtuele tour/videotool. Resolutie 1250x744, onder of net op de 1280px-norm. Zie brief.md voor de volledige toelichting."
+      "note": "openingsshot. Bronbestand is een 'Screenshot'-benoemd bestand uit de VCY-gallery (geen normale fotografie-bestandsnaam) -- mogelijk een export uit een virtuele tour/videotool. Resolutie 1250x744, onder of net op de 1280px-norm. Zie brief.md voor de volledige toelichting. | v2 (10-10-2026): UITGESLOTEN uit de gemonteerde video \u2014 bronfoto toont een echt persoon aan boord, harde CLAUDE.md-regelovertreding. Zie log.md QC laag 2.",
+      "excluded_v2": true
     },
     {
       "index": 2,
@@ -33,7 +34,8 @@
       "duration": 3,
       "mode": "std",
       "prompt": "Gentle slow pan across the exterior deck of a luxury motor yacht, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, open water and sky, natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, stable geometry, no morphing or warping of railings, hull lines or window frames",
-      "note": "Bronbestand is een 'Screenshot'-benoemd bestand uit de VCY-gallery (geen normale fotografie-bestandsnaam) -- mogelijk een export uit een virtuele tour/videotool. Resolutie 1025x685, onder of net op de 1280px-norm. Zie brief.md voor de volledige toelichting."
+      "note": "Bronbestand is een 'Screenshot'-benoemd bestand uit de VCY-gallery (geen normale fotografie-bestandsnaam) -- mogelijk een export uit een virtuele tour/videotool. Resolutie 1025x685, onder of net op de 1280px-norm. Zie brief.md voor de volledige toelichting. | v2 (10-10-2026): UITGESLOTEN uit de gemonteerde video \u2014 bronfoto toont een echt persoon aan boord, harde CLAUDE.md-regelovertreding. Zie log.md QC laag 2.",
+      "excluded_v2": true
     },
     {
       "index": 4,
@@ -183,7 +185,8 @@
       "duration": 5,
       "mode": "std",
       "prompt": "Slow cinematic pull-back revealing the full profile of a luxury motor yacht at anchor, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, calm water, distant shoreline kept soft and out of sharp focus, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boat name, no vessel name painted on the hull, no signage, no readable text of any kind anywhere in frame, stable geometry, no morphing or warping of railings, hull lines or window frames",
-      "note": "afsluitende zoom-out op dezelfde bronfoto als de openingsshot"
+      "note": "afsluitende zoom-out op dezelfde bronfoto als de openingsshot | v2 (10-10-2026): UITGESLOTEN uit de gemonteerde video \u2014 bronfoto toont een echt persoon aan boord, harde CLAUDE.md-regelovertreding. Zie log.md QC laag 2.",
+      "excluded_v2": true
     }
   ]
 }
