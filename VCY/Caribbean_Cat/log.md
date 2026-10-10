@@ -42,8 +42,19 @@ Gevolg: eindlengte 51,28s, ONDER de 60-90s-norm uit CLAUDE.md. Geaccepteerd gevo
 brondata voor deze specifieke boot (geen vervangende foto's beschikbaar) — gemeld aan
 Valentijn.
 
-## QC laag 2 (visueel)
-NIET uitgevoerd — zelfde technische sessiebeperking als bij Sandpiper (zie brief.md).
+## QC laag 2 (visueel) — alsnog uitgevoerd (10-10-2026)
+
+Zelfde methode als Sandpiper (`sandbox_exec` image_paths, geen relay nodig).
+**TEXT (OCR):** geen leesbare woorden van 4+ letters behalve één betekenisloos
+fragment ("ities") — verder alleen ruis van teak/water. Geen bootnaam/logo
+gevonden (dit jacht had al geen bruikbare bestandsnamen, en blijkbaar ook
+geen leesbare naam op de romp in de gebruikte bronfoto's).
+**Visueel (22-punts mosaic):** geen mensen, geen verzonnen meubels/dieren,
+geen morphing van relingen/kozijnen. Andere (echte) boten zichtbaar op de
+achtergrond in marina-shots — dat zit al in de bronfoto's, geen hallucinatie.
+Geen afkeuringen.
+**Transition QC:** geen surgical-splice-geschiedenis, dus niet van toepassing;
+geen van de crossfades in de mosaic toont ghosting.
 
 ## Montage
 14 clips (na uitsluiting van 12/13/16), genormaliseerd naar 1920x1080/30fps, assemble.py,
@@ -70,8 +81,7 @@ fade-out 2s, AAC 192kbps.
 1. GEEN room-categorieen — volgorde is site-gallery-volgorde, geen bevestigde kamervolgorde.
 2. Eindlengte 51,30s, onder de 60-90s-norm — geen vervangende foto's beschikbaar om aan te
    vullen na uitsluiting van 3 clips met een niet-oplosbaar watermark-probleem.
-3. Laag-2 visuele QC niet uitgevoerd — technische sessiebeperking.
-4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
+3. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.
 
 ## Credits (gecombineerd met Sandpiper, zelfde sessie/batch)

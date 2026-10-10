@@ -37,13 +37,35 @@ Eerste ronde: 6 van 19 clips geflagd op TEXT (01, 03, 07, 10, 14, 18); clip 07 o
 Eindresultaat: 17/19 clips schoon of geaccepteerd, 1 clip (18) definitief uitgesloten na
 bevestiging dat het bronmateriaal-tekst betreft.
 
-## QC laag 2
-Niet uitgevoerd — zelfde technische sessiebeperking als bij de vorige boten.
+## QC laag 2 — alsnog uitgevoerd (10-10-2026) — **AFKEURING gevonden**
+
+Zelfde methode als de andere boten in deze batch. Zelfde patroon als Southern
+Mist/Thumper:
+
+**Clip 2 (bronfoto `19A8895-1280x950.jpg`, t≈4,6-7,2s) toont een duidelijk
+zichtbare persoon** (man in blauw shirt/pet) staand op het zwemplatform/de
+rand van de boot, POV-shot naar een tender en een ander schip. **Clip 4
+(bronfoto `90697956_..._n.jpg`, t≈9,8-12,4s) toont een persoon aan het roer
+op de flybridge** terwijl de boot vaart. Beide bevestigd met scherpe
+close-ups, geen twijfelgeval.
+
+Relevant: `19A8895` is dezelfde bronfoto die in Wild_Blue's brief al uit
+voorzorg werd uitgesloten wegens "vermoeden van gedeeld/generiek materiaal"
+— dat vermoeden blijkt achteraf terecht, al was het niet de gedeeldheid
+maar de zichtbare persoon die het probleem is. Hier in Tidewater is dezelfde
+foto wél gebruikt (clip 2) en dus ook deze afkeuring.
+
+Clips 1, 3, 5 t/m 17 zijn schoon: geen mensen, geen verzonnen meubels/
+dieren, geen morphing. **TEXT:** alleen ruis ("Beal"/"alli"/"peat"), geen
+bootnaam/logo.
 
 ## Transition QC
-Niet visueel uitgevoerd — zelfde technische sessiebeperking. Geen surgical splice (alle
-gebruikte clips zijn vers gegenereerd), dus het oude-naad-risico uit sectie 12 van CLAUDE.md
-is hier niet van toepassing. Crossfade-duur standaard 0,4s.
+Alle crossfades in de mosaic ogen normaal, geen ghosting. Geen surgical
+splice (alle gebruikte clips zijn vers gegenereerd), dus het oude-naad-
+risico uit sectie 12 van CLAUDE.md is hier niet van toepassing.
+
+**Niet opgelost deze sessie:** credits op 0. Clips 2 en 4 zijn NIET
+aangepast — keuze voor Valentijn, zie Openstaande punten.
 
 ## Montage
 18 clips (19 gepland, clip 18 uitgesloten na QC), genormaliseerd naar 1920x1080/30fps,
@@ -70,7 +92,10 @@ Balance tijdens productie: 691,75 (gecheckt na de eerste batch-inzending, ruim b
 1. **Clip 18 (opnieuw exterieur-wide) is uit de video gehaald** omdat de bronfoto een gebrande
    naam+locatie-caption bevatte die niet te verwijderen was. Als Alexia een schone versie van
    deze bronfoto (zonder caption) kan aanleveren, kan dit shot alsnog worden toegevoegd.
-2. GEEN room-categorieen — volgorde is site-gallery-volgorde.
-3. Laag-2 visuele QC en transition-QC niet uitgevoerd — technische sessiebeperking.
+2. **AFGEKEURD: clip 2 en clip 4 tonen echte mensen aan boord — harde regelovertreding,
+   zie QC laag 2 hierboven.** Niet naar Alexia/eindklant sturen voordat dit is opgelost.
+   Opties: (a) uitknippen (gratis, surgical splice, -2 clips) of (b) vervangen met
+   mensvrije bronfoto's zodra credits beschikbaar zijn (nu 0). Wacht op akkoord Valentijn.
+3. GEEN room-categorieen — volgorde is site-gallery-volgorde.
 4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.

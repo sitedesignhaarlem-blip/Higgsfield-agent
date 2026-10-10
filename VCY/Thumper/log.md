@@ -31,15 +31,34 @@ Eerste ronde: 2 van 18 clips geflagd.
 Eindresultaat: 17/18 clips schoon bij eerste poging, 1 clip (16) hergenereerd en daarna schoon,
 2 clips geaccepteerd op basis van niet-herhaalde lage-confidence TEXT-ruis.
 
-## QC laag 2
-Niet uitgevoerd — zelfde technische sessiebeperking als bij de vorige boten (geen visuele
-inspectie mogelijk in deze sessie).
+## QC laag 2 — alsnog uitgevoerd (10-10-2026) — **AFKEURING gevonden**
 
-## Transition QC
-Niet visueel uitgevoerd — zelfde technische sessiebeperking. Geen surgical splice (alle 18
-clips zijn vers gegenereerd, niet geknipt uit bestaand materiaal), dus het specifieke
-oude-naad-risico uit sectie 12 van CLAUDE.md is hier niet van toepassing. Crossfade-duur
-standaard 0,4s.
+Zelfde methode als de andere boten in deze batch (`sandbox_exec` image_paths).
+
+**Clips 1, 3 en 18 tonen echte mensen aan boord** — meerdere personen op de
+flybridge van de boot terwijl die vaart (bronfoto's `Screenshot-21.png`
+[clip 1 opener, hergebruikt als clip 18 closer] en `Screenshot-22.png`
+[clip 3]). Bevestigd met scherpe close-ups, ondubbelzinnig. Zelfde patroon
+als bij Southern Mist: dit zijn vermoedelijk actie-/vaart-opnames uit het
+fabrieksmateriaal van de site-gallery (niet dekshots van dit specifieke
+exemplaar), en Kling reproduceert de mensen getrouw ondanks `no people` in
+de prompt. Clips 2 en 4 (tussen clip 1 en 3 in) zijn wél schoon — dus dit
+is geen doorlopend probleem door de hele opener-sectie, maar 3 specifieke
+clips.
+
+**Overige clips (5 t/m 17) zijn schoon**: geen mensen, geen verzonnen
+meubels/dieren, geen morphing. **TEXT:** alleen OCR-ruis ("Lull"/"Milf"/
+"cane"), geen bootnaam of logo gevonden.
+
+**Transition QC:** de ogenschijnlijke "watermerk"-waas rond t≈10s in de
+mosaic bleek bij nader onderzoek een gewone crossfade-ghost (palmbomen van
+de volgende clip doorschemerend), geen echt watermerk en geen restmateriaal
+van een oude naad. Geen surgical-splice-geschiedenis (alle 18 clips vers
+gegenereerd), dus dat risico is sowieso niet van toepassing.
+
+**Niet opgelost deze sessie:** credits op 0, geen nieuwe generatie mogelijk.
+Clips 1, 3, 18 zijn NIET aangepast — keuze voor Valentijn (uitknippen/
+vervangen vs. wachten op credits), zie Openstaande punten.
 
 ## Montage
 18 clips, genormaliseerd naar 1920x1080/30fps, assemble.py, xfade 0,4s.
@@ -63,7 +82,11 @@ Balance na deze boot: 804 (gecheckt tijdens productie, ruim boven de 300-credit-
 ## Openstaande punten voor Alexia/Valentijn
 1. **Bronmateriaal-kwaliteit**: de volledige gallery bestaat uit screenshot-achtige bestanden,
    niet uit normale fotografie. Alexia moet bevestigen of dit representatief en bruikbaar is.
-2. GEEN room-categorieen — volgorde is site-gallery-volgorde.
-3. Laag-2 visuele QC en transition-QC niet uitgevoerd — technische sessiebeperking.
+2. **AFGEKEURD: clips 1, 3 en 18 (opener, 3e clip, closer) tonen echte mensen aan boord —
+   harde regelovertreding, zie QC laag 2 hierboven.** Niet naar Alexia/eindklant sturen
+   voordat dit is opgelost. Opties: (a) uitknippen (gratis, surgical splice, maar de opener
+   én closer vervallen dan — grote impact op dit jacht) of (b) vervangen met mensvrije
+   bronfoto's zodra credits beschikbaar zijn (nu 0). Wacht op akkoord Valentijn.
+3. GEEN room-categorieen — volgorde is site-gallery-volgorde.
 4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.

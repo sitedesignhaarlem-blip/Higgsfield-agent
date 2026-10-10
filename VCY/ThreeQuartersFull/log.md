@@ -20,8 +20,13 @@ ruis).
 
 Eindresultaat: 17/19 clips schoon, 2 geaccepteerd na 2 pogingen.
 
-## QC laag 2
-Niet uitgevoerd — zelfde technische sessiebeperking als bij de vorige boten.
+## QC laag 2 — alsnog uitgevoerd (10-10-2026)
+Zelfde methode als de vorige boten. **TEXT:** geen leesbare woorden (ruis),
+geen bootnaam/logo. **Visueel (26-punts mosaic):** geen mensen, geen
+verzonnen meubels/dieren, geen morphing. Andere boten op de achtergrond in
+marina-shots zijn legitiem onderdeel van de bronfoto's. Geen afkeuringen.
+**Transition QC:** geen surgical splice van toepassing; geen ghosting
+waargenomen.
 
 ## Montage
 19 clips, genormaliseerd naar 1920x1080/30fps, assemble.py, xfade 0.4s.
@@ -39,6 +44,5 @@ vorige boten in deze batch.
 
 ## Openstaande punten voor Alexia/Valentijn
 1. GEEN room-categorieen — volgorde is site-gallery-volgorde.
-2. Laag-2 visuele QC niet uitgevoerd — technische sessiebeperking.
-3. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
+2. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.

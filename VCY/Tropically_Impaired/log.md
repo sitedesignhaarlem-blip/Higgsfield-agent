@@ -51,13 +51,29 @@ geaccepteerd als gewone Kling-OCR-ruis.
 Eindresultaat: 19/19 clips in de definitieve montage schoon of geaccepteerd; 4 van de
 oorspronkelijke 19 clips definitief vervangen wegens bevestigde brontekst.
 
-## QC laag 2
-Niet uitgevoerd — zelfde technische sessiebeperking als bij de vorige boten.
+## QC laag 2 — alsnog uitgevoerd (10-10-2026) — **AFKEURING gevonden**
+
+Zelfde methode als de andere boten in deze batch. Zelfde patroon als
+Southern Mist/Thumper/Tidewater:
+
+**Clip 2 (bronfoto `953f0f61-...jpeg`, t≈4,6-7,2s) toont een persoon aan het
+roer op de flybridge** terwijl de boot vaart. Bevestigd met close-ups over
+meerdere frames (5,0/6,0/7,0s), consistent zichtbaar, geen twijfelgeval.
+De overige "boot vaart"-shots (clip 1 opener en de afsluitende clip) zijn
+wél schoon — expliciet gecontroleerd, geen mensen zichtbaar.
+
+Clips 1, 3 t/m 19 zijn verder schoon: geen mensen, geen verzonnen meubels/
+dieren, geen morphing. **TEXT:** alleen ruis ("jill"), geen bootnaam/logo —
+en geen terugkeer van het al bekende watermerk-probleem (zie punt 1
+hieronder, al opgelost via vervanging).
 
 ## Transition QC
-Niet visueel uitgevoerd — zelfde technische sessiebeperking. Geen surgical splice (alle
-gebruikte clips zijn vers gegenereerd), dus het oude-naad-risico uit sectie 12 van CLAUDE.md
-is hier niet van toepassing. Crossfade-duur standaard 0,4s.
+Alle crossfades in de mosaic ogen normaal, geen ghosting. Geen surgical
+splice (alle gebruikte clips zijn vers gegenereerd), dus het oude-naad-
+risico uit sectie 12 van CLAUDE.md is hier niet van toepassing.
+
+**Niet opgelost deze sessie:** credits op 0. Clip 2 is NIET aangepast —
+keuze voor Valentijn, zie Openstaande punten.
 
 ## Montage
 19 clips (4 vervangen na QC), genormaliseerd naar 1920x1080/30fps, assemble.py, xfade 0,4s.
@@ -84,7 +100,10 @@ prompt). Balance vóór deze boot: 691,75. Ruim boven de 300-credit-meldgrens.
    de hele upload-batch eromheen) hebben een gebrande "TROPICALLY IMPAIRED / New Castle, NH"
    caption. Dit is opgelost voor déze video door vervanging, maar is relevant voor Alexia om
    te weten voor toekomstig gebruik van diezelfde bronfoto's (ook buiten deze pijplijn).
-2. GEEN room-categorieen — volgorde is site-gallery-volgorde.
-3. Laag-2 visuele QC en transition-QC niet uitgevoerd — technische sessiebeperking.
+2. **AFGEKEURD: clip 2 toont een persoon aan het roer — harde regelovertreding, zie
+   QC laag 2 hierboven.** Niet naar Alexia/eindklant sturen voordat dit is opgelost.
+   Opties: (a) uitknippen (gratis, surgical splice) of (b) vervangen met een mensvrije
+   bronfoto zodra credits beschikbaar zijn (nu 0). Wacht op akkoord Valentijn.
+3. GEEN room-categorieen — volgorde is site-gallery-volgorde.
 4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.

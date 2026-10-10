@@ -28,8 +28,14 @@ Eerste ronde: 7 van 17 clips geflagd.
 
 Eindresultaat: 16/17 clips schoon, 1 geaccepteerd na 2 pogingen.
 
-## QC laag 2
-Niet uitgevoerd — zelfde technische sessiebeperking als bij de vorige boten.
+## QC laag 2 — alsnog uitgevoerd (10-10-2026)
+Zelfde methode als de vorige boten. **TEXT:** geen leesbare woorden
+("Vali"/"foal" zijn ruis), geen bootnaam/logo. **Visueel (25-punts mosaic +
+close-ups):** de lagere beeldkwaliteit van de ensuite-clips (al bekend, zie
+punt 2 hieronder) is zichtbaar maar geen vervorming/hallucinatie; de witte
+beanbag-stoelen op de bow zijn echt (bevestigd met close-up, geen zwevend
+object). Geen mensen, dieren, extra vaartuigen of verzonnen meubels gezien.
+**Transition QC:** geen surgical splice van toepassing; geen ghosting.
 
 ## Montage
 17 clips, genormaliseerd naar 1920x1080/30fps, assemble.py, xfade 0.4s.
@@ -50,6 +56,5 @@ vorige boten in deze batch.
 1. GEEN room-categorieen — volgorde is site-gallery-volgorde.
 2. Beeldkwaliteit wisselend (8 van 17 clips op bronfoto's onder de resolutienorm).
 3. Eindlengte 59,18s, net onder de norm.
-4. Laag-2 visuele QC niet uitgevoerd — technische sessiebeperking.
-5. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
+4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.

@@ -48,13 +48,30 @@ Eindresultaat automatische QC (na fixes): 20/21 clips schoon, 1 geaccepteerd met
 oorzaak (bootnaam in bronfoto, clip 1, ook zichtbaar in clip 21 die dezelfde bronfoto
 hergebruikt — zelfde geaccepteerde reden).
 
-## QC laag 2 (visueel)
-NIET uitgevoerd — visuele inspectie van individuele frames/contactsheets is in deze sessie
-technisch onmogelijk (netwerkbeleid blokkeert alle toegang tot Higgsfield's CDN en de VCY-site
-vanuit de hoofdsessie, bevestigd getest, geen workaround). Dit is een bekende, gedocumenteerde
-beperking voor deze hele batch — zie brief.md. Verzonnen-objecten-check (extra meubels,
-dieren, boten) kon dus niet met eigen ogen gebeuren; alleen de vier geautomatiseerde scores
-(JERK/EDGE/DRIFT/TEXT) zijn gebruikt als vangnet.
+## QC laag 2 (visueel) — alsnog uitgevoerd (10-10-2026)
+
+De eerdere CDN-blokkade gold alleen voor de hoofdsessie; via `sandbox_exec`'s
+`image_paths`-optie (native beeld terug, geen base64-relay nodig) is de
+eindvideo alsnog volledig visueel nagelopen.
+
+**TEXT (OCR, tesseract, 0.8fps op 1600px frames):** geen nieuwe treffers.
+Enige leesbare tekst: "LEOPARD" (conf 93-95) en "Sandpiper" (conf 60-71) in
+clip 1/opener — dit is het al bekende, geaccepteerde geval (bootmerk/-naam
+daadwerkelijk zichtbaar op de romp in de bronfoto, zie hierboven). Verder
+alleen OCR-ruis van teakpatroon/water (korte onleesbare fragmenten).
+
+**Visueel (27-punts mosaic over de volledige video + losse close-ups):**
+geen mensen, geen verzonnen meubels/dieren/vaartuigen, geen morphing van
+relingen/kozijnen/rompnaden, geen dubbele hutten. Eén frame (~48s, salon→
+cabin1-overgang) oogde in de mosaic verdacht (groenig gepatroonde waas) —
+bij nader onderzoek een gewone crossfade-blend tussen de neutrale
+galley-tinten en de felle turquoise beddensprei van cabin 1, geen
+restmateriaal/ghosting. Geen afkeuringen.
+
+**Transition QC:** steekproef op de opvallendste overgang (salon→cabin1,
+~48s) bevestigt een schone crossfade. Geen surgical-splice-geschiedenis bij
+dit jacht (alle clips vers gegenereerd), dus het "oude naad"-risico is hier
+sowieso niet van toepassing.
 
 ## Montage
 Genormaliseerd naar 1920x1080/30fps, geassembleerd met assemble.py, xfade 0.4s.
@@ -83,9 +100,7 @@ Ingekort tot videolengte, fade-in 1,5s, fade-out 2s, AAC 192kbps, beeld ongewijz
 1. Cabin-lettering (A/B/C) niet bevestigd — 3 hutten genummerd 1/2/3 op bestandsnaamvolgorde.
 2. Clip 1 (opener) en clip 21 (closer) tonen mogelijk de bootnaam/merk op de romp — niet
    weg te prompten, waarschijnlijk echt zichtbaar in de bronfoto.
-3. Laag-2 visuele QC (verzonnen objecten, mensen, dieren) niet uitgevoerd — technische
-   sessiebeperking, niet doorlopend overgeslagen.
-4. Video is een baseline op basis van site-foto's, niet client-aangeleverde/gecategoriseerde
+3. Video is een baseline op basis van site-foto's, niet client-aangeleverde/gecategoriseerde
    foto's — Alexia's bevestiging nog nodig voor definitieve oplevering.
 
 ## Credits

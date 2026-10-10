@@ -29,13 +29,44 @@ Beste resultaat van de hele batch: slechts 2 van 18 clips geflagd, allebei op TE
 Geen regeneraties nodig deze boot. Eindresultaat: 18/18 clips schoon of geaccepteerd bij
 eerste poging.
 
-## QC laag 2
-Niet uitgevoerd — zelfde technische sessiebeperking als bij de vorige boten.
+## QC laag 2 — alsnog uitgevoerd (10-10-2026) — **AFKEURING, ernstigste geval van de batch**
+
+Zelfde methode als de andere boten. Dit is de meest aangetaste video van de
+10: **4 van de 18 clips tonen echte mensen aan boord**, bevestigd met
+close-ups, geen twijfelgevallen:
+
+- **Clip 1 (opener, t≈0-4,6s, bronfoto `wildblue-12-1...jpg`)**: vrouw in
+  zwempak zittend op het voornet/de bow.
+- **Clip 14 (t≈45,8-48,4s, bronfoto `19A8881-1280x950.jpg`)**: 3 mensen op
+  de flybridge — kapitein aan het roer, twee personen aan de dinettetafel.
+- **Clip 16 (t≈53,0-55,6s, bronfoto `wildblue-13-1...jpg`)**: luchtfoto met
+  een man en vrouw liggend/zittend op het zonnedek.
+- **Clip 18 (closer, t≈58,2-63,2s)**: hergebruikt dezelfde bronfoto als
+  clip 1 (`wildblue-12-1...jpg`) — dus dezelfde vrouw op de bow, nu als
+  slotshot.
+
+Opvallend: bronfoto `19A8881` (clip 14, mensen) is een ANDER bestand dan het
+al eerder uit voorzorg uitgesloten `19A8895` (zie Openstaande punten #4) —
+dat eerdere vermoeden ("gedeeld/generiek materiaal met Tidewater") blijkt
+dus niet de oorzaak; het echte probleem is steeds een los geval van mensen
+in de specifieke bronfoto, net als bij Southern Mist/Thumper/Tidewater/
+Tropically Impaired in dezelfde batch.
+
+Clips 2-13, 15, 17 zijn schoon: geen mensen, geen verzonnen meubels/dieren,
+geen morphing. **TEXT:** geen enkele OCR-treffer (ook geen ruis) — wel is
+"FOUNTAINE PAJOT" (de botenbouwer, geen Wild Blue-specifiek merk) zichtbaar
+op de romp in clip 1/18, net als de LEOPARD-naam bij Sandpiper: een
+getrouwe reproductie van wat al op de romp staat, geen hallucinatie.
 
 ## Transition QC
-Niet visueel uitgevoerd — zelfde technische sessiebeperking. Geen surgical splice (alle
-gebruikte clips zijn vers gegenereerd), dus het oude-naad-risico uit sectie 12 van CLAUDE.md
-is hier niet van toepassing. Crossfade-duur standaard 0,4s.
+Crossfades in de mosaic ogen normaal, geen ghosting. Geen surgical splice
+(alle clips vers gegenereerd), dus het oude-naad-risico uit sectie 12 van
+CLAUDE.md is hier niet van toepassing.
+
+**Niet opgelost deze sessie:** credits op 0. Clips 1, 14, 16, 18 zijn NIET
+aangepast — keuze voor Valentijn, zie Openstaande punten. Let op: clips 1
+én 18 delen dezelfde bronfoto, dus een vervangende, mensvrije foto lost
+in één keer zowel opener als closer op.
 
 ## Montage
 18 clips, genormaliseerd naar 1920x1080/30fps, assemble.py, xfade 0,4s.
@@ -59,7 +90,12 @@ Ruim boven de 300-credit-meldgrens.
 
 ## Openstaande punten voor Alexia/Valentijn
 1. GEEN room-categorieen — volgorde is site-gallery-volgorde.
-2. Laag-2 visuele QC en transition-QC niet uitgevoerd — technische sessiebeperking.
+2. **AFGEKEURD: clips 1, 14, 16 en 18 tonen echte mensen aan boord — harde regelovertreding,
+   ernstigste geval van de hele batch, zie QC laag 2 hierboven.** Niet naar Alexia/eindklant
+   sturen voordat dit is opgelost. Clips 1 en 18 delen dezelfde bronfoto (dus 1 vervangende
+   foto lost beide op). Opties: (a) uitknippen (gratis, surgical splice, -4 clips, incl.
+   opener én closer — grote impact) of (b) vervangen met mensvrije bronfoto's zodra credits
+   beschikbaar zijn (nu 0). Wacht op akkoord Valentijn.
 3. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.
 4. 1 bestand (19A8895) uit voorzorg niet gebruikt wegens vermoeden van gedeeld/generiek

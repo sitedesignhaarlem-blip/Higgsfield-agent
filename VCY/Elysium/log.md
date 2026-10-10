@@ -20,8 +20,17 @@ Regeneratie met verzwaarde no-text-guard: index 8 en 9 schoon, index 6 kreeg een
 (ander) 2-teken fragment ('yy' conf85) — geaccepteerd na 1 herkansing, patroon wijst op
 Kling-ruis.
 
-## QC laag 2
-Niet uitgevoerd — zelfde technische sessiebeperking als bij de vorige boten.
+## QC laag 2 — alsnog uitgevoerd (10-10-2026)
+Zelfde methode als Sandpiper/Caribbean Cat (`sandbox_exec` image_paths).
+**TEXT:** geen leesbare woorden — "Seen"/"Thad"/"WARE" zijn losse OCR-ruis-
+fragmenten (teak/water), geen bootnaam of logo gevonden.
+**Visueel (27-punts mosaic + close-ups op 2 verdachte tiles):** geen mensen,
+geen verzonnen meubels/dieren/vaartuigen, geen morphing. De 2 tiles die in
+de mosaic wazig oogden (flybridge sunpad/helm-overgang, ~24-29s) bleken bij
+close-up gewoon scherpe, correcte frames — artefact van de kleine tile-
+compressie, geen echt defect.
+**Transition QC:** geen surgical splice van toepassing; geen ghosting
+waargenomen.
 
 ## Montage
 19 clips, genormaliseerd naar 1920x1080/30fps, assemble.py, xfade 0.4s.
@@ -39,6 +48,5 @@ vorige boten in deze batch.
 
 ## Openstaande punten voor Alexia/Valentijn
 1. GEEN room-categorieen — volgorde is site-gallery-volgorde.
-2. Laag-2 visuele QC niet uitgevoerd — technische sessiebeperking.
-3. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
+2. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.
