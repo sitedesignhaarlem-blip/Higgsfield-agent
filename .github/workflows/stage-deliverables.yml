@@ -30,9 +30,23 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          set -e
+          gh --version
           TAG="vcy-deliverables-$(date +%Y%m%d%H%M%S)"
-          gh release create "$TAG" out/*.mp4 \
+          if ! gh release create "$TAG" out/*.mp4 \
             --title "VCY deliverables (met muziek) - $(date +%d-%m-%Y)" \
-            --notes "Automatische staging van de 10 VCY-jachtvideo's (met muziek), met de juiste bestandsnamen. Gegenereerd door de stage-deliverables workflow."
+            --notes "Automatische staging van de 10 VCY-jachtvideo's (met muziek), met de juiste bestandsnamen." \
+            > /tmp/release_stdout.log 2> /tmp/release_stderr.log; then
+            echo "RELEASE_FAILED=1" >> "$GITHUB_ENV"
+          fi
           echo "RELEASE_TAG=$TAG" >> "$GITHUB_ENV"
+          echo "--- stdout ---"; cat /tmp/release_stdout.log
+          echo "--- stderr ---"; cat /tmp/release_stderr.log
+
+      - name: Post failure details as commit comment
+        if: env.RELEASE_FAILED == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          BODY=$(printf '### stage-deliverables failed\n\n**stdout:**\n```\n%s\n```\n\n**stderr:**\n```\n%s\n```' "$(cat /tmp/release_stdout.log)" "$(cat /tmp/release_stderr.log)")
+          gh api repos/${{ github.repository }}/commits/${{ github.sha }}/comments -f body="$BODY"
+          exit 1
