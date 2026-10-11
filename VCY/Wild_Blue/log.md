@@ -108,8 +108,10 @@ eerste (samen met Thumper) nieuwe, mensvrije bronfoto's nodig.
 - Stille versie: Wild_Blue.mp4 (44,6s) —
   https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/9b7eef9d-e978-4417-b052-6f885966780b.mp4
 - media_id: 9b7eef9d-e978-4417-b052-6f885966780b
-- **Met-muziek-versie nog niet opnieuw gemaakt** — zie Openstaande punten.
-- Kosten: 0 credits (pure re-splice).
+- Met muziek: Wild_Blue_music.mp4 (44,6s, track "Majestic" op de nieuwe lengte
+  geknipt, fade-in 1,5s/fade-out 2s, AAC 192kbps, beeld ongewijzigd) —
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/13ce32de-b09e-45c3-b844-716675fb6959.mp4
+- Kosten: 0 credits (pure re-splice + audio-mux, geen generatie).
 
 ## Openstaande punten voor Alexia/Valentijn
 1. GEEN room-categorieen — volgorde is site-gallery-volgorde.
@@ -117,10 +119,9 @@ eerste (samen met Thumper) nieuwe, mensvrije bronfoto's nodig.
    2 mid-clips én closer (alle 4 afgekeurd wegens mensen in beeld). Dit jacht heeft als
    eerste (samen met Thumper) nieuwe bronfoto's nodig zodra credits beschikbaar zijn —
    vooral voor een nieuwe opener/closer (beide gebruikten dezelfde, nu verwijderde, foto).
-3. Met-muziek-versie nog opnieuw te maken op de nieuwe lengte.
-4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
+3. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.
-5. 1 bestand (19A8895) uit voorzorg niet gebruikt wegens vermoeden van gedeeld/generiek
+4. 1 bestand (19A8895) uit voorzorg niet gebruikt wegens vermoeden van gedeeld/generiek
    materiaal met Tidewater — kan alsnog toegevoegd worden als Alexia bevestigt dat het een
    uniek Wild Blue-bestand is.
 

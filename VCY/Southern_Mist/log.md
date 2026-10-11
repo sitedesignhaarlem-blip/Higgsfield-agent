@@ -86,16 +86,15 @@ mensvrije foto's beschikbaar binnen deze sessie om de 9,2s te compenseren.
 - Stille versie: Southern_Mist.mp4 (55,9s) —
   https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/9ae39ad1-3a13-4a86-824c-85b4b464ca39.mp4
 - media_id: 9ae39ad1-3a13-4a86-824c-85b4b464ca39
-- **Met-muziek-versie nog niet opnieuw gemaakt** — de v1-muziektrack was op
-  de oude (65,10s) lengte geknipt; moet opnieuw op 55,9s worden afgestemd.
-  Zie Openstaande punten.
-- Kosten: 0 credits (pure re-splice).
+- Met muziek: Southern_Mist_music.mp4 (55,9s, track "Majestic" opnieuw op de nieuwe
+  lengte geknipt, fade-in 1,5s/fade-out 2s, AAC 192kbps, beeld ongewijzigd) —
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/f2db6bda-b7e9-4a29-b63f-508bb3a47a99.mp4
+- Kosten: 0 credits (pure re-splice + audio-mux, geen generatie).
 
 ## Openstaande punten voor Alexia/Valentijn
 1. GEEN room-categorieen — volgorde is site-gallery-volgorde.
 2. **Eindlengte 55,9s, onder de 60-90s-norm** (gevolg van het verwijderen van de
    afgekeurde mensen-clips). Permanente oplossing: 3 mensvrije bronfoto's voor
    het exterior-blok zodra credits beschikbaar zijn.
-3. Met-muziek-versie nog opnieuw te maken op de nieuwe lengte.
-4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
+3. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.

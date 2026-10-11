@@ -111,8 +111,10 @@ impact van de 5 gefixte boten in deze batch.
 - Stille versie: Tropically_Impaired.mp4 (58,5s) —
   https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/2b67d10a-d371-4663-8f43-beef72fc252f.mp4
 - media_id: 2b67d10a-d371-4663-8f43-beef72fc252f
-- **Met-muziek-versie nog niet opnieuw gemaakt** — zie Openstaande punten.
-- Kosten: 0 credits (pure re-splice).
+- Met muziek: Tropically_Impaired_music.mp4 (58,5s, track "Majestic" op de nieuwe
+  lengte geknipt, fade-in 1,5s/fade-out 2s, AAC 192kbps, beeld ongewijzigd) —
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/d36101b5-c050-4d84-9833-7705af9e3130.mp4
+- Kosten: 0 credits (pure re-splice + audio-mux, geen generatie).
 
 ## Openstaande punten voor Alexia/Valentijn
 1. **Watermarkreeks ontdekt in bronmateriaal**: de foto's IMG_3447/3449/3451/3452 (mogelijk
@@ -121,7 +123,6 @@ impact van de 5 gefixte boten in deze batch.
    te weten voor toekomstig gebruik van diezelfde bronfoto's (ook buiten deze pijplijn).
 2. **Eindlengte 58,5s, net onder de 60-90s-norm** — gevolg van het verwijderen van de
    afgekeurde clip. Kleine marge, een vervangende mensvrije bronfoto zou dit oplossen.
-3. Met-muziek-versie nog opnieuw te maken op de nieuwe lengte.
-4. GEEN room-categorieen — volgorde is site-gallery-volgorde.
-5. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
+3. GEEN room-categorieen — volgorde is site-gallery-volgorde.
+4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.

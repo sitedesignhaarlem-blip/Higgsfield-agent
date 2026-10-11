@@ -100,8 +100,10 @@ voor een nieuwe opener/closer).
 - Stille versie: Thumper.mp4 (46,6s) —
   https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/155369cf-66b4-4671-b73c-e5663cae031b.mp4
 - media_id: 155369cf-66b4-4671-b73c-e5663cae031b
-- **Met-muziek-versie nog niet opnieuw gemaakt** — zie Openstaande punten.
-- Kosten: 0 credits (pure re-splice).
+- Met muziek: Thumper_music.mp4 (46,6s, track "Majestic" op de nieuwe lengte
+  geknipt, fade-in 1,5s/fade-out 2s, AAC 192kbps, beeld ongewijzigd) —
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/6542eb2e-6b8d-44ae-b33d-cdb9ed1da336.mp4
+- Kosten: 0 credits (pure re-splice + audio-mux, geen generatie).
 
 ## Openstaande punten voor Alexia/Valentijn
 1. **Bronmateriaal-kwaliteit**: de volledige gallery bestaat uit screenshot-achtige bestanden,
@@ -109,7 +111,6 @@ voor een nieuwe opener/closer).
 2. **Eindlengte 46,6s, fors onder de 60-90s-norm** — gevolg van het verwijderen van opener,
    3e clip én closer (alle 3 afgekeurd wegens mensen in beeld). Dit jacht heeft als eerste
    nieuwe bronfoto's nodig zodra credits beschikbaar zijn.
-3. Met-muziek-versie nog opnieuw te maken op de nieuwe lengte.
-4. GEEN room-categorieen — volgorde is site-gallery-volgorde.
-5. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
+3. GEEN room-categorieen — volgorde is site-gallery-volgorde.
+4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.

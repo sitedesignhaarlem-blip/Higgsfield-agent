@@ -105,8 +105,10 @@ Southern Mist voor dezelfde afweging.
 - Stille versie: Tidewater.mp4 (53,8s) —
   https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/0c0215a3-5dc9-4738-8da0-3d0b5e7e051d.mp4
 - media_id: 0c0215a3-5dc9-4738-8da0-3d0b5e7e051d
-- **Met-muziek-versie nog niet opnieuw gemaakt** — zie Openstaande punten.
-- Kosten: 0 credits (pure re-splice).
+- Met muziek: Tidewater_music.mp4 (53,8s, track "Majestic" op de nieuwe lengte
+  geknipt, fade-in 1,5s/fade-out 2s, AAC 192kbps, beeld ongewijzigd) —
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/433ed237-e5f4-49cb-be88-e645ce15d22a.mp4
+- Kosten: 0 credits (pure re-splice + audio-mux, geen generatie).
 
 ## Openstaande punten voor Alexia/Valentijn
 1. **Clip 18 (opnieuw exterieur-wide) is uit de video gehaald** omdat de bronfoto een gebrande
@@ -115,7 +117,6 @@ Southern Mist voor dezelfde afweging.
 2. **Eindlengte 53,8s, onder de 60-90s-norm** — gevolg van het verwijderen van de 2 afgekeurde
    mensen-clips. Permanente oplossing: mensvrije vervangende bronfoto's zodra credits
    beschikbaar zijn.
-3. Met-muziek-versie nog opnieuw te maken op de nieuwe lengte.
-4. GEEN room-categorieen — volgorde is site-gallery-volgorde.
-5. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
+3. GEEN room-categorieen — volgorde is site-gallery-volgorde.
+4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.
