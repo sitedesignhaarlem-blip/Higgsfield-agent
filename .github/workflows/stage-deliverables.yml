@@ -1,0 +1,38 @@
+name: Stage VCY Deliverables
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download videos
+        run: |
+          set -e
+          mkdir -p out
+          curl -sS -o "out/Sandpiper.mp4" "https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/8524c7a6-eb1a-4ca5-8eb4-041a104ff921.mp4"
+          curl -sS -o "out/Caribbean_Cat.mp4" "https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/4844945d-8423-4445-91e2-a45fc0cb94bf.mp4"
+          curl -sS -o "out/Elysium.mp4" "https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/1f758200-3143-445a-8293-b184787bee13.mp4"
+          curl -sS -o "out/One_Life.mp4" "https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/aafabc25-82d9-4660-af5d-e02d996dc489.mp4"
+          curl -sS -o "out/ThreeQuartersFull.mp4" "https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/d7354dca-dca7-4f6d-ba8b-f6b086502fbf.mp4"
+          curl -sS -o "out/Southern_Mist.mp4" "https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/f2db6bda-b7e9-4a29-b63f-508bb3a47a99.mp4"
+          curl -sS -o "out/Thumper.mp4" "https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/6542eb2e-6b8d-44ae-b33d-cdb9ed1da336.mp4"
+          curl -sS -o "out/Tidewater.mp4" "https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/433ed237-e5f4-49cb-be88-e645ce15d22a.mp4"
+          curl -sS -o "out/Tropically_Impaired.mp4" "https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/d36101b5-c050-4d84-9833-7705af9e3130.mp4"
+          curl -sS -o "out/Wild_Blue.mp4" "https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/13ce32de-b09e-45c3-b844-716675fb6959.mp4"
+          ls -la out/
+
+      - name: Create release with correct filenames
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          TAG="vcy-deliverables-$(date +%Y%m%d%H%M%S)"
+          gh release create "$TAG" out/*.mp4 \
+            --title "VCY deliverables (met muziek) - $(date +%d-%m-%Y)" \
+            --notes "Automatische staging van de 10 VCY-jachtvideo's (met muziek), met de juiste bestandsnamen. Gegenereerd door de stage-deliverables workflow."
+          echo "RELEASE_TAG=$TAG" >> "$GITHUB_ENV"
