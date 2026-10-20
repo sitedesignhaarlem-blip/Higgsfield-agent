@@ -9,9 +9,9 @@
       "start_image": "photos/01_opener_sunset.jpg",
       "end_image": null,
       "duration": 5,
-      "mode": "pro",
+      "mode": "std",
       "prompt": "Cinematic dolly forward along the hull of a moored speedboat at golden hour sunset, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, warm low sunlight, calm water, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boat name, no vessel name painted on the hull, stable geometry, no morphing or warping of railings, hull lines or window frames",
-      "note": "resolutie 877x658, onder de 1280px-norm — gemeld in brief.md"
+      "note": "resolutie 877x658, onder de 1280px-norm — gemeld in brief.md. mode teruggezet naar std: pro vereist een plus-abonnement, huidig plan is starter (bevestigd door Valentijn)."
     },
     {
       "index": 2,
@@ -46,9 +46,9 @@
       "start_image": "photos/05_closer_clearwater.jpg",
       "end_image": null,
       "duration": 5,
-      "mode": "pro",
+      "mode": "std",
       "prompt": "Cinematic wide reveal of a speedboat anchored in crystal clear turquoise water, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boat name, no vessel name painted on the hull, stable geometry, no morphing or warping of railings, hull lines or window frames",
-      "note": "resolutie 877x658, onder de 1280px-norm — gemeld in brief.md"
+      "note": "resolutie 877x658, onder de 1280px-norm — gemeld in brief.md. mode teruggezet naar std: pro vereist een plus-abonnement, huidig plan is starter (bevestigd door Valentijn)."
     }
   ]
 }
