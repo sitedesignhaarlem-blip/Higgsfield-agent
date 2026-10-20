@@ -1,0 +1,54 @@
+{
+  "client": "Fasoulias Lines",
+  "aspect_ratio": "16:9",
+  "target_length_sec": 20,
+  "clips": [
+    {
+      "index": 1,
+      "category": "Exterior (opener)",
+      "start_image": "photos/01_opener_sunset.jpg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "pro",
+      "prompt": "Cinematic dolly forward along the hull of a moored speedboat at golden hour sunset, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, warm low sunlight, calm water, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boat name, no vessel name painted on the hull, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "resolutie 877x658, onder de 1280px-norm — gemeld in brief.md"
+    },
+    {
+      "index": 2,
+      "category": "Exterior (detail)",
+      "start_image": "photos/02_idea53_clearwater.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle slow pan across a moored speedboat in crystal clear turquoise water, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boat name, no vessel name painted on the hull, stable geometry, no morphing or warping of railings, hull lines or window frames"
+    },
+    {
+      "index": 3,
+      "category": "Scenery",
+      "start_image": "photos/03_rockarch_scenery.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Slow forward glide toward a natural rock arch over turquoise sea water, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boats, stable geometry, no morphing or warping of rock formations or water surface"
+    },
+    {
+      "index": 4,
+      "category": "Exterior (detail)",
+      "start_image": "photos/04_rib_closeup.jpg",
+      "end_image": null,
+      "duration": 3,
+      "mode": "std",
+      "prompt": "Gentle slow pan across a moored RIB speedboat, red upholstery and outboard engine detail, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boat name, no vessel name painted on the hull, stable geometry, no morphing or warping of railings or hull lines"
+    },
+    {
+      "index": 5,
+      "category": "Exterior (closer)",
+      "start_image": "photos/05_closer_clearwater.jpg",
+      "end_image": null,
+      "duration": 5,
+      "mode": "pro",
+      "prompt": "Cinematic wide reveal of a speedboat anchored in crystal clear turquoise water, gimbal-stabilized, smooth moderately-paced constant speed, locked horizon, bright natural daylight, photorealistic, cinematic color grade, no people, no text, no lettering, no logos, no boat name, no vessel name painted on the hull, stable geometry, no morphing or warping of railings, hull lines or window frames",
+      "note": "resolutie 877x658, onder de 1280px-norm — gemeld in brief.md"
+    }
+  ]
+}
