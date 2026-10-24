@@ -225,5 +225,19 @@ visueel vergelijkbare hutten, niet met echt restmateriaal.
 - URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3GZorgXJgm7K6l75bC5xyl4LIu6/ab949206-39c8-4775-99e4-fecefd1e957c.mp4
 - media_id: ab949206-39c8-4775-99e4-fecefd1e957c (bevestigd)
 - Kosten deze ronde: 18 credits (4 nieuwe generaties). Saldo: 2275 → 2257.
-- **Nog niet opgeleverd aan klant** — Valentijn levert.
 - **Openstaand:** titel-overlay (optioneel).
+
+## Levering aan klant (24-10-2026)
+
+Alexia vroeg naar deze video in de "10 Base videos"-mailthread (ze had hem nog nooit
+ontvangen — v3 stond intern klaar maar was nog niet verstuurd). Op verzoek van Valentijn is
+alsnog een muziekversie gemaakt en als draft-mail klaargezet.
+
+- Met muziek: Unwinding_walkthrough_v3_music.mp4 (68,87s, track "Majestic" — Diego Nava,
+  Mixkit Stock Music Free License, zelfde track als de rest van de vloot, fade-in 1,5s /
+  fade-out 2s, AAC 192kbps, beeld ongewijzigd) —
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/54c219e2-d15f-442c-9a60-6c0b86af97a7.mp4
+- media_id: 54c219e2-d15f-442c-9a60-6c0b86af97a7
+- Kosten: 0 credits (pure audio-mux, geen generatie).
+- Klaargezet als Gmail-draft in de "10 Base videos"-thread, samen met de Southern
+  Mist-deurplaatsing-vraag. Nog niet verstuurd — Valentijn verstuurt.
