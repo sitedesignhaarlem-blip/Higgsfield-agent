@@ -50,3 +50,17 @@ vorige boten in deze batch.
 1. GEEN room-categorieen — volgorde is site-gallery-volgorde.
 2. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.
+
+## Revisie Alexia (28-10-2026) - deurclip testclip
+
+Alexia wil dat het schuifdeurtje bij Elysium foto 9 opengaat naar het kleine hutje (foto 10),
+en hetzelfde voor Wild Blue en Southern Mist (voor SM foto 17).
+
+Foto 9 (deur dicht) en foto 10 (close-up bed van binnen) hebben heel verschillende standpunten,
+dus geen start+end-paar (morphing-risico, sectie 8). Gekozen: single-image clip vanaf foto 9
+met prompt "deur schuift naar links open", daarna foto 10 als aparte clip.
+
+- Foto: Elysium_9.jpg, media_id `eb230e1d-93f0-4d00-998e-08cc3685e2ce`
+- Clip: job `33be792d-693c-4955-b911-67750f861574`, 3s std, sound off, 16:9, 4,5 credits
+- Resultaat: deur schuift soepel naar links, bed wordt zichtbaar, kussen en ruit stabiel,
+  geen mensen of verzonnen objecten. Wacht op akkoord Valentijn.
