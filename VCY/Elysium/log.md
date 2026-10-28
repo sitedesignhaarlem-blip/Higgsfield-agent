@@ -64,3 +64,10 @@ met prompt "deur schuift naar links open", daarna foto 10 als aparte clip.
 - Clip: job `33be792d-693c-4955-b911-67750f861574`, 3s std, sound off, 16:9, 4,5 credits
 - Resultaat: deur schuift soepel naar links, bed wordt zichtbaar, kussen en ruit stabiel,
   geen mensen of verzonnen objecten. Wacht op akkoord Valentijn.
+
+## Revisie Alexia (28-10-2026) - uitgevoerd
+Bestaande video tot 57,3s, daarna Elysium-foto 1-8, dan foto 9 (deurclip: deur schuift open) en foto 10, daarna de bestaande exterieur-closer. Let op: Alexia schreef 'aan het einde'; de foto's staan vóór de exterieur-closer zodat de video op een exterieur eindigt (zoals bij de andere boten).
+
+- Nieuwe clips: 9 (3s std, sound off, 16:9, 40.5 credits; zie `_Alexia_revisie_2810/jobs.txt` voor job-id's)
+- Bestand: Elysium_music.mp4, 87,83s — https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/89f7dfde-2819-4a94-ada1-3c88c179decd.mp4
+- QC: laag 1 + laag 2 op alle nieuwe clips, crossfade-check per naad (NCC-blend + stroken rond de splice-naden). Zie `_Alexia_revisie_2810/log.md`.

@@ -98,3 +98,10 @@ mensvrije foto's beschikbaar binnen deze sessie om de 9,2s te compenseren.
    het exterior-blok zodra credits beschikbaar zijn.
 3. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.
+
+## Revisie Alexia (28-10-2026) - uitgevoerd
+0-3s geknipt, 4,2-34,9s behouden, 36-43 geknipt, 46-50,7s (salon/galley) naar voren verplaatst, foto 5-16 erna, deurclip vóór foto 17, foto 17 en 18, daarna exterieur-closer. Foto 1-4 en 19 (drone, mensen) NIET gegenereerd.
+
+- Nieuwe clips: 14 (3s std, sound off, 16:9, 63 credits; zie `_Alexia_revisie_2810/jobs.txt` voor job-id's)
+- Bestand: Southern_Mist_music.mp4, 78,77s — https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/2124307a-7bd7-4edb-aa8c-322181e67f2b.mp4
+- QC: laag 1 + laag 2 op alle nieuwe clips, crossfade-check per naad (NCC-blend + stroken rond de splice-naden). Zie `_Alexia_revisie_2810/log.md`.

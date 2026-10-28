@@ -106,3 +106,10 @@ Ingekort tot videolengte, fade-in 1,5s, fade-out 2s, AAC 192kbps, beeld ongewijz
 ## Credits
 Balans voor start batch (Sandpiper + Caribbean Cat samen): 1715
 Balans na deze batch: 1428 (zie Caribbean_Cat/log.md voor de gecombineerde afrekening)
+
+## Revisie Alexia (28-10-2026) - uitgevoerd
+0-17,6s behouden, 18-25 geknipt, foto 1-5, 26-48 behouden, foto 6-10, 49-58 geknipt, foto 11, 12, leopard-head, foto 13, 14, leopard-head (omgekeerd), foto 15, 16, bestaande exterieur-closer. Iets boven de 90s-doellengte (Alexia's lijst is leidend).
+
+- Nieuwe clips: 18 (3s std, sound off, 16:9, 81 credits; zie `_Alexia_revisie_2810/jobs.txt` voor job-id's)
+- Bestand: Sandpiper_music.mp4, 90,37s — https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/1661f03a-07d3-479c-8321-2ef3e60dcba2.mp4
+- QC: laag 1 + laag 2 op alle nieuwe clips, crossfade-check per naad (NCC-blend + stroken rond de splice-naden). Zie `_Alexia_revisie_2810/log.md`.

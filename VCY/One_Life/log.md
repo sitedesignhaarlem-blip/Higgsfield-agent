@@ -58,3 +58,10 @@ vorige boten in deze batch.
 3. Eindlengte 59,18s, net onder de norm.
 4. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.
+
+## Revisie Alexia (28-10-2026) - uitgevoerd
+0-7s behouden, 8-33 geknipt, foto 1-4, dan 33,7-53,9s, foto 5, 6, leopard-head, foto 7, 8, leopard-head (omgekeerd afgespeeld voor variatie), exterieur-closer.
+
+- Nieuwe clips: 9 (3s std, sound off, 16:9, 40.5 credits; zie `_Alexia_revisie_2810/jobs.txt` voor job-id's)
+- Bestand: One_Life_music.mp4, 57,17s — https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/828dc4ce-572b-4575-92fe-756bbced0d30.mp4
+- QC: laag 1 + laag 2 op alle nieuwe clips, crossfade-check per naad (NCC-blend + stroken rond de splice-naden). Zie `_Alexia_revisie_2810/log.md`.

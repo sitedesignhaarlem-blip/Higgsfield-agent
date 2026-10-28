@@ -62,3 +62,5 @@
 514 3c99569c-4bc6-44de-a469-11621bf1d2a8
 515 2302ed90-6acb-47c7-b1f6-f477d8772025
 516 d180c961-587e-4077-9ca3-cbe68e88bb01
+303 f29b6725-0d9a-4572-82e3-963ae379a98f   (hergenereerd na failed job; failed job e5946e9a... terugbetaald)
+605 4eef3815-2fb8-4b18-ae1f-501195e023a4   (herkansing: eerste versie 'd7c7a97a...' had verzonnen witte fender -> afgekeurd, 4,5 cr extra)

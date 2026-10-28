@@ -46,3 +46,10 @@ vorige boten in deze batch.
 1. GEEN room-categorieen — volgorde is site-gallery-volgorde.
 2. Baseline op basis van site-foto's — Alexia's bevestiging nog nodig voor definitieve
    oplevering.
+
+## Revisie Alexia (28-10-2026) - uitgevoerd
+0-19,7s behouden, 20-24 geknipt, 26-48 behouden, 3QF-foto 1-9 (9 clips) erna, daarna de exterieur-closer vanaf 56s.
+
+- Nieuwe clips: 9 (3s std, sound off, 16:9, 40.5 credits; zie `_Alexia_revisie_2810/jobs.txt` voor job-id's)
+- Bestand: Three_Quarters_Full.mp4 (met muziek), 69,70s — https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/19c6ce8d-3dc0-4d12-a70c-1756303e95fc.mp4
+- QC: laag 1 + laag 2 op alle nieuwe clips, crossfade-check per naad (NCC-blend + stroken rond de splice-naden). Zie `_Alexia_revisie_2810/log.md`.
