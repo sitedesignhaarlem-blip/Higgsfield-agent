@@ -36,3 +36,23 @@ van de clip een lichte lensvervorming van de railing, acceptabel.
 Elke crossfade per video: middenframe vs. blend van de twee buren (NCC) + visuele controle van de
 splice-naden (nieuwe naad direct na een bestaand fragment) met 10fps-stroken. Snijpunten staan
 minstens 0,1-0,3s buiten de oude crossfade-zones (CLAUDE.md §12).
+
+## Oplevering (alle met muziek, 1920x1080 30fps)
+| Boot | Bestand | Duur |
+|---|---|---|
+| Three Quarters Full | Three_Quarters_Full.mp4 | 69,7s |
+| Elysium | Elysium_music.mp4 | 87,8s |
+| Southern Mist | Southern_Mist_music.mp4 | 78,8s |
+| One Life | One_Life_music.mp4 | 57,2s |
+| Sandpiper | Sandpiper_music.mp4 | 90,4s |
+| Wild Blue | Wild_Blue_music.mp4 | 47,3s |
+URL's staan per boot in `<boot>/log.md`. Saldo na afloop: 25,5 credits (ruim onder de 300-meldgrens).
+
+## Openstaande punten voor Valentijn
+1. Foto's met mensen niet verwerkt (harde regel): Wild Blue 1 en 4, Southern Mist 1-4 en 19. Alexia vraagt ze wel expliciet.
+   Opties: (a) zo laten en aan haar melden, (b) als stilstaand beeld met langzame zoom (gratis, mensen blijven zichtbaar, het zijn haar eigen foto's),
+   (c) Kling-clip (kans op vervormde figuurtjes), ~4,5 cr per foto.
+2. Wild Blue komt op 47s (onder de 60s) en One Life op 57s; Sandpiper op 90,4s.
+3. Elysium: foto 1-10 staan vóór de exterieur-closer (Alexia schreef 'aan het einde').
+4. Southern Mist: salon-stukje 43-45s weggelaten (zij vroeg 45-51 te verplaatsen en 36-43 te knippen).
+5. Foto 12 'leopard head' bij One Life/Sandpiper twee keer gebruikt zoals gevraagd; tweede keer omgekeerd afgespeeld voor variatie.

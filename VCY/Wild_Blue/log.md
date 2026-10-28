@@ -131,3 +131,9 @@ Cat, Elysium, One Life, Southern Mist, ThreeQuartersFull, Thumper, Tidewater, Tr
 Impaired, Wild Blue) zijn nu geleverd als baseline-versie, elk met stille en muziek-variant,
 en elk met een brief.md die de methodologiebeperkingen en boot-specifieke bijzonderheden
 documenteert voor Alexia's review.
+
+## Revisie Alexia (28-10-2026) - uitgevoerd
+Behouden 0-4,5s (exterieur), 41-43 (flybridge) vooruit, daarna Wild Blue-foto 2, 3, 5, 6, dan 26-39 (salon), 8-13 (master cabin), 20-25 (gastenhutten), deurclip + foto 7, exterieur-closer.
+Foto 1 (kapitein + 2 personen op de flybridge) en foto 4 (twee zonnebaders) NIET gegenereerd: mensen in beeld. Foto 5 is bijgesneden op het mensvrije deel (man op zwemplatform). Eindlengte 47,3s: onder de 60s-richtlijn doordat Alexia 5-7 en 15-18 schrapt en foto 1/4 ontbreken.
+- Nieuwe clips: 5 (+1 herkansing 605) = 27 credits, deurclip eerder 4,5
+- Bestand: Wild_Blue_music.mp4, 47,33s — https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/3c8ddc02-84da-445d-8cdb-a5d153053378.mp4
