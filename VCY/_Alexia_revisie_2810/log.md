@@ -56,3 +56,10 @@ URL's staan per boot in `<boot>/log.md`. Saldo na afloop: 25,5 credits (ruim ond
 3. Elysium: foto 1-10 staan vóór de exterieur-closer (Alexia schreef 'aan het einde').
 4. Southern Mist: salon-stukje 43-45s weggelaten (zij vroeg 45-51 te verplaatsen en 36-43 te knippen).
 5. Foto 12 'leopard head' bij One Life/Sandpiper twee keer gebruikt zoals gevraagd; tweede keer omgekeerd afgespeeld voor variatie.
+
+## Ronde 2 (feedback Alexia 08-11-2026) — zonder credits
+- Sandpiper en One Life: 'leopard 51 head' (de twee clips die inzoomden op de wasbak) vervangen door de VOLLEDIGE foto, stilstaand, 3s, geen zoom (blur-vulling links/rechts omdat de foto 3:2 is). Sandpiper nu 88,6s, One Life 55,4s.
+  Let op: in de spiegel van die foto is de fotograaf zichtbaar (reflectie, klein) + telefoon. Alexia vraagt deze foto zelf, dus ongewijzigd gebruikt.
+- Elysium 1:05-1:17 (foto 4-8): Kling-clips vervangen door de volledige foto's, stilstaand met heel lichte uitzoom (eindigt op volledig beeld). Foto 5-8 zijn portret: volledig in beeld met blur-vulling links/rechts. Elysium nu 86,8s.
+- Gemaakt door de bestaande opgeleverde video's te knippen vóór/na de oude clips (cut op de pure frames, 0,05s marge) en met 0,4s crossfade te koppelen; muziek hergebruikt (zelfde track), nieuwe fade-out.
+- Three Quarters Full: goedgekeurd door Alexia. Southern Mist en Wild Blue: niet beoordeeld, nog niet af.
