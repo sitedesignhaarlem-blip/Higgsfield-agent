@@ -137,3 +137,6 @@ Behouden 0-4,5s (exterieur), 41-43 (flybridge) vooruit, daarna Wild Blue-foto 2,
 Foto 1 (kapitein + 2 personen op de flybridge) en foto 4 (twee zonnebaders) NIET gegenereerd: mensen in beeld. Foto 5 is bijgesneden op het mensvrije deel (man op zwemplatform). Eindlengte 47,3s: onder de 60s-richtlijn doordat Alexia 5-7 en 15-18 schrapt en foto 1/4 ontbreken.
 - Nieuwe clips: 5 (+1 herkansing 605) = 27 credits, deurclip eerder 4,5
 - Bestand: Wild_Blue_music.mp4, 47,33s — https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/3c8ddc02-84da-445d-8cdb-a5d153053378.mp4
+
+## Ronde 3 (16-11-2026)
+Alexia vroeg 15-11 om Wild Blue. Opgeleverde versie = de revisie van 28-10 hierboven (47,33s, zonder mensenfoto's; Valentijn besliste dat die foto's (1 en 4) eruit blijven). Een proefversie met die foto's als stilstaande stills (50,8s, 99b7c453-7438-4453-b288-71e629fc4634.mp4) is gemaakt maar niet opgeleverd. Mailconcept met de link staat klaar (niet verstuurd). Zie `_Alexia_revisie_2810/log.md`.

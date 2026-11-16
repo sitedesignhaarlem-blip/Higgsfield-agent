@@ -105,3 +105,6 @@ mensvrije foto's beschikbaar binnen deze sessie om de 9,2s te compenseren.
 - Nieuwe clips: 14 (3s std, sound off, 16:9, 63 credits; zie `_Alexia_revisie_2810/jobs.txt` voor job-id's)
 - Bestand: Southern_Mist_music.mp4, 78,77s — https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/2124307a-7bd7-4edb-aa8c-322181e67f2b.mp4
 - QC: laag 1 + laag 2 op alle nieuwe clips, crossfade-check per naad (NCC-blend + stroken rond de splice-naden). Zie `_Alexia_revisie_2810/log.md`.
+
+## Ronde 3 (16-11-2026)
+Alexia vroeg 15-11 om Southern Mist. Opgeleverde versie = de revisie van 28-10 hierboven (78,77s, zonder mensenfoto's; Valentijn besliste dat foto 1-4 en 19 eruit blijven). Een proefversie met die foto's als stilstaande stills (88,4s, 3435cbd1-85c3-4a7a-933e-c38a74af6ad8.mp4) is gemaakt maar niet opgeleverd. Mailconcept met de link staat klaar (niet verstuurd). Zie `_Alexia_revisie_2810/log.md`.

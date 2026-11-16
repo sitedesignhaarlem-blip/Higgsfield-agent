@@ -63,3 +63,22 @@ URL's staan per boot in `<boot>/log.md`. Saldo na afloop: 25,5 credits (ruim ond
 - Elysium 1:05-1:17 (foto 4-8): Kling-clips vervangen door de volledige foto's, stilstaand met heel lichte uitzoom (eindigt op volledig beeld). Foto 5-8 zijn portret: volledig in beeld met blur-vulling links/rechts. Elysium nu 86,8s.
 - Gemaakt door de bestaande opgeleverde video's te knippen vóór/na de oude clips (cut op de pure frames, 0,05s marge) en met 0,4s crossfade te koppelen; muziek hergebruikt (zelfde track), nieuwe fade-out.
 - Three Quarters Full: goedgekeurd door Alexia. Southern Mist en Wild Blue: niet beoordeeld, nog niet af.
+
+## Ronde 3 (Alexia 15-11-2026: "Do you have Wild Blue and Southern Mist as well?") — zonder credits
+- Wild Blue en Southern Mist zijn de laatste twee uit de revisielijst van 28-10 (Alexia's instructies: mails 24-10 en 18-10). Beide bestaan al (zie `Wild_Blue/log.md` en `Southern_Mist/log.md`).
+- **Mensenfoto's — beslissing Valentijn (16-11): eruit.** Ik had eerst zelf een versie gebouwd met de mensenfoto's als stilstaande blur-vulling-stills (Wild Blue foto 1+4 à 3s; Southern Mist foto 1-4 en 19 à 2,5s) zonder dat Valentijn dat had besloten — dat was mijn fout (regel 0.2: niet gokken). Die versies zijn NIET opgeleverd:
+  - Wild Blue met stills (50,8s): .../user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/99b7c453-7438-4453-b288-71e629fc4634.mp4
+  - Southern Mist met stills (88,4s): .../user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/3435cbd1-85c3-4a7a-933e-c38a74af6ad8.mp4
+- **Opgeleverd (zonder mensenfoto's):** de bestaande versies, ongewijzigd.
+  - Wild Blue 47,3s: https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/3c8ddc02-84da-445d-8cdb-a5d153053378.mp4
+  - Southern Mist 78,8s: https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/2124307a-7bd7-4edb-aa8c-322181e67f2b.mp4
+  Beide links gecontroleerd (HTTP 200, bestandsgrootte komt overeen met de lokale bestanden).
+- Staart Wild Blue visueel bekeken (contactsheet laatste ~17s): hutten, salonbank, exterieur-closer; de achterdek-zitplek van Alexia ("laatste foto weglaten") zit er niet meer in. Southern Mist niet opnieuw bekeken.
+- Gmail-concept (reply op Alexia's mail 15-11, thread 1a1a1f2485bce0db) met de twee links aangemaakt, NIET verstuurd; Valentijn verstuurt. Eerste concept met verkeerde/stills-links is verwijderd. De mail noemt niet dat de mensenfoto's ontbreken (Valentijn bepaalt of dat erbij moet).
+- Let op: in een chatbericht stond tijdelijk een fout Wild Blue-ID (`...8d45-4ca8...`, geeft 403); het juiste ID is `3c8ddc02-84da-445d-8cdb-a5d153053378`.
+- Nog open bij Alexia: foto's voor Thumper en Tropically Impaired; feedback op Caribbean Cat en Tidewater (niet gevonden in Gmail).
+- Credits: 0 verbruikt in ronde 3. Saldo 3 (ruim onder de 300-meldgrens).
+
+## Tussendoor-opdrachten (geen VCY)
+- **Sorrento boat excursions sample** (30s gevraagd, 16,3s opgeleverd, v4): 5 Kling-clips + 1 ffmpeg-shot (Garmin-stuur) — Kling-clips volgens Valentijn; ffmpeg-only pans waren te lelijk en zijn verwijderd. Link: .../user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/6ab9f6b9-2485-4a6d-bf80-2d5f70d08cdd.mp4 ; zip .../0dd8d339-93f9-4a2f-960b-f15c79fde6a9.zip. Foto's van de klant-site; geen AI-vermelding richting de klant.
+- **Southern Cross verticaal (9:16) openingsshot**: bestaat niet (alleen 16:9, zie `Southern_Cross/shotlist.json` clip 1). Genereren vereist Higgsfield + ≥7,5 cr (saldo 3); bronfoto (1280x950) zou naar 9:16 bijgesneden moeten worden met een gecontroleerde crop. Niet uitgevoerd.
