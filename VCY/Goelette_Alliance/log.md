@@ -21,3 +21,4 @@
 ## 18-11-2026 — laatste clip verwijderd (opdracht Valentijn)
 - Clip 5 (voordek Oude Haven) uit de montage gehaald (bestanden bewaard in clips/removed/). Nieuwe sample: 4 clips, 12,93s, 1920x1080, met muziek (output/Goelette_Alliance.mp4, 10,3 MB, sha256 d54f42f9...). Geen extra credits; 4,5 cr van clip 5 was al uitgegeven. Saldo 75.
 - Mailconcept NIET aangemaakt: de Gmail-koppeling accepteert maximaal ~3,1 MB aan bijlagen per aanroep, de video is 10,3 MB. Open vraag aan Valentijn: link in plaats van bijlage.
+- Link (12,93s versie, 10,3 MB): https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/1d731e71-a09c-4892-9de4-f292fa7574b8.mp4 (HTTP 200, grootte komt overeen). Gmail-concept met deze link aangemaakt zonder ontvanger (adres Goelette Alliance niet bekend), niet verstuurd.
