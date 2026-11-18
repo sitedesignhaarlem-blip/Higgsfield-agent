@@ -17,3 +17,7 @@
 - QC laag 2 (contactsheets qc/02-05): alle vier stabiel, geen tekst/bootnaam, geen extra boten of meubels. Clip 3: schoener wordt iets kleiner t.o.v. de rots (normale camerabeweging). Clip 4: een paar piepkleine donkere stipjes in de lucht komen ook in de bronfoto voor. Clip 5: bron 800px, iets zachter. qc_check.py (laag 1, incl. TEXT) NIET gedraaid in deze sessie: geen OCR beschikbaar.
 - Montage: genormaliseerd 1920x1080 30fps, assemble.py xfade 0,4s -> 15,57s, muziek Majestic (fade-in 1,5s, fade-out 2s) -> output/Goelette_Alliance.mp4 (stille versie output/silent.mp4).
 - Transition QC: middenframes van alle 4 naden bekeken (qc/transitions.jpg). Naad 1-3 tonen tijdens de dissolve twee schoeners over elkaar (verwacht bij een 0,4s crossfade tussen twee scheepsfoto's, ~0,2s zichtbaar). Niet als defect gemarkeerd; alternatief bij klacht: kortere xfade of harde cut.
+
+## 18-11-2026 — laatste clip verwijderd (opdracht Valentijn)
+- Clip 5 (voordek Oude Haven) uit de montage gehaald (bestanden bewaard in clips/removed/). Nieuwe sample: 4 clips, 12,93s, 1920x1080, met muziek (output/Goelette_Alliance.mp4, 10,3 MB, sha256 d54f42f9...). Geen extra credits; 4,5 cr van clip 5 was al uitgegeven. Saldo 75.
+- Mailconcept NIET aangemaakt: de Gmail-koppeling accepteert maximaal ~3,1 MB aan bijlagen per aanroep, de video is 10,3 MB. Open vraag aan Valentijn: link in plaats van bijlage.
