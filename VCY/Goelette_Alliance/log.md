@@ -7,3 +7,13 @@
   Bestand lokaal: clips/raw/01_exterior.mp4 (1280x720, 24fps, 5,04s).
 - QC laag 2 (contactsheet, 12 frames): stabiel, rustige dolly, zeilen/rompijnen/want blijven consistent, geen tekst, geen extra boten of dieren. De kleine figuurtjes op het dek komen uit de bronfoto en blijven klein. qc_check.py niet gedraaid voor deze testclip.
 - WACHT op feedback Valentijn voor clips 2-5 (18 cr, saldo na test: 93).
+
+## 18-11-2026 — clips 2-5 en montage
+- Saldo voor: 93. Clips 2-5 (kling3_0 std, 3s, geen geluid, 16:9, 4,5 cr per clip = 18 cr), saldo daarna 75. Geen herkansingen.
+  - 2 (Shootingvoilier, profiel-orbit): job c558f67a-cb42-4f76-a721-dfecf6b22c28
+  - 3 (DSC06298, zijwaartse glijbeweging rotspunt): job 393aee85-1bf4-4787-b948-590f71b26647
+  - 4 (zonsondergang, push-in): job f17979e9-4c4d-4444-849f-e559696d9a0d
+  - 5 (voordek Oude Haven, glijbeweging): job 518c581f-2394-412d-a287-23ea02d93625
+- QC laag 2 (contactsheets qc/02-05): alle vier stabiel, geen tekst/bootnaam, geen extra boten of meubels. Clip 3: schoener wordt iets kleiner t.o.v. de rots (normale camerabeweging). Clip 4: een paar piepkleine donkere stipjes in de lucht komen ook in de bronfoto voor. Clip 5: bron 800px, iets zachter. qc_check.py (laag 1, incl. TEXT) NIET gedraaid in deze sessie: geen OCR beschikbaar.
+- Montage: genormaliseerd 1920x1080 30fps, assemble.py xfade 0,4s -> 15,57s, muziek Majestic (fade-in 1,5s, fade-out 2s) -> output/Goelette_Alliance.mp4 (stille versie output/silent.mp4).
+- Transition QC: middenframes van alle 4 naden bekeken (qc/transitions.jpg). Naad 1-3 tonen tijdens de dissolve twee schoeners over elkaar (verwacht bij een 0,4s crossfade tussen twee scheepsfoto's, ~0,2s zichtbaar). Niet als defect gemarkeerd; alternatief bij klacht: kortere xfade of harde cut.
