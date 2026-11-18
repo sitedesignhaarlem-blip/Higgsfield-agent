@@ -1,0 +1,6 @@
+{"yacht":"Goelette Alliance","aspect_ratio":"16:9","target_length_sec":15,"clips":[
+{"index":1,"category":"Exterior","start_image":"photos/1_DSC06120.jpg","end_image":null,"duration":5,"mode":"std","note":"openingsshot, dolly forward"},
+{"index":2,"category":"Exterior","start_image":"photos/2_Shootingvoilier.jpg","end_image":null,"duration":3,"mode":"std","note":"zachte orbit profiel"},
+{"index":3,"category":"Exterior","start_image":"photos/3_DSC06298.jpg","end_image":null,"duration":3,"mode":"std","note":"zijwaartse glijbeweging rotspunt"},
+{"index":4,"category":"Sunset","start_image":"photos/4_zonsondergang.jpg","end_image":null,"duration":3,"mode":"std","note":"zachte push-in op silhouet"},
+{"index":5,"category":"Bow","start_image":"photos/5_proue.jpg","end_image":null,"duration":3,"mode":"std","note":"glijbeweging langs voordek, bron 800px"}]}
