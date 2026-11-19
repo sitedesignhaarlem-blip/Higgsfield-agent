@@ -28,3 +28,6 @@ Alle 8 clips: geen mensen, geen tekst, geen verzonnen meubels of boten, geometri
 
 ## Montage
 Genormaliseerd 1920x1080 24fps (Kling std levert 1280x720, dus opgeschaald, geen echte 1080p), harde cuts, muziek Majestic (zelfde track als VCY) fade-in 1,5s/fade-out 2s. Resultaat 30,33s. Bestand `Southern_Cross_new_prompt_test.mp4` (37 MB) staat niet in de repo.
+
+## Besluit Valentijn (19-11-2026)
+Het nieuwe prompt-concept (prompt 1 foto's verbeteren + prompt 2 walkthrough met harde cuts en één move per shot) bevalt niet. We blijven voortaan bij de bestaande werkwijze uit CLAUDE.md (start+end-frames, promptbibliotheek, crossfade 0,4s, QC in twee lagen). De bestanden in deze map zijn alleen een proef en worden niet gebruikt.
