@@ -108,3 +108,12 @@ mensvrije foto's beschikbaar binnen deze sessie om de 9,2s te compenseren.
 
 ## Ronde 3 (16-11-2026)
 Alexia vroeg 15-11 om Southern Mist. Opgeleverde versie = de revisie van 28-10 hierboven (78,77s, zonder mensenfoto's; Valentijn besliste dat foto 1-4 en 19 eruit blijven). Een proefversie met die foto's als stilstaande stills (88,4s, 3435cbd1-85c3-4a7a-933e-c38a74af6ad8.mp4) is gemaakt maar niet opgeleverd. Mailconcept met de link staat klaar (niet verstuurd). Zie `_Alexia_revisie_2810/log.md`.
+
+## Ronde 4 (Alexia 20-11-2026: "we're very close")
+Wensen: exterieurfoto's aan begin én eind toevoegen (zij leverde er 6 aan); de foto die op 55s inzoomt op het toilet helemaal weghalen.
+- Toiletclip (zichtbaar 56,1-58,3s in Southern_Mist_music.mp4) verwijderd: knip bij 55,5s en 58,9s, beide ≥0,2s buiten de crossfade-zones (blend 55,75-56,05 en 58,35-58,65); nieuwe naad hut -> bed met 0,4s crossfade.
+- Begin: foto `image23 (1).jpeg` (960x720, boot met strand/heuvels) als stilstaand beeld 3s, blur-vulling links/rechts, heel lichte uitzoom (zelfde behandeling als Elysium, door Alexia goedgekeurd). Eind: `image6 (4).jpeg` 3s, stilstaand zonder zoom.
+- Niet gebruikt: `Southern-mist-2 (1).jpg` (man aan het roer en vrouw op het voordek duidelijk in beeld), `image12`, `image17` (mensen op flybridge en achter), `image4`. In de gekozen foto's zijn alleen heel kleine, onscherpe figuurtjes op de flybridge te zien (komen uit haar eigen drone-foto's).
+- Resultaat: 80,2s, 1920x1080 30fps, muziek Majestic opnieuw op de nieuwe lengte (fade-in 1,5s/fade-out 2s). Naden visueel gecontroleerd met 10fps-stroken (nieuwe begin-, hut/bed- en eindnaad): geen restmateriaal van de oude naad, geen ghosting buiten de normale dissolve.
+- Link: https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/beecef1d-6bd5-4b12-816d-a133fe18fda0.mp4
+- Kosten: 0 credits (alleen ffmpeg). Saldo 28.

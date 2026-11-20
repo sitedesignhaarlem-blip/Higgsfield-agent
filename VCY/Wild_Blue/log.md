@@ -140,3 +140,12 @@ Foto 1 (kapitein + 2 personen op de flybridge) en foto 4 (twee zonnebaders) NIET
 
 ## Ronde 3 (16-11-2026)
 Alexia vroeg 15-11 om Wild Blue. Opgeleverde versie = de revisie van 28-10 hierboven (47,33s, zonder mensenfoto's; Valentijn besliste dat die foto's (1 en 4) eruit blijven). Een proefversie met die foto's als stilstaande stills (50,8s, 99b7c453-7438-4453-b288-71e629fc4634.mp4) is gemaakt maar niet opgeleverd. Mailconcept met de link staat klaar (niet verstuurd). Zie `_Alexia_revisie_2810/log.md`.
+
+## Ronde 4 (Alexia 20-11-2026)
+Wens: op 11s staat een foto die inzoomt op de ladder; zij wil het hele zwemplatform tonen, niet alleen de ladder (foto `19A8908-1280x950.jpg` opnieuw meegestuurd).
+- Ladderclip (zichtbaar 11,75-14,1s in Wild_Blue_music.mp4) verwijderd: knip bij 11,2s en 14,7s, ≥0,25s buiten de crossfade-zones (11,45-11,7 en 14,15-14,45). Ervoor de voordek-clip, erna de achterdek-clip.
+- Ertussen de VOLLEDIGE foto 19A8908 (1280x950, 4:3) stilstaand 3s, geen zoom, blur-vulling links/rechts (zoals de leopard-foto bij Sandpiper/One Life).
+- LET OP: op deze foto staat een man in blauw shirt op het zwemplatform duidelijk in beeld. Alexia vraagt deze foto zelf. Besluit van Valentijn nodig: zo laten, man eruit halen, of wegcroppen (dan niet meer het hele platform).
+- Resultaat: 46,03s (onder de 60s-richtlijn, Alexia's lijst gaat voor), muziek opnieuw geknipt. Naden visueel gecontroleerd.
+- Link (versie met de man in de foto, nog niet definitief): https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/abc272a9-bde8-4f35-8fd5-a0eba1aeea89.mp4
+- Kosten: 0 credits.
