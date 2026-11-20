@@ -149,3 +149,7 @@ Wens: op 11s staat een foto die inzoomt op de ladder; zij wil het hele zwemplatf
 - Resultaat: 46,03s (onder de 60s-richtlijn, Alexia's lijst gaat voor), muziek opnieuw geknipt. Naden visueel gecontroleerd.
 - Link (versie met de man in de foto, nog niet definitief): https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/abc272a9-bde8-4f35-8fd5-a0eba1aeea89.mp4
 - Kosten: 0 credits.
+
+### Ronde 4 — definitieve versie (20-11-2026)
+Valentijn leverde dezelfde zwemplatformfoto aan zonder de man (1280x950, 4:3); die vervangt de versie met de man. Zelfde montage: voordek-clip, volledige foto 3s stilstaand zonder zoom (blur-vulling links/rechts), achterdek-clip; knippen bij 11,2s en 14,7s. Naden visueel gecontroleerd, geen restmateriaal. 46,03s, 1920x1080 30fps, muziek opnieuw geknipt. 0 credits.
+- Definitieve link: https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/c6c76b61-a918-4ab5-958a-6eb191164390.mp4 (de eerdere link abc272a9... met de man vervalt).
