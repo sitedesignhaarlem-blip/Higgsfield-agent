@@ -117,3 +117,11 @@ Wensen: exterieurfoto's aan begin én eind toevoegen (zij leverde er 6 aan); de 
 - Resultaat: 80,2s, 1920x1080 30fps, muziek Majestic opnieuw op de nieuwe lengte (fade-in 1,5s/fade-out 2s). Naden visueel gecontroleerd met 10fps-stroken (nieuwe begin-, hut/bed- en eindnaad): geen restmateriaal van de oude naad, geen ghosting buiten de normale dissolve.
 - Link: https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/beecef1d-6bd5-4b12-816d-a133fe18fda0.mp4
 - Kosten: 0 credits (alleen ffmpeg). Saldo 28.
+
+### Ronde 5 (Alexia 21-11-2026): meerdere foto's aan begin en eind, met in/uitzoom
+Alexia: "add a couple of photos to the beginning and end of Southern Mist and have them zoom in/out, the same way you have done on the other boats; I like having multiple photos at the start to grab people's attention."
+- Begin: 3 foto's van haar (image23, image12, image17), elk 2,5s; eind: 2 foto's (image4 3x2,5s, image6 3s). Alle met dezelfde lichte uitzoom (1,04 -> 1,0) en blur-vulling als bij Elysium (door haar goedgekeurd); volledige foto blijft zichtbaar, geen inzoom op een detail.
+- Toiletclip blijft weg (knip bij 55,5s/58,9s uit ronde 4).
+- Niet gebruikt: `Southern-mist-2 (1).jpg` (man en vrouw duidelijk in beeld, 800x533).
+- Resultaat: 86,0s, 1920x1080 30fps, muziek opnieuw geknipt. Alle 6 nieuwe naden visueel gecontroleerd (10fps-stroken): schoon.
+- Link: https://d2ol7oe51mr4n9.cloudfront.net/user_3GAnI2MKRZFE3ukZ4ZGqGe45vyC/0e6b0153-2eb3-451e-9b7c-aaee8cad3018.mp4 (vervangt beecef1d...). 0 credits.
